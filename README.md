@@ -1,7 +1,7 @@
 student_paper
 =============
 
-Computer science papers written by a group of students
+Computer science papers written by a group of PetrSU students
 
 Petrozavodsk State University (PetrSU), https://en.wikipedia.org/wiki/Petrozavodsk_State_University
 
