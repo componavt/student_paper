@@ -1,0 +1,325 @@
+\documentclass{article}
+\usepackage{krctran}
+
+\begin{document}
+
+\procname{Труды Карельского научного центра РАН\\ \No 0. 2010. С.~1--4}
+\udk{УДК 004.01:006.72 (470.22)}
+
+\rustitle{Обзор методов (уточнить - каких?) \newline по решению задачи разрешения лексической многозначности}
+\engtitle{Word-sense disambiguation methods (specific?) review}
+
+\rusauthor{А.~С.~Румянцев}
+\engauthor{A.~S.~Rumyantsev}
+
+\organization{Институт прикладных математических исследований Карельского научного центра РАН}
+
+\rusabstract{Данный файл является примером статьи для научного издания Труды Карельского научного центра РАН, 
+серия <<Математическое моделирование и информационные технологии>>.
+В нем содержатся основные используемые переменные и окружения. При подготовке статьи рекомендуется
+воспользоваться этим примером в качестве шаблона. Данный абзац оформлен в стиле аннотации статьи.}
+\engabstract{This file is an auxiliary example of an article prepared forTransactions of Karelian Research Centre of RAS.
+It contains most useful environments and variables. While preparing your article, it's recommended to use
+this text as a template. This paragraph is formatted as an Abstract of the article.}
+
+\ruskeywords{труды, шаблон, подготовка статьи.}
+\engkeywords{transactions, template, article.}
+
+\maketitle
+
+\begin{articletext}
+\section{Введение}
+Статья, представляемая в научное издание, должна быть оформлена в соответствии
+с <<Правилами для авторов>>, размещенными на сайте \hbox{http://transactions.krc.karelia.ru}.
+Данный документ претендует на роль технической документации в помощь авторам.
+Достаточно подробную информацию по наборе в системе \LaTeX можно найти,
+напр., в работе~\cite{Latexrus}.
+
+\section{Структура файла в формате \LaTeXe}
+
+\begin{verbatim}
+\documentclass{article}
+\usepackage{krctran}
+...
+\begin{document}
+
+\procname{...}
+\udk{...}
+\rustitle{...}
+\engtitle{...}
+\rusauthor{...}
+\engauthor{...}
+\organization{...}
+\rusabstract{...}
+\engabstract{...}
+\ruskeywords{...}
+\engkeywords{...}
+
+\maketitle
+
+\begin{articletext}
+\section{...}
+...
+\begin{thebibliography}
+...
+\end{thebibliography}
+\end{articletext}
+
+\section{СВЕДЕНИЯ ОБ АВТОРE:}
+\begin{aboutauthors}
+...
+\end{aboutauthors}
+\end{document}
+\end{verbatim}
+
+Преамбула статьи должна содержать две обязательные команды:
+\begin{verbatim}
+\documentclass{article}
+\usepackage{krctran}
+\end{verbatim}
+
+Далее формируется заголовок статьи: выходные данные, код УДК, название статьи, 
+авторы с указанием мест работы, аннотация,
+ключевые слова. Например, заголовок этого файла сформирован следующими командами: 
+\begin{verbatim}
+\procname{Труды...\\ \No...}
+\udk{УДК...}
+\rustitle{Руководство...}
+\engtitle{Usage...}
+\rusauthor{А.~С.~Румянцев}
+\engauthor{A.~S.~Rumyantsev}
+\organization{Институт...}
+\rusabstract{Данный файл...}
+\engabstract{This file...}
+\ruskeywords{труды,...}
+\engkeywords{transactions,...}
+\maketitle
+\end{verbatim}
+
+\begin{Remark}
+Для ручной разбивки на строки названия статьи воспользуйтесь командой \verb"\newline".
+\end{Remark}
+
+\bfullwidth
+\begin{figure}
+%\includegraphics[height=100mm,width=0.9\textwidth]{delay_HT.pdf}
+\caption{Задержки в модели 10-узловой системы, случай тяжелых хвостов}
+\label{fig5}
+\end{figure}
+\efullwidth
+
+\section{Основной текст}
+Текст статьи, а также список используемой литературы заключаются
+в окружение \verb"{articletext}".
+
+При наборе формул, желательно пользоваться
+окружениями \verb"{equation}", \verb"{align}" и др.
+Для ссылок на формулы удобно использовать команду \verb"\eqref{...}".
+
+\section{Библиография}
+Библиографические ссылки принято оформлять в виде [номер], в отличие от
+ранее принятых [Автор, год] (см., напр., \cite{Trans}). 
+Источник, процитированный выше, был набран командой
+\begin{verbatim}
+\bibitem{Trans}
+\textit{Борисов~Г.~А., 
+Тихомирова~Т.~А.}
+Характеристики и свойства потерь 
+энергии и мощности на пределах 
+энергетического хозяйства региона //
+Труды Карельского научного центра 
+Российской академии наук. 2010. 
+\No 3. С.~4--10.
+\end{verbatim}
+
+\section{Теоремоподобные окружения}
+Для теорем, утверждений и пр. необходимо использовать соответствующие
+окружения. Например:
+
+\begin{State} 
+В предложенной модели системы обслуживания при
+$\rho=ES/ET<1$ условие $ES^{\alpha+1}<\infty$ является достаточным для 
+конечности момента порядка $\alpha$ времени ожидания в системе, $ED^\alpha<\infty$.
+\end{State}
+\begin{proof}
+Очевидно.
+\end{proof}
+
+В данном случае было использовано окружение \verb"\begin{State}...\end{State}". Для
+набора доказательства использовалось окружение \verb"\begin{proof}...\end{proof}".
+Доступные автору теоремоподобные окружения перечислены в Таблице~\ref{theorems}.
+
+\begin{table}[H]
+\centering
+\caption{Теоремоподобные окружения}
+\begin{tabular}{|l|l|}
+\hline
+\verb"Theorem" & Теорема\\
+\verb"Lemma" & Лемма\\
+\verb"State" & Утверждение\\
+\verb"Corollary" & Следствие\\
+\verb"Axiom" & Аксиома\\
+\verb"Definition" & Определение\\
+\verb"Example" & Пример\\
+\verb"Remark" & Замечание\\
+\hline
+\end{tabular}
+\label{theorems}
+\end{table}
+
+Для определений, примеров и замечаний используется прямое написание.
+\begin{Example*}
+Например, как в этом примере.
+\end{Example*}
+
+Соответствующие версии окружений <<со звездой>> также работают. Пример
+выше был набран такой командой:
+
+\begin{verbatim}
+\begin{Example*}
+Например, как в этом примере.
+\end{Example*}
+\end{verbatim}
+
+\bfullwidth
+\begin{table}[H]
+\caption{Таблица, демонстрирующая возможность размещения на всю ширину страницы}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Первая колонка & вторая колонка & третья колонка & четвертая колонка & пятая колонна\\
+\hline
+\end{tabular}
+\label{tab_width}
+\end{table}
+\efullwidth
+
+\section{Рисунки и таблицы}
+Рисунки и таблицы могут вставляться как на всю ширину страницы,
+так и на ширину колонки. Желательно использовать рисунки формата pdf. 
+Для конвертации из формата eps можно воспользоваться утилитой epstopdf.
+Так, например, Рис.~\ref{fig1} был вставлен на ширину колонки командой
+\begin{verbatim}
+\begin{figure}[H]
+\includegraphics[keepaspectratio=true,
+ width=0.9\columnwidth]{delay_80.pdf}
+\caption{Задержки в модели 
+ 10-узловой системы}
+\label{fig1}
+\end{figure}
+\end{verbatim}
+
+\begin{figure}[H]
+    \includegraphics[keepaspectratio=true,width=0.9\columnwidth]{delay_80.pdf}
+    \caption{Задержки в модели 10-узловой системы}
+    \label{fig1}
+\end{figure}
+
+
+
+\section{Размещение на всю ширину страницы}
+В стилевом файле предусмотрена возможность размещения формул, рисунков
+и таблиц на ширину страницы. Для этого размещаемый элемент необходимо
+заключить между командами \verb'\bfullwidth' и \verb'\efullwidth'.
+ 
+Пример формулы на всю ширину страницы:
+\bfullwidth
+\begin{equation}
+Y=A_1x+A_2x^2+\ldots +A_nx^n.
+\end{equation}
+\efullwidth
+Набран пример следующим образом:
+\begin{verbatim}
+\bfullwidth
+\begin{equation}
+Y=A_1x+A_2x^2+\ldots +A_nx^n.
+\end{equation}
+\efullwidth
+\end{verbatim}
+
+
+Пример размещения таблицы на ширину страницы (см. таблицу~\ref{tab_width}):
+\begin{verbatim}
+\bfullwidth
+\centering
+\begin{table}[H]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Первая колонка & ...\\
+\hline
+\end{tabular}
+\label{tab_width}
+\end{table}
+\efullwidth
+\end{verbatim}
+
+Рис.~\ref{fig5} демонстрирует возможности вставки по всей ширине страницы.
+Это было достигнуто при помощи команды
+\begin{verbatim}
+\bfullwidth
+\begin{figure}
+\includegraphics[height=100mm,...}
+\caption{Задержки в модели...}
+\label{fig5}
+\end{figure}
+\efullwidth
+\end{verbatim}
+Следует обратить внимание на то, что вышеуказанная команда
+вставит рисунок не ближе, чем на следующей странице сверху,
+а не сразу на месте указания команды.
+
+\section{Сведения об авторах}
+После основного текста оформляются сведения об авторах. Используется
+окружение \verb"\begin{aboutauthors}...\end{aboutauthors}". При этом следует обратить внимание, что
+работа ведется в двухколоночном режиме, поэтому необходимо вручную 
+указать разрыв колонки для отделения сведений на русском и английском
+языках. Например:
+\begin{verbatim}
+\begin{aboutauthors}
+\authorsname{Румянцев Александр...}
+аспирант\\ 
+...
+\columnbreak
+\authorsname{Rumyantsev, Alexander}
+...
+\end{aboutauthors}
+\end{verbatim}
+
+\section{Заключение}
+Компиляцию исходного файла желательно выполнять с помощью макроса \verb"pdflatex".
+
+В работе рассмотрены основные технические аспекты подготовки статьи
+для сборника Трудов Карельского научного центра РАН. Предложения
+и пожелания по доработке стилевого файла, а также текста этого документа
+принимаются по электронному адресу, указанному в разделе <<Сведения об авторах>>.
+
+\begin{thebibliography}{9}
+%\bibitem[Борисов, Тихомирова(2010)]{Trans}
+\bibitem{Trans}
+\textit{Борисов~Г.~А., Тихомирова~Т.~А.} Характеристики и свойства потерь энергии
+и мощности на пределах энергетического хозяйства региона //
+Труды Карельского научного центра Российской академии наук. 2010. \No 3. С.~4--10.
+
+\bibitem{Latexrus}
+\textit{Львовский С. М.} Набор и верстка в системе \LaTeX. М., 2003. 448~с.
+\end{thebibliography}
+\end{articletext}
+
+
+\section{СВЕДЕНИЯ ОБ АВТОРE:}
+\begin{aboutauthors}
+\authorsname{Румянцев Александр Cергеевич}
+аспирант\\ 
+Институт прикладных математических исследований КарНЦ РАН\\ 
+ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
+эл. почта: ar0@krc.karelia.ru\\
+тел.: (8142) 763370
+
+\columnbreak
+
+\authorsname{Rumyantsev, Alexander}
+Institute of Applied Mathematical Research, Karelian Research Centre, Russian Academy of Science\\
+11 Pushkinskaya St., 185910 Petrozavodsk, Karelia, Russia\\
+e-mail: ar0@krc.karelia.ru\\
+tel.: (8142) 763370
+\end{aboutauthors}
+\end{document}
