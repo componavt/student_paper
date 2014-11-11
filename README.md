@@ -10,4 +10,4 @@ Internet-mathematics course
 == Literature == 
 
 Krizhanovsky, Andrew (2014) Methodology and guidelines of writing articles in Wikipedia by students with the help of the teacher (the Russian Wikipedia case study) (in Russian). Petrozavodsk. (preprint). URL: http://scipeople.com/publication/114999/
-
+.
