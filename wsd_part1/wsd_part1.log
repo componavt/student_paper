@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  15 DEC 2014 15:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  16 DEC 2014 14:42
 entering extended mode
 **wsd_part1.tex
-(C:\Users\acer\Desktop\wsd_part1\wsd_part1.tex
+(C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\wsd_part1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -30,7 +30,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\acer\Desktop\wsd_part1\krctran.sty
+(C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\krctran.sty
 Package: krctran 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
@@ -429,7 +429,7 @@ Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 \c@Example=\count131
 \c@Remark=\count132
 )
-(C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
+(C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\wsd_part1.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
@@ -531,10 +531,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []
 
 
-Package natbib Warning: Citation `Latexrus' on page 1 undefined on input line 3
-7.
-
-
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 39.
 
@@ -571,22 +567,6 @@ Overfull \hbox (7.74753pt too wide) in paragraph at lines 112--112
 \T2A/cmr/bx/sc/10.95 in Biomedical Text With Unsupervised
  []
 
-
-Package natbib Warning: Citation `Savova 2005' on page 2 undefined on input lin
-e 113.
-
-
-Package natbib Warning: Citation `epr:website' on page 2 undefined on input lin
-e 125.
-
-
-Package natbib Warning: Citation `Averin 2006' on page 2 undefined on input lin
-e 125.
-
-
-Package natbib Warning: Citation `UMLS:website' on page 2 undefined on input li
-ne 128.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -605,23 +585,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-
-Package natbib Warning: Citation `Pedersen 1997' on page 3 undefined on input l
-ine 136.
-
-
-Package natbib Warning: Citation `Schutze 1998' on page 3 undefined on input li
-ne 136.
-
-
-Package natbib Warning: Citation `SC:website' on page 3 undefined on input line
- 142.
-
-
-Package natbib Warning: Citation `Weeber 2001' on page 3 undefined on input lin
-e 142.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 147--147
 \T2A/cmr/bx/sc/10.95 Реферат ста-тьи <<Word sense
  []
@@ -632,25 +595,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--147
  []
 
 
-Package natbib Warning: Citation `VERONIS 1990' on page 3 undefined on input li
-ne 152.
-
-
 Underfull \hbox (badness 5924) in paragraph at lines 156--157
 []\T2A/cmr/m/n/10.95 В даль-ней-шем бу-дем на-зы-вать сло-ва,
  []
-
-
-Package natbib Warning: Citation `LESK 1986' on page 3 undefined on input line 
-160.
-
-
-Package natbib Warning: Citation `COTTRELL 1983' on page 3 undefined on input l
-ine 164.
-
-
-Package natbib Warning: Citation `WALTZ 1985' on page 3 undefined on input line
- 164.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -658,17 +605,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-
-Package natbib Warning: Citation `Trans' on page 4 undefined on input line 177.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 176--179
 []\T2A/cmr/m/n/10.95 Библиографические ссыл-ки при-ня-то
  []
-
-
-LaTeX Warning: Reference `theorems' on page 4 undefined on input line 206.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -676,9 +615,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4]
-
-LaTeX Warning: Reference `fig1' on page 5 undefined on input line 256.
-
 
 LaTeX Warning: File `delay_80.pdf' not found on input line 268.
 
@@ -694,12 +630,6 @@ l.268 ...true,width=0.9\columnwidth]{delay_80.pdf}
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `tab_width' on page 5 undefined on input line 296.
-
-
-LaTeX Warning: Reference `fig5' on page 5 undefined on input line 311.
 
 
 Overfull \hbox (4.55197pt too wide) in paragraph at lines 327--332
@@ -763,15 +693,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--463
 
  []
 
-
-Package natbib Warning: There were undefined citations.
-
-[7] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+[7] (C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\wsd_part1.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -779,21 +701,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  7004 strings out of 493921
- 87220 string characters out of 3147285
- 220958 words of memory out of 3000000
+ 87427 string characters out of 3147285
+ 221211 words of memory out of 3000000
  10122 multiletter control sequences out of 15000+200000
  24279 words of font info for 73 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,8n,33p,3246b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,33p,3246b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lar
 m0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi
 600\labx0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-
@@ -816,7 +732,7 @@ sfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb
 >
-Output written on wsd_part1.pdf (7 pages, 365775 bytes).
+Output written on wsd_part1.pdf (7 pages, 365430 bytes).
 PDF statistics:
  886 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
