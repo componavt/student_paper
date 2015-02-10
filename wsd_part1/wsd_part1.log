@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  16 DEC 2014 14:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  10 FEB 2015 23:07
 entering extended mode
 **wsd_part1.tex
-(C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\wsd_part1.tex
+(C:\Users\acer\Desktop\wsd_part1\wsd_part1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -30,7 +30,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\krctran.sty
+(C:\Users\acer\Desktop\wsd_part1\krctran.sty
 Package: krctran 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
@@ -429,54 +429,142 @@ Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 \c@Example=\count131
 \c@Remark=\count132
 )
-(C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\wsd_part1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 4.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+(C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 5.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 5.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 4.
+(Font)              size <5> substituted on input line 5.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 4.
+(Font)              size <5> substituted on input line 5.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 4.
+(Font)              size <5> substituted on input line 5.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 4.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 4.
+(Font)              size <5> substituted on input line 5.
 
-Package xypdf Info: Line width: 0.43999pt on input line 4.
+Package xypdf Info: Line width: 0.43999pt on input line 5.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
@@ -526,27 +614,27 @@ Package xypdf Info: Line width: 0.43999pt on input line 4.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 39.
+(Font)              using `OT1/cmr/bx/n' instead on input line 40.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 39.
+(Font)              size <5> substituted on input line 40.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 39.
+(Font)              size <5> substituted on input line 40.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 39.
+(Font)              size <5> substituted on input line 40.
 
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 41.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.fd"
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
@@ -558,25 +646,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (1.13185pt too wide) in paragraph at lines 112--112
-\T2A/cmr/bx/sc/10.95 Обзор ста-тьи <<Resolving Ambiguities
- []
-
-
-Overfull \hbox (7.74753pt too wide) in paragraph at lines 112--112
-\T2A/cmr/bx/sc/10.95 in Biomedical Text With Unsupervised
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <11> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
-
-Underfull \hbox (badness 5490) in paragraph at lines 130--131
-[]\T2A/cmr/m/n/10.95 Метатезаурус вклю-ча-ет все тер-ми-ны
+Underfull \hbox (badness 5924) in paragraph at lines 128--129
+[]\T2A/cmr/m/n/10.95 В даль-ней-шем бу-дем на-зы-вать сло-ва,
  []
 
 
@@ -585,18 +656,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
-\T2A/cmr/bx/sc/10.95 Реферат ста-тьи <<Word sense
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T2A/cmr/bx/sc/10.95 <<Разрешение мно-го-знач-но-сти в
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
-\T2A/cmr/bx/sc/10.95 disambiguation with very large
- []
-
-
-Underfull \hbox (badness 5924) in paragraph at lines 156--157
-[]\T2A/cmr/m/n/10.95 В даль-ней-шем бу-дем на-зы-вать сло-ва,
+Underfull \hbox (badness 5490) in paragraph at lines 171--172
+[]\T2A/cmr/m/n/10.95 Метатезаурус вклю-ча-ет все тер-ми-ны
  []
 
 
@@ -605,18 +671,74 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 176--179
-[]\T2A/cmr/m/n/10.95 Библиографические ссыл-ки при-ня-то
- []
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[4]
+[4] <fig_1.jpg, id=30, 574.39594pt x 283.81032pt>
+File: fig_1.jpg Graphic file (type jpg)
+ <use fig_1.jpg>
+Package pdftex.def Info: fig_1.jpg used on input line 217.
+(pdftex.def)             Requested size: 207.41919pt x 102.48343pt.
 
-LaTeX Warning: File `delay_80.pdf' not found on input line 268.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+                                                   \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+                                                   \\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+                                                   \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+                                                   \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[5 <C:/Users/acer/Desktop/wsd_part1/fig_1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
+[]\T2A/cmr/m/n/10.95 Словам <<ве-ро-ят-но>> и <<ма-ло-ве-ро-ят-но>>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
+[]\T2A/cmr/m/n/10.95 Библиографические ссыл-ки при-ня-то
+ []
+
+
+LaTeX Warning: File `delay_80.pdf' not found on input line 366.
 
 
 ! Package pdftex.def Error: File `delay_80.pdf' not found.
@@ -625,14 +747,130 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.268 ...true,width=0.9\columnwidth]{delay_80.pdf}
+l.366 ...true,width=0.9\columnwidth]{delay_80.pdf}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.55197pt too wide) in paragraph at lines 327--332
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][]
+ []
+
+[6]
+Overfull \vbox (60.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (59.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (58.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (57.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (56.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (55.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (54.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (53.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (52.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (51.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (50.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (49.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (48.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (47.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (46.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (45.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (44.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (43.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (42.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (41.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (40.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (39.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (38.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (37.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (36.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (35.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (34.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (33.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (32.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (31.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (30.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (29.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (28.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (27.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (26.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (25.59303pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (24.59303pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (4.55197pt too wide) in paragraph at lines 425--430
 []\T2A/cmtt/m/n/10.95 \begin{aboutauthors}...\end{aboutauthors}\T2A/cmr/m/n/10.
 95 .
  []
@@ -642,58 +880,63 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[5]
-Underfull \hbox (badness 7099) in paragraph at lines 371--372
+[7]
+Underfull \hbox (badness 7099) in paragraph at lines 475--476
 []\T2A/cmr/m/it/10 LESK, M.\T2A/cmr/m/n/10 Automatic sense disambiguation
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 380--381
-[]\T2A/cmr/m/it/10 VERONIS, J. and IDE, N. \T2A/cmr/m/n/10 Word sense
+Overfull \hbox (17.50641pt too wide) in paragraph at lines 481--482
+\T2A/cmr/m/n/10 word senses in untagged text. Proc.EMNLP.Providence,
  []
 
 
-Overfull \hbox (12.80873pt too wide) in paragraph at lines 383--384
+Overfull \hbox (12.80873pt too wide) in paragraph at lines 493--494
 []\T2A/cmr/m/it/10 SenseClusters\T2A/cmr/m/n/10 http://senseclusters.sourceforg
 e.net 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 []\T2A/cmr/m/it/10 Schutze, H.\T2A/cmr/m/n/10 Automatic Word Sense
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 []\T2A/cmr/m/it/10 U\T2A/cmr/m/n/10 MLS Terminology Services (UTS).
  []
 
 
-Overfull \hbox (27.44179pt too wide) in paragraph at lines 389--390
+Overfull \hbox (27.44179pt too wide) in paragraph at lines 499--500
 \T2A/cmr/m/n/10 http://umlsks.nlm.nih.gov/kss/servlet/Turbine/template 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--407
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--427
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 444--444
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--463
+Underfull \hbox (badness 10000) in paragraph at lines 554--554
 
  []
 
-[7] (C:\Users\acer\Documents\GitHub\student_paper\wsd_part1\wsd_part1.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--573
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 592--592
+
+ []
+
+[9] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -703,38 +946,39 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 7004 strings out of 493921
- 87427 string characters out of 3147285
- 221211 words of memory out of 3000000
- 10122 multiletter control sequences out of 15000+200000
- 24279 words of font info for 73 fonts, out of 3000000 for 9000
+ 7467 strings out of 493921
+ 94312 string characters out of 3147285
+ 214712 words of memory out of 3000000
+ 10576 multiletter control sequences out of 15000+200000
+ 24620 words of font info for 74 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,8n,33p,3246b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,8n,33p,3267b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lar
 m0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi
-600\labx0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-
-t2a\dpi600\lati1000.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\lh\lh-t2a\dpi600\latt1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\lh\lh-t2a\dpi600\larm1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\lh\lh-t2a\dpi600\laxc1095.pk> <C:\Users\acer\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1095.pk> <C:\Users\acer\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\acer\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk> <C:\Users\ace
-r\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1095.pk> <C:\Us
-ers\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1000.pk>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb
->
-Output written on wsd_part1.pdf (7 pages, 365430 bytes).
+600\labx0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
+en\ec\dpi600\tcrm1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\lh\lh-t2a\dpi600\lati1000.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\lh\lh-t2a\dpi600\latt1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1095.pk> <C:\Users\acer\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\laxc1095.pk> <C:\Users\acer\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1095.pk> <C:\Users\acer\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\a
+cer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk> <C:\
+Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1095.p
+k> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lar
+m1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lci
+rcle1.pfb>
+Output written on wsd_part1.pdf (9 pages, 423865 bytes).
 PDF statistics:
- 886 PDF objects out of 1000 (max. 8388607)
+ 943 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
