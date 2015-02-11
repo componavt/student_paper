@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  10 FEB 2015 23:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  11 FEB 2015 18:45
 entering extended mode
 **wsd_part1.tex
 (C:\Users\acer\Desktop\wsd_part1\wsd_part1.tex
@@ -510,61 +510,78 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
 (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 5.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 6.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 5.
+(Font)              size <5> substituted on input line 6.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 5.
+(Font)              size <5> substituted on input line 6.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 5.
+(Font)              size <5> substituted on input line 6.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 6.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 5.
+(Font)              size <5> substituted on input line 6.
 
-Package xypdf Info: Line width: 0.43999pt on input line 5.
+Package xypdf Info: Line width: 0.43999pt on input line 6.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
@@ -614,27 +631,27 @@ Package xypdf Info: Line width: 0.43999pt on input line 5.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 40.
+(Font)              using `OT1/cmr/bx/n' instead on input line 41.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 40.
+(Font)              size <5> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 40.
+(Font)              size <5> substituted on input line 41.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 40.
+(Font)              size <5> substituted on input line 41.
 
-LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 42.
+LaTeX Font Info:    Try loading font information for T2A+cmtt on input line 43.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\cyrillic\t2acmtt.fd"
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
@@ -646,7 +663,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 5924) in paragraph at lines 128--129
+Underfull \hbox (badness 5924) in paragraph at lines 129--130
 []\T2A/cmr/m/n/10.95 В даль-ней-шем бу-дем на-зы-вать сло-ва,
  []
 
@@ -656,12 +673,38 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 148--148
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[3]
+Underfull \hbox (badness 3302) in paragraph at lines 192--192
+[]|\T2A/cmr/m/n/10.95 закономерное, по-сле-до-ва-тель-ное раз-ви-тие, из-ме-не-
+ние
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 200--201
+[]|\T2A/cmr/m/n/10.95 время, со-бы-тие, про-ис-ше-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+[]\T2A/cmr/m/n/10.95 Предположим, на-при-мер, что век-тор
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 \T2A/cmr/bx/sc/10.95 <<Разрешение мно-го-знач-но-сти в
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][]
+ []
+
+[4]
+Underfull \hbox (badness 5490) in paragraph at lines 258--259
 []\T2A/cmr/m/n/10.95 Метатезаурус вклю-ча-ет все тер-ми-ны
  []
 
@@ -670,21 +713,21 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[3]
+[5] <fig_1.jpg, id=33, 574.39594pt x 283.81032pt>
+File: fig_1.jpg Graphic file (type jpg)
+ <use fig_1.jpg>
+Package pdftex.def Info: fig_1.jpg used on input line 304.
+(pdftex.def)             Requested size: 207.41919pt x 102.48343pt.
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[4] <fig_1.jpg, id=30, 574.39594pt x 283.81032pt>
-File: fig_1.jpg Graphic file (type jpg)
- <use fig_1.jpg>
-Package pdftex.def Info: fig_1.jpg used on input line 217.
-(pdftex.def)             Requested size: 207.41919pt x 102.48343pt.
-
+[6]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -692,7 +735,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -703,7 +746,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -714,7 +757,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.230 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -723,22 +766,23 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-[5 <C:/Users/acer/Desktop/wsd_part1/fig_1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 []\T2A/cmr/m/n/10.95 Словам <<ве-ро-ят-но>> и <<ма-ло-ве-ро-ят-но>>
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
+Underfull \hbox (badness 10000) in paragraph at lines 361--364
 []\T2A/cmr/m/n/10.95 Библиографические ссыл-ки при-ня-то
  []
 
 
-LaTeX Warning: File `delay_80.pdf' not found on input line 366.
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[7 <C:/Users/acer/Desktop/wsd_part1/fig_1.jpg>]
+
+LaTeX Warning: File `delay_80.pdf' not found on input line 453.
 
 
 ! Package pdftex.def Error: File `delay_80.pdf' not found.
@@ -747,132 +791,39 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 ...true,width=0.9\columnwidth]{delay_80.pdf}
+l.453 ...true,width=0.9\columnwidth]{delay_80.pdf}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
+Overfull \vbox (29.53685pt too high) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[6]
-Overfull \vbox (60.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (59.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (58.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (57.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (56.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (55.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (54.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (53.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (52.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (51.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (50.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (49.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (48.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (47.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (46.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (45.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (44.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (43.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (42.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (41.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (40.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (39.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (38.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (37.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (36.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (35.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (34.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (33.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (32.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (31.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (30.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (29.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (28.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (27.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (26.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (25.59303pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (24.59303pt too high) has occurred while \output is active []
-
-
-Overfull \hbox (4.55197pt too wide) in paragraph at lines 425--430
+[8]
+Overfull \hbox (4.55197pt too wide) in paragraph at lines 512--517
 []\T2A/cmtt/m/n/10.95 \begin{aboutauthors}...\end{aboutauthors}\T2A/cmr/m/n/10.
 95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+[]\T2A/cmr/m/it/10 Jain, A. and Dubes, R.\T2A/cmr/m/n/10 Algorithms for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+[]\T2A/cmr/m/it/10 Miller, G.\T2A/cmr/m/n/10 Wordnet: An on-line lexical
+ []
+
+
+Overfull \hbox (17.50641pt too wide) in paragraph at lines 577--578
+\T2A/cmr/m/n/10 word senses in untagged text. Proc.EMNLP.Providence,
  []
 
 
@@ -880,63 +831,63 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[7]
-Underfull \hbox (badness 7099) in paragraph at lines 475--476
-[]\T2A/cmr/m/it/10 LESK, M.\T2A/cmr/m/n/10 Automatic sense disambiguation
- []
-
-
-Overfull \hbox (17.50641pt too wide) in paragraph at lines 481--482
-\T2A/cmr/m/n/10 word senses in untagged text. Proc.EMNLP.Providence,
- []
-
-
-Overfull \hbox (12.80873pt too wide) in paragraph at lines 493--494
+[9]
+Overfull \hbox (12.80873pt too wide) in paragraph at lines 592--593
 []\T2A/cmr/m/it/10 SenseClusters\T2A/cmr/m/n/10 http://senseclusters.sourceforg
 e.net 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
 []\T2A/cmr/m/it/10 Schutze, H.\T2A/cmr/m/n/10 Automatic Word Sense
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+Underfull \hbox (badness 10000) in paragraph at lines 598--599
 []\T2A/cmr/m/it/10 U\T2A/cmr/m/n/10 MLS Terminology Services (UTS).
  []
 
 
-Overfull \hbox (27.44179pt too wide) in paragraph at lines 499--500
+Overfull \hbox (27.44179pt too wide) in paragraph at lines 598--599
 \T2A/cmr/m/n/10 http://umlsks.nlm.nih.gov/kss/servlet/Turbine/template 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--517
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
+\T2A/cmr/m/n/10 Conference on Information and Knowledge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
+Underfull \hbox (badness 10000) in paragraph at lines 637--637
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
+Underfull \hbox (badness 10000) in paragraph at lines 654--654
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--573
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
+
+Underfull \hbox (badness 10000) in paragraph at lines 692--692
 
  []
 
-[9] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
+[10]
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[11] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -946,13 +897,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 7467 strings out of 493921
- 94312 string characters out of 3147285
- 214712 words of memory out of 3000000
- 10576 multiletter control sequences out of 15000+200000
+ 7948 strings out of 493921
+ 99854 string characters out of 3147285
+ 222984 words of memory out of 3000000
+ 11051 multiletter control sequences out of 15000+200000
  24620 words of font info for 74 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 34i,8n,33p,3267b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,11n,35p,3267b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lar
 m0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi
 600\labx0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
@@ -976,9 +927,9 @@ public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lci
 rcle1.pfb>
-Output written on wsd_part1.pdf (9 pages, 423865 bytes).
+Output written on wsd_part1.pdf (11 pages, 442690 bytes).
 PDF statistics:
- 943 PDF objects out of 1000 (max. 8388607)
+ 975 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
