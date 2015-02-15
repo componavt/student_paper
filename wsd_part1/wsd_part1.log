@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  11 FEB 2015 18:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  15 FEB 2015 13:32
 entering extended mode
 **wsd_part1.tex
 (C:\Users\acer\Desktop\wsd_part1\wsd_part1.tex
@@ -663,7 +663,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 5924) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][]
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[]\T2A/cmr/bx/n/10.95 Результаты экс-пе-ри-мен-тов. \T2A/cmr/m/n/10.95 Ито-гом
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[3]
+Underfull \hbox (badness 5924) in paragraph at lines 207--208
 []\T2A/cmr/m/n/10.95 В даль-ней-шем бу-дем на-зы-вать сло-ва,
  []
 
@@ -672,29 +687,29 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[2]
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-[3]
-Underfull \hbox (badness 3302) in paragraph at lines 192--192
+[4]
+Underfull \hbox (badness 3302) in paragraph at lines 270--270
 []|\T2A/cmr/m/n/10.95 закономерное, по-сле-до-ва-тель-ное раз-ви-тие, из-ме-не-
 ние
  []
 
 
-Underfull \hbox (badness 5578) in paragraph at lines 200--201
+Underfull \hbox (badness 5578) in paragraph at lines 278--279
 []|\T2A/cmr/m/n/10.95 время, со-бы-тие, про-ис-ше-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 []\T2A/cmr/m/n/10.95 Предположим, на-при-мер, что век-тор
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--235
+Underfull \hbox (badness 10000) in paragraph at lines 313--313
 \T2A/cmr/bx/sc/10.95 <<Разрешение мно-го-знач-но-сти в
  []
 
@@ -703,8 +718,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[4]
-Underfull \hbox (badness 5490) in paragraph at lines 258--259
+[6]
+Underfull \hbox (badness 5490) in paragraph at lines 336--337
 []\T2A/cmr/m/n/10.95 Метатезаурус вклю-ча-ет все тер-ми-ны
  []
 
@@ -713,21 +728,16 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[5] <fig_1.jpg, id=33, 574.39594pt x 283.81032pt>
+[7] <fig_1.jpg, id=43, 574.39594pt x 283.81032pt>
 File: fig_1.jpg Graphic file (type jpg)
  <use fig_1.jpg>
-Package pdftex.def Info: fig_1.jpg used on input line 304.
+Package pdftex.def Info: fig_1.jpg used on input line 382.
 (pdftex.def)             Requested size: 207.41919pt x 102.48343pt.
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][][]
- []
-
-[6]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.395 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -735,7 +745,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.395 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -746,7 +756,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.395 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -757,7 +767,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.317 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.395 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -766,12 +776,17 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][]
+ []
+
+[8 <C:/Users/acer/Desktop/wsd_part1/fig_1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 []\T2A/cmr/m/n/10.95 Словам <<ве-ро-ят-но>> и <<ма-ло-ве-ро-ят-но>>
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--364
+Underfull \hbox (badness 10000) in paragraph at lines 439--442
 []\T2A/cmr/m/n/10.95 Библиографические ссыл-ки при-ня-то
  []
 
@@ -780,9 +795,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[7 <C:/Users/acer/Desktop/wsd_part1/fig_1.jpg>]
+[9]
 
-LaTeX Warning: File `delay_80.pdf' not found on input line 453.
+LaTeX Warning: File `delay_80.pdf' not found on input line 531.
 
 
 ! Package pdftex.def Error: File `delay_80.pdf' not found.
@@ -791,103 +806,106 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.453 ...true,width=0.9\columnwidth]{delay_80.pdf}
+l.531 ...true,width=0.9\columnwidth]{delay_80.pdf}
                                                   
 Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \vbox (29.53685pt too high) has occurred while \output is active []
+Overfull \hbox (4.55197pt too wide) in paragraph at lines 590--595
+[]\T2A/cmtt/m/n/10.95 \begin{aboutauthors}...\end{aboutauthors}\T2A/cmr/m/n/10.
+95 .
+ []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[8]
-Overfull \hbox (4.55197pt too wide) in paragraph at lines 512--517
-[]\T2A/cmtt/m/n/10.95 \begin{aboutauthors}...\end{aboutauthors}\T2A/cmr/m/n/10.
-95 .
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
+[]\T2A/cmr/m/it/10 Bruce, R. and Wiebe, J.\T2A/cmr/m/n/10 Word-sense
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--566
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 []\T2A/cmr/m/it/10 Jain, A. and Dubes, R.\T2A/cmr/m/n/10 Algorithms for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
+Overfull \hbox (2.73947pt too wide) in paragraph at lines 652--653
+[]\T2A/cmr/m/it/10 C. Leacock, G. Towell, and E. Voorhees.\T2A/cmr/m/n/10 Corpu
+s-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
 []\T2A/cmr/m/it/10 Miller, G.\T2A/cmr/m/n/10 Wordnet: An on-line lexical
  []
 
 
-Overfull \hbox (17.50641pt too wide) in paragraph at lines 577--578
+Overfull \hbox (17.50641pt too wide) in paragraph at lines 664--665
 \T2A/cmr/m/n/10 word senses in untagged text. Proc.EMNLP.Providence,
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-[9]
-Overfull \hbox (12.80873pt too wide) in paragraph at lines 592--593
+Overfull \hbox (12.80873pt too wide) in paragraph at lines 679--680
 []\T2A/cmr/m/it/10 SenseClusters\T2A/cmr/m/n/10 http://senseclusters.sourceforg
 e.net 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
 []\T2A/cmr/m/it/10 Schutze, H.\T2A/cmr/m/n/10 Automatic Word Sense
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--599
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 []\T2A/cmr/m/it/10 U\T2A/cmr/m/n/10 MLS Terminology Services (UTS).
  []
 
 
-Overfull \hbox (27.44179pt too wide) in paragraph at lines 598--599
+Overfull \hbox (27.44179pt too wide) in paragraph at lines 685--686
 \T2A/cmr/m/n/10 http://umlsks.nlm.nih.gov/kss/servlet/Turbine/template 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
-\T2A/cmr/m/n/10 Conference on Information and Knowledge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 617--617
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 637--637
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 654--654
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 673--673
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 692--692
-
- []
-
-[10]
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[11] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 694--695
+\T2A/cmr/m/n/10 Conference on Information and Knowledge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--760
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--779
+
+ []
+
+[12] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -897,10 +915,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 7948 strings out of 493921
- 99854 string characters out of 3147285
- 222984 words of memory out of 3000000
- 11051 multiletter control sequences out of 15000+200000
+ 7959 strings out of 493921
+ 100043 string characters out of 3147285
+ 231050 words of memory out of 3000000
+ 11062 multiletter control sequences out of 15000+200000
  24620 words of font info for 74 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,11n,35p,3267b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -927,9 +945,9 @@ public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lci
 rcle1.pfb>
-Output written on wsd_part1.pdf (11 pages, 442690 bytes).
+Output written on wsd_part1.pdf (12 pages, 461820 bytes).
 PDF statistics:
- 975 PDF objects out of 1000 (max. 8388607)
+ 1000 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
