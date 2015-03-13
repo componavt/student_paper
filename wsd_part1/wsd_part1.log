@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  2 MAR 2015 10:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  13 MAR 2015 17:51
 entering extended mode
 **wsd_part1.tex
-(C:\Users\acer\Desktop\wsd_part1\wsd_part1.tex
+(C:\Users\acer\Desktop\СѓС‡РµР±Р°\wsd_part1\wsd_part1.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -30,7 +30,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\acer\Desktop\wsd_part1\krctran.sty
+(C:\Users\acer\Desktop\СѓС‡РµР±Р°\wsd_part1\krctran.sty
 Package: krctran 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
@@ -527,7 +527,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(C:\Users\acer\Desktop\wsd_part1\algorithm2e.sty
+(C:\Users\acer\Desktop\СѓС‡РµР±Р°\wsd_part1\algorithm2e.sty
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count133
 
@@ -582,61 +582,80 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count136
 \algocf@algoframe=\box66
 \algocf@algobox=\box67
-) (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
+)
+
+! LaTeX Error: Option clash for package graphicx.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \graphicspath
+                 {{pictures/}}
+The package graphicx has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [dvips]
+Adding the global options:
+  ,dvips
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(C:\Users\acer\Desktop\СѓС‡РµР±Р°\wsd_part1\wsd_part1.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 7.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 9.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 7.
+(Font)              size <5> substituted on input line 9.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 7.
+(Font)              size <5> substituted on input line 9.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 7.
+(Font)              size <5> substituted on input line 9.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 7.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 7.
+(Font)              size <5> substituted on input line 9.
 
-Package xypdf Info: Line width: 0.43999pt on input line 7.
+Package xypdf Info: Line width: 0.43999pt on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count137
@@ -686,7 +705,17 @@ Package xypdf Info: Line width: 0.43999pt on input line 7.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]\T2A/cmr/bx/n/10.95 T. V. Kaushinis, A. N. Kirillov, N. I. Korzhitsky,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\T2A/cmr/bx/n/10.95 E. A. Yaryshkina. WORD-SENSE DISAMBIGUATION
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
@@ -698,18 +727,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 44--44
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[]\T2A/cmr/m/n/10.95 WSD-методы с учи-те-лем (\T2A/cmr/m/it/10.95 supervised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 \T2A/cmr/bx/sc/10.95 Разрешение лек-си-че-ской мно-го-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--67
-
  []
 
 
@@ -718,13 +742,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-[]\T2A/cmr/bx/n/10.95 Результаты экс-пе-ри-мен-тов. \T2A/cmr/m/n/10.95 Ито-гом
+Underfull \hbox (badness 10000) in paragraph at lines 92--100
+
  []
 
 
-Underfull \hbox (badness 5924) in paragraph at lines 140--141
-[]\T2A/cmr/m/n/10.95 В даль-ней-шем бу-дем на-зы-вать сло-ва,
+Underfull \hbox (badness 10000) in paragraph at lines 92--100
+
  []
 
 
@@ -733,43 +757,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 158--158
-\T2A/cmr/bx/sc/10.95 Сравнительные экс-пе-ри-мен-ты в
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--186
-[]|\T2A/cmr/bx/n/10.95 ключевое
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--186
-[]|\T2A/cmr/bx/n/10.95 толкование на ан-глий-ском
- []
-
-
-Underfull \hbox (badness 4660) in paragraph at lines 188--189
-[]|\T2A/cmr/m/n/10.95 ряд слов, букв или
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
-[]|\T2A/cmr/m/n/10.95 несколько объ-ек-тов,
- []
-
-
-Underfull \hbox (badness 3525) in paragraph at lines 190--191
-\T2A/cmr/m/n/10.95 нию или сле-ду-ю-щих
- []
-
-
-Underfull \hbox (badness 4479) in paragraph at lines 192--193
-[]|\T2A/cmr/m/n/10.95 тактическое во-ин-ское
- []
-
-
-Overfull \hbox (5.84892pt too wide) in paragraph at lines 198--198
-[]|\T2A/cmr/m/n/10.95 продуктовая
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+[]\T2A/cmr/bx/n/10.95 Результаты экс-пе-ри-мен-тов. \T2A/cmr/m/n/10.95 Ито-гом
  []
 
 
@@ -778,57 +767,98 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
-\T2A/cmr/m/n/10.95 PFOIL-DLIST, PROIL-DNF, PFOIL-CNF.
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+\T2A/cmr/bx/sc/10.95 Сравнительные экс-пе-ри-мен-ты в
  []
 
-<p1.png, id=28, 700.6175pt x 486.81876pt>
-File: p1.png Graphic file (type png)
- <use p1.png>
-Package pdftex.def Info: p1.png used on input line 219.
-(pdftex.def)             Requested size: 207.41919pt x 144.12283pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\T2A/cmr/bx/n/10.95 ключевое
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\T2A/cmr/bx/n/10.95 толкование на ан-глий-ском
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 206--207
+[]|\T2A/cmr/m/n/10.95 ряд слов, букв или
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+[]|\T2A/cmr/m/n/10.95 несколько объ-ек-тов,
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 208--209
+\T2A/cmr/m/n/10.95 нию или сле-ду-ю-щих
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 210--211
+[]|\T2A/cmr/m/n/10.95 тактическое во-ин-ское
+ []
+
+
+Overfull \hbox (5.84892pt too wide) in paragraph at lines 216--216
+[]|\T2A/cmr/m/n/10.95 продуктовая
+ []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[5] <p2.png, id=32, 687.56876pt x 481.8pt>
-File: p2.png Graphic file (type png)
- <use p2.png>
-Package pdftex.def Info: p2.png used on input line 228.
-(pdftex.def)             Requested size: 207.41919pt x 145.34244pt.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+\T2A/cmr/m/n/10.95 PFOIL-DLIST, PROIL-DNF, PFOIL-CNF.
+ []
 
-<p3.png, id=33, 691.58376pt x 481.8pt>
-File: p3.png Graphic file (type png)
- <use p3.png>
-Package pdftex.def Info: p3.png used on input line 237.
-(pdftex.def)             Requested size: 207.41919pt x 144.497pt.
+<pictures/line_wsd_1_accuracy.png, id=33, 700.6175pt x 486.81876pt>
+File: pictures/line_wsd_1_accuracy.png Graphic file (type png)
+
+<use pictures/line_wsd_1_accuracy.png>
+Package pdftex.def Info: pictures/line_wsd_1_accuracy.png used on input line 23
+7.
+(pdftex.def)             Requested size: 207.41919pt x 144.12283pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[6 <C:/Users/acer/Desktop/wsd_part1/p1.png (PNG copy)> <C:/Users/acer/Desktop/w
-sd_part1/p2.png (PNG copy)> <C:/Users/acer/Desktop/wsd_part1/p3.png (PNG copy)>
-]
-Underfull \hbox (badness 3302) in paragraph at lines 292--292
-[]|\T2A/cmr/m/n/10.95 закономерное, по-сле-до-ва-тель-ное раз-ви-тие, из-ме-не-
-ние
- []
+[6] <pictures/line_wsd_2_time.png, id=37, 687.56876pt x 481.8pt>
+File: pictures/line_wsd_2_time.png Graphic file (type png)
 
+<use pictures/line_wsd_2_time.png>
+Package pdftex.def Info: pictures/line_wsd_2_time.png used on input line 246.
+(pdftex.def)             Requested size: 207.41919pt x 145.34244pt.
 
-Underfull \hbox (badness 5578) in paragraph at lines 300--301
-[]|\T2A/cmr/m/n/10.95 время, со-бы-тие, про-ис-ше-
- []
+<pictures/line_wsd_3_testing_time.png, id=38, 691.58376pt x 481.8pt>
+File: pictures/line_wsd_3_testing_time.png Graphic file (type png)
 
+<use pictures/line_wsd_3_testing_time.png>
+Package pdftex.def Info: pictures/line_wsd_3_testing_time.png used on input lin
+e 255.
+(pdftex.def)             Requested size: 207.41919pt x 144.497pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
-[]\T2A/cmr/m/n/10.95 Предположим, на-при-мер, что век-тор
+[7 <C:/Users/acer/Desktop/СѓС‡РµР±Р°/wsd_part1/pictures/line_wsd_1_accuracy.png
+ (PNG copy)> <C:/Users/acer/Desktop/СѓС‡РµР±Р°/wsd_part1/pictures/line_wsd_2_ti
+me.png (PNG copy)> <C:/Users/acer/Desktop/СѓС‡РµР±Р°/wsd_part1/pictures/line_ws
+d_3_testing_time.png (PNG copy)>]
+Underfull \hbox (badness 3302) in paragraph at lines 310--310
+[]|\T2A/cmr/m/n/10.95 закономерное, по-сле-до-ва-тель-ное раз-ви-тие, из-ме-не-
+ние
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 318--319
+[]|\T2A/cmr/m/n/10.95 время, со-бы-тие, про-ис-ше-
  []
 
 
@@ -837,12 +867,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 372--373
-[]\T2A/cmr/m/n/10.95 измерим ко-ли-че-ство ин-фор-ма-ции в
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
+[]\T2A/cmr/m/n/10.95 Предположим, на-при-мер, что век-тор
  []
-
-
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 402.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -850,19 +877,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
-[]\T2A/cmr/bx/n/10.95 Практическая ре-а-ли-за-ция ме-то-да.
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+[]\T2A/cmr/m/n/10.95 измерим ко-ли-че-ство ин-фор-ма-ции в
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--419
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
-
- []
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 420.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -870,8 +890,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [10]
-Underfull \hbox (badness 5490) in paragraph at lines 506--507
-[]\T2A/cmr/m/n/10.95 Метатезаурус вклю-ча-ет все тер-ми-ны
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+[]\T2A/cmr/bx/n/10.95 Практическая ре-а-ли-за-ция ме-то-да.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
  []
 
 
@@ -880,17 +910,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [11]
-
-LaTeX Warning: Command \cyre invalid in math mode on input line 560.
-
-Missing character: There is no е in font cmr10!
-
-LaTeX Warning: Command \CYRS invalid in math mode on input line 564.
-
-Missing character: There is no С in font cmr10!
-
-Overfull \hbox (30.39633pt too wide) detected at line 577
-[][] 
+Underfull \hbox (badness 5490) in paragraph at lines 524--525
+[]\T2A/cmr/m/n/10.95 Метатезаурус вклю-ча-ет все тер-ми-ны
  []
 
 
@@ -900,49 +921,71 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [12]
 
-LaTeX Warning: Command \CYRS invalid in math mode on input line 590.
+LaTeX Warning: Command \cyre invalid in math mode on input line 578.
+
+Missing character: There is no е in font cmr10!
+
+LaTeX Warning: Command \CYRS invalid in math mode on input line 582.
 
 Missing character: There is no С in font cmr10!
+
+Overfull \hbox (30.39633pt too wide) detected at line 595
+[][] 
+ []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 606--608
-[]\T2A/cmr/m/n/10.95 Согласно дис-три-бу-тив-ной ги-по-те-зе
- []
 
+LaTeX Warning: Command \CYRS invalid in math mode on input line 608.
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--633
-[][]
- []
-
-
-Underfull \hbox (badness 7451) in paragraph at lines 638--640
-[]\T2A/cmr/m/n/10.95 Одним из ос-нов-ных раз-ли-чий меж-ду
- []
-
+Missing character: There is no С in font cmr10!
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][][]
  []
 
-[14] <fig_1.jpg, id=71, 574.39594pt x 283.81032pt>
-File: fig_1.jpg Graphic file (type jpg)
- <use fig_1.jpg>
-Package pdftex.def Info: fig_1.jpg used on input line 677.
-(pdftex.def)             Requested size: 207.41919pt x 102.48343pt.
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 624--626
+[]\T2A/cmr/m/n/10.95 Согласно дис-три-бу-тив-ной ги-по-те-зе
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 631--651
+[][]
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 656--658
+[]\T2A/cmr/m/n/10.95 Одним из ос-нов-ных раз-ли-чий меж-ду
+ []
+
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
 [15]
+<pictures/bayesian_network_crocodile.jpg, id=74, 574.39594pt x 283.81032pt>
+File: pictures/bayesian_network_crocodile.jpg Graphic file (type jpg)
+
+<use pictures/bayesian_network_crocodile.jpg>
+Package pdftex.def Info: pictures/bayesian_network_crocodile.jpg used on input 
+line 695.
+(pdftex.def)             Requested size: 207.41919pt x 102.48343pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][]
+ []
+
+[16]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.690 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.708 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -950,7 +993,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.690 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.708 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -961,7 +1004,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.690 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.708 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -972,7 +1015,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.690 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
+l.708 ...it{X = x}|\textit{Y_1 = y_1, Y_2 = y_2})}
                                                    \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -981,95 +1024,8 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--729
+Underfull \hbox (badness 10000) in paragraph at lines 745--747
 []\T2A/cmr/m/n/10.95 Словам <<ве-ро-ят-но>> и <<ма-ло-ве-ро-ят-но>>
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][][]
- []
-
-[16 <C:/Users/acer/Desktop/wsd_part1/fig_1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 750--751
-[]\T2A/cmr/m/it/10 Bruce, R. and Wiebe, J.\T2A/cmr/m/n/10 Word-sense
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 762--763
-[]\T2A/cmr/m/it/10 Dekang Lin.\T2A/cmr/m/n/10 1998. Automatic Retrieval
- []
-
-
-Underfull \hbox (badness 5607) in paragraph at lines 762--763
-\T2A/cmr/m/n/10 and Clustering of Similar Words.Proceedings
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 762--763
-\T2A/cmr/m/n/10 of the 17th international conference on
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
-[]\T2A/cmr/m/it/10 Dekang Lin.\T2A/cmr/m/n/10 1993. Principle-based parsing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 780--781
-[]\T2A/cmr/m/it/10 Jain, A. and Dubes, R.\T2A/cmr/m/n/10 Algorithms for
- []
-
-
-Overfull \hbox (1.96584pt too wide) in paragraph at lines 786--787
-[]\T2A/cmr/m/it/10 C. Leacock, G. Towell, and E. Voorhees.\T2A/cmr/m/n/10 Corpu
-s-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--796
-[]\T2A/cmr/m/it/10 Manning, C. D. and Sch?tze, H.\T2A/cmr/m/n/10 1999.
- []
-
-
-Underfull \hbox (badness 7203) in paragraph at lines 795--796
-\T2A/cmr/m/n/10 Foundations of Statistical Natural Language
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
-[]\T2A/cmr/m/it/10 Miller, G.\T2A/cmr/m/n/10 Wordnet: An on-line lexical
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
-[]\T2A/cmr/m/it/10 Patrick Pantel, Dekang Lin\T2A/cmr/m/n/10 Discovering
- []
-
-
-Overfull \hbox (17.50641pt too wide) in paragraph at lines 814--815
-\T2A/cmr/m/n/10 word senses in untagged text. Proc.EMNLP.Providence,
- []
-
-
-Overfull \hbox (12.0351pt too wide) in paragraph at lines 829--830
-[]\T2A/cmr/m/it/10 SenseClusters\T2A/cmr/m/n/10 http://senseclusters.sourceforg
-e.net 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 832--833
-[]\T2A/cmr/m/it/10 Schutze, H.\T2A/cmr/m/n/10 Automatic Word Sense
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 835--836
-[]\T2A/cmr/m/it/10 U\T2A/cmr/m/n/10 MLS Terminology Services (UTS).
- []
-
-
-Overfull \hbox (27.44179pt too wide) in paragraph at lines 835--836
-\T2A/cmr/m/n/10 http://umlsks.nlm.nih.gov/kss/servlet/Turbine/template 
  []
 
 
@@ -1077,91 +1033,194 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [][]
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 844--845
+[17 <C:/Users/acer/Desktop/СѓС‡РµР±Р°/wsd_part1/pictures/bayesian_network_croco
+dile.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
+[]\T2A/cmr/m/it/10 Bruce, R. and Wiebe, J.\T2A/cmr/m/n/10 Word-sense
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--796
+[]\T2A/cmr/m/it/10 Dekang Lin.\T2A/cmr/m/n/10 1998. Automatic Retrieval
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 795--796
+\T2A/cmr/m/n/10 and Clustering of Similar Words.Proceedings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--796
+\T2A/cmr/m/n/10 of the 17th international conference on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 798--799
+[]\T2A/cmr/m/it/10 Dekang Lin.\T2A/cmr/m/n/10 1993. Principle-based parsing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--814
+[]\T2A/cmr/m/it/10 G.E. Hinton, J.L. McClelland, D.E.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
+[]\T2A/cmr/m/it/10 Jain, A. and Dubes, R.\T2A/cmr/m/n/10 Algorithms for
+ []
+
+
+Overfull \hbox (1.96584pt too wide) in paragraph at lines 822--823
+[]\T2A/cmr/m/it/10 C. Leacock, G. Towell, and E. Voorhees.\T2A/cmr/m/n/10 Corpu
+s-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--832
+[]\T2A/cmr/m/it/10 Manning, C. D. and Sch?tze, H.\T2A/cmr/m/n/10 1999.
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 831--832
+\T2A/cmr/m/n/10 Foundations of Statistical Natural Language
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 834--835
+[]\T2A/cmr/m/it/10 Miller, G.\T2A/cmr/m/n/10 Wordnet: An on-line lexical
+ []
+
+
+Underfull \hbox (badness 6396) in paragraph at lines 844--845
+[]\T2A/cmr/m/it/10 Navigli R.\T2A/cmr/m/n/10 Word sense disambiguation: A
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 847--848
+[]\T2A/cmr/m/it/10 Patrick Pantel, Dekang Lin\T2A/cmr/m/n/10 Discovering
+ []
+
+
+Overfull \hbox (17.50641pt too wide) in paragraph at lines 853--854
+\T2A/cmr/m/n/10 word senses in untagged text. Proc.EMNLP.Providence,
+ []
+
+
+Overfull \hbox (12.0351pt too wide) in paragraph at lines 868--869
+[]\T2A/cmr/m/it/10 SenseClusters\T2A/cmr/m/n/10 http://senseclusters.sourceforg
+e.net 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 871--872
+[]\T2A/cmr/m/it/10 Schutze, H.\T2A/cmr/m/n/10 Automatic Word Sense
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
+[]\T2A/cmr/m/it/10 U\T2A/cmr/m/n/10 MLS Terminology Services (UTS).
+ []
+
+
+Overfull \hbox (27.44179pt too wide) in paragraph at lines 874--875
+\T2A/cmr/m/n/10 http://umlsks.nlm.nih.gov/kss/servlet/Turbine/template 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 \T2A/cmr/m/n/10 Conference on Information and Knowledge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 854--854
+Underfull \hbox (badness 10000) in paragraph at lines 893--893
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 874--874
+Underfull \hbox (badness 10000) in paragraph at lines 913--913
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--912
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 971--971
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 932--932
+Underfull \hbox (badness 10000) in paragraph at lines 991--991
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 952--952
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 972--972
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 988--988
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1029
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1008
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1045
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1028
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1035
+Underfull \hbox (badness 10000) in paragraph at lines 1085--1085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1038--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1092
 
  []
 
-[19] (C:\Users\acer\Desktop\wsd_part1\wsd_part1.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1101
+
+ []
+
+[20] (C:\Users\acer\Desktop\СѓС‡РµР±Р°\wsd_part1\wsd_part1.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 9286 strings out of 493921
- 118589 string characters out of 3147285
- 271745 words of memory out of 3000000
- 12390 multiletter control sequences out of 15000+200000
+ 9302 strings out of 493921
+ 119502 string characters out of 3147285
+ 270843 words of memory out of 3000000
+ 12405 multiletter control sequences out of 15000+200000
  20411 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  34i,16n,35p,3267b,644s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lar
 m0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi
-600\labx0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
-en\ec\dpi600\tcrm1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\lh\lh-t2a\dpi600\labi1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\lh\lh-t2a\dpi600\lati1000.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9
+600\labx0900.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-
+t2a\dpi600\labi1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\lh\lh-t2a\dpi600\lati1000.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\tcrm1095.pk> <C:\Users\acer\AppData\Local\MiKTeX\2.9
 \fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1095.pk> <C:\Users\acer\AppData\Local\MiK
 TeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\laxc1095.pk> <C:\Users\acer\AppData\Lo
 cal\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1095.pk> <C:\Users\acer\App
@@ -1181,9 +1240,9 @@ m/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on wsd_part1.pdf (19 pages, 671668 bytes).
+Output written on wsd_part1.pdf (20 pages, 684901 bytes).
 PDF statistics:
- 1049 PDF objects out of 1200 (max. 8388607)
+ 1070 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
