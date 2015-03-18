@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  15 MAR 2015 20:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.12.2)  18 MAR 2015 17:35
 entering extended mode
 **wsd_part1.tex
 (C:\Users\acer\Desktop\учеба\wsd_part1\wsd_part1.tex
@@ -1147,12 +1147,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 891--891
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 911--911
+Underfull \hbox (badness 10000) in paragraph at lines 892--898
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 931--931
+Underfull \hbox (badness 10000) in paragraph at lines 901--907
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 909--909
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
 
  []
 
@@ -1162,17 +1172,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 949--949
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 969--969
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 989--989
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
 
  []
 
@@ -1182,27 +1192,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1043
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1045
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1081--1081
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1090
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1117
 
  []
 
@@ -1246,7 +1261,7 @@ fonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lci
 rcle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on wsd_part1.pdf (20 pages, 702840 bytes).
+Output written on wsd_part1.pdf (20 pages, 702900 bytes).
 PDF statistics:
  1124 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
