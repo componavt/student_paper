@@ -27,13 +27,15 @@
 \rustitle{Обзор методов и алгоритмов разрешения \newline лексической многозначности: Введение}
 \engtitle{Word-sense disambiguation methods and algorithms review: Introduction}
 
-\rusauthor{Т.~В.~Каушинис$^2$,  А.~Н.~Кириллов$^1$,  Н.~И.~Коржицкий$^2$, А.~А.~Крижановский$^1$, А.~В.~Пилинович$^2$, И.~А.~Сихонина$^2$,  А.~М.~Спиркова$^2$, В.~Г.~Старкова$^1$, С.~С.~Ткач$^2$,  А.~Л.~Чухарев$^1$,  Д.~С.~Шорец$^2$,  Д.~Ю.~Янкевич$^2$, Е.~А.~Ярышкина$^2$}
-\engauthor{T.~V.~Kaushinis$^2$, A.~N.~Kirillov$^1$, N.~I.~Korzhitsky$^2$, A.~A.~Krizhanovsky$^1$, A.~V.~Pilinovich$^2$, I.~A.~Sikhonina$^2$, A.~M.~Spirkova$^2$, V.~G.~Starkova$^1$, S.~S.~Tkach$^2$,  A.~L.~Chuharev$^1$, D.~S.~Shorets$^2$, D.~Y.~Yankevich$^2$, E.~A.~Yaryshkina$^2$}
+\rusauthor{Слепое рецензирование}
+\engauthor{Blind review}
+%todo\rusauthor{Т.~В.~Каушинис$^2$,  А.~Н.~Кириллов$^1$,  Н.~И.~Коржицкий$^2$, А.~А.~Крижановский$^1$, А.~В.~Пилинович$^2$, И.~А.~Сихонина$^2$,  А.~М.~Спиркова$^2$, В.~Г.~Старкова$^1$, С.~С.~Ткач$^2$,  А.~Л.~Чухарев$^1$,  Д.~С.~Шорец$^2$,  Д.~Ю.~Янкевич$^2$, Е.~А.~Ярышкина$^2$}
+%todo\engauthor{T.~V.~Kaushinis$^2$, A.~N.~Kirillov$^1$, N.~I.~Korzhitsky$^2$, A.~A.~Krizhanovsky$^1$, A.~V.~Pilinovich$^2$, I.~A.~Sikhonina$^2$, A.~M.~Spirkova$^2$, V.~G.~Starkova$^1$, S.~S.~Tkach$^2$,  A.~L.~Chuharev$^1$, D.~S.~Shorets$^2$, D.~Y.~Yankevich$^2$, E.~A.~Yaryshkina$^2$}
 
 
-\organization{$^1$Институт прикладных математических исследований Карельского научного центра РАН \\
-$^2$Петрозаводский Государственный Университет}
-
+%todo\organization{$^1$Институт прикладных математических исследований Карельского научного центра РАН \\
+%todo$^2$Петрозаводский Государственный Университет}
+\organization{Blind review}
 
 \rusabstract{Разрешение лексической многозначности --- это задача выбора между разными значениями 
 слов и словосочетаний в словаре в зависимости от контекста. 
@@ -96,7 +98,7 @@ $^2$Петрозаводский Государственный Универси
 \section{Разрешение лексической многозначности методом ансамбля байесовских классификаторов}
 
 \begin{flushright}
-\textit{А. Л. Чухарев, Т. В. Каушинис}
+%todo\textit{А. Л. Чухарев, Т. В. Каушинис}
 \end{flushright}
 
 В работе Педерсена \cite{Pedersen 2000} рассматривается подход к разрешению лексической многозначности слов (WSD), подразумевающий создание ансамбля наивных байесовских классификаторов, каждый из которых основан на оценке вероятности вхождения определенных слов в контекст целевого слова, значение которого определяется.
@@ -179,7 +181,7 @@ total & 2368\\
 \section{WSD на основе нейронных сетей, построенных по данным машиночитаемых словарей}
 
 \begin{flushright}
-\textit{А. Н. Кириллов}
+%todo\textit{А. Н. Кириллов}
 \end{flushright}
 
 \parindent=0,5cm
@@ -195,7 +197,7 @@ total & 2368\\
 \section{Сравнительные эксперименты в WSD: роль предпочтений в машинном обучении}
 
 \begin{flushright}
-\textit{Н. И. Коржицкий}
+%todo\textit{Н. И. Коржицкий}
 \end{flushright}
 
 В заключение главы, посвященной разрешению многозначности, приведем эксперементальное сравнение методов. В работе Рэймонда Муни \cite{Mooney 1996} представлено одно из первых сравнений разных по природе методов WSD на одних и тех же данных. В статье \cite{Mooney 1996} проведена серия экспериментов, в которых сравнивалась способность различных обучающихся алгоритмов определять значение слова в зависимости от контекста. 
@@ -280,11 +282,10 @@ product & продуктовая линия & The products or services sold by a
 \end{center}
 \efullwidth
 
-
 \section{Различение значений слов на основе векторов свойств, расширенных словарными толкованиями}
 
 \begin{flushright}
-\textit{А. М. Спиркова} 
+%todo\textit{А. М. Спиркова} 
 \end{flushright}
 
 Амрута Пурандаре и Тед Педерсен в 2004 году разработали <<Алгоритм различения значений на основе контекстных векторов>> (\textit{Сontext vector sense discrimination}) \cite{Purandare 2004}. В этом алгоритме (1) берется набор примеров употреблений исследуемого слова, (2) выполняется кластеризация этих примеров так, чтобы близкие по значению или связанные каким-либо образом слова объединились в одну группу \cite{Purandare 2004}.
@@ -370,7 +371,7 @@ product & продуктовая линия & The products or services sold by a
 \section{Автоматический поиск и кластеризация похожих слов}
 
 \begin{flushright}
-\textit{Д. С. Шорец} 
+%todo\textit{Д. С. Шорец} 
 \end{flushright}
 
 В работе \cite{Dekang 1998} представлена методология автоматического создания тезауруса, основанная на анализе корпуса текста и вычислении сходства слов, близости их значений. Значение незнакомого слова часто можно определить по контексту \cite{Eugene 1975}.  Рассмотрим, например, следующий текст:
@@ -518,7 +519,7 @@ $w(pos):w_1,s_1,w_2,s_2,\ldots,w_N,s_N$\\
 \section{Разрешение многозначности в биомедицинских текстах с помощью методов кластеризации без учителя}
 
 \begin{flushright}
-\textit{Е. А. Ярышкина} 
+%todo\textit{Е. А. Ярышкина} 
 \end{flushright}
 
 В статье \cite{Savova 2005} изучаются уже существующие методы кластеризации без учителя и их эффективность для решения лексической многозначности при обработке текстов по биомедицине. Решение проблем лексической многозначности в данной области включает в себя не только традиционные задачи присвоения ранее определенных смысловых значений для терминов, но так же и обнаружения новых значений для них, еще не включенных в данную онтологию.
@@ -557,7 +558,7 @@ $w(pos):w_1,s_1,w_2,s_2,\ldots,w_N,s_N$\\
 
 \section{Выявление значений слов из текста}
 \begin{flushright}
-\textit{Д. Ю. Янкевич} 
+%todo\textit{Д. Ю. Янкевич} 
 \end{flushright}
 
 В статье \cite{Pantel 2002} представлен алгоритм автоматического обнаружения значений слов в тексте, названный \textit{кластеризация посредством комитетов} (Clustering By Committee (CBC)). Также авторы предлагают методологию оценки для автоматического измерения точности и полноты найденных значений.
@@ -683,7 +684,7 @@ Nq235 & 0.20 & покрытие, оболочка, дорога\\
 
 \section{Использование лексических цепочек для реферирования текстов}
 \begin{flushright}
-\textit{А. В. Пилинович} 
+%todo\textit{А. В. Пилинович} 
 \end{flushright}
 
 В статье \cite{Barzilay Elhadad 1997} с целью реферирования текста строится модель в виде лексических цепочек. Реферирование включает четыре этапа: оригинальный текст делится на блоки (сегменты), строятся лексические цепочки, определяются сильные цепочки, извлекаются важные предложения.
@@ -834,7 +835,7 @@ $Score(Chain) > Average(Scores) + 2 \times StandardDeviation(Scores)$
 
 \section{Построение сочетаемостных ограничений на основе байесовских сетей для разрешения многозначности}
 \begin{flushright}
-\textit{И. А. Сихонина} 
+%todo\textit{И. А. Сихонина} 
 \end{flushright}
 
 В статье \cite{Ciaramita 2000} представлена байесовская модель, применяемая для разрешения лексической многозначности глаголов. Авторы рассматривают такое понятие, как сочетаемостные ограничения (selectional preferences). \textit{Сочетаемостные ограничения} (далее SP) --- это закономерности использования глагола относительно семантического класса его параметров (субъект, объект (прямое дополнение) и косвенное дополнение).
@@ -1086,235 +1087,6 @@ An Illustration of the Role of Bias in Machine Learning, Department of Computer 
 
 \section{СВЕДЕНИЯ ОБ АВТОРE:}
 
-\begin{aboutauthors}
-\authorsname{Каушинис Татьяна Викторовна}
-Студентка\\
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел.: (8142) 711078\\
-эл. почта: merilstreet@mail.ru
-
-\columnbreak
-
-\authorsname{Kaushinis, Tatiana}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: merilstreet@mail.ru
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Кириллов Александр Николаевич}
-доктор физико-математических наук\\ 
-доцент\\
-Институт прикладных математических исследований Карельского научного центра РАН\\ 
-ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
-эл. почта: kirillov@krc.karelia.ru\\
-тел.: (8142) 766312
-
-\columnbreak
-
-\authorsname{Kirillov, Alexander}
-Institute of Applied Mathematical Research, Karelian Research Centre, Russian Academy of Sciences\\
-11 Pushkinskaya St., 185910 Petrozavodsk, Karelia, Russia\\
-e-mail: kirillov@krc.karelia.ru\\
-tel.: (8142) 766312
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Коржицкий Никита Иванович}
-Студент\\
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел.: (8142) 711078\\
-эл. почта: nikita@nikita.tv
-
-\columnbreak
-
-\authorsname{Korzhitsky, Nikita}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: nikita@nikita.tv 
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Крижановский Андрей Анатольевич}
-кандитат технических наук\\ 
-Институт прикладных математических исследований Карельского научного центра РАН\\ 
-ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
-эл. почта: andew.krizhanovsky@gmail.com\\
-тел.: (8142) 766312
-
-\columnbreak
-
-\authorsname{Krizhanovsky, Andrew}
-Institute of Applied Mathematical Research, Karelian Research Centre, Russian Academy of Sciences\\
-11 Pushkinskaya St., 185910 Petrozavodsk, Karelia, Russia\\
-e-mail: andew.krizhanovsky@gmail.com\\
-tel.: (8142) 766312
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Пилинович Александр}
-Студент\\
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел.: (8142) 711078\\
-эл. почта: alexander.pilinovich@yandex.ru
-
-\columnbreak
-
-\authorsname{Pilinovich, Aleksander}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: alexander.pilinovich@yandex.ru 
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Сихонина Ирина Александровна}
-Студентка\\
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел.: (8142) 711078\\
-эл. почта: syawenka@mail.ru
-
-\columnbreak
-
-\authorsname{Sikhonina, Irina}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: syawenka@mail.ru 
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Спиркова Анна Михайловна}
-Студентка\\
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел.: (8142) 711078\\
-эл. почта: annspirkova@gmail.com
-
-\columnbreak
-
-\authorsname{Spirkova, Anna}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: annspirkova@gmail.com
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Старкова Валентина Геннадьевна}
-старший инженер-программист\\ 
-Институт прикладных математических исследований КарНЦ РАН\\ 
-ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
-тел.: (8142) 766312\\
-эл. почта: stark\_val@mail.ru
-
-\columnbreak
-
-\authorsname{Starkova, Valentina}
-Institute of Applied Mathematical Research, Karelian Research Centre, Russian Academy of Sciences\\
-11 Pushkinskaya St., 185910 Petrozavodsk, Karelia, Russia\\
-tel.: (8142) 766312\\
-e-mail: stark\_val@mail.ru 
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Ткач Станислав Сергеевич}
-Студент\\
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел.: (8142) 711078\\
-эл. почта: tkachkras@gmail.com
-
-\columnbreak
-
-\authorsname{Tkach, Stanislav}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: tkachkras@gmail.com 
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Чухарев Алексей Леонидович}
-старший инженер-программист\\ 
-Институт прикладных математических исследований КарНЦ РАН\\ 
-ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
-тел.: (8142) 766312
-эл. почта: chuharev@krc.karelia.ru
-
-\columnbreak
-
-\authorsname{Chuharev, Alexey}
-Institute of Applied Mathematical Research, Karelian Research Centre, Russian Academy of Sciences\\
-11 Pushkinskaya St., 185910 Petrozavodsk, Karelia, Russia\\
-tel.: (8142) 766312
-e-mail: chuharev@krc.karelia.ru
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Шорец Дарья Сергеевна}
-Студентка\\ 
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел: (8142) 711078\\
-эл. почта: da\_sha1078@mail.ru
-
-\columnbreak
-
-\authorsname{Shorets, Daria}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: da\_sha1078@mail.ru
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Ярышкина Екатерина Александровна}
-Студентка\\ 
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел:(8142) 711078\\
-эл. почта: kate.rysh@gmail.com
-
-\columnbreak
-
-\authorsname{Yaryshkina, Ekaterina}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: kate.rysh@gmail.com 
-\end{aboutauthors}
-
-\begin{aboutauthors}
-\authorsname{Янкевич Дарья Юрьевна}
-Студентка\\ 
-Математический факультет\\ 
-Петрозаводский государственный университет\\
-пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
-тел: (8142) 711078\\
-эл. почта: dyankevic@gmail.com
-
-\columnbreak
-
-\authorsname{Yankevich, Daria}
-Petrozavodsk State University\\
-33, Lenin Str., 185910, Petrozavodsk, Republic of Karelia, Russia\\
-tel.: (8142) 711078\\
-e-mail: dyankevic@gmail.com
-\end{aboutauthors}
+Blind review
 
 \end{document}
