@@ -4,3 +4,4 @@
 *.dvi
 *.tex~
 wsd_part1.synctex.gz
+*.addon
