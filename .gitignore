@@ -1,0 +1,6 @@
+*.aux
+*.ps
+*.log
+*.dvi
+*.tex~
+wsd_part1.synctex.gz
