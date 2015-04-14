@@ -1,12 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             Стилевой файл сборника Труды КарНЦ РАН v 1.12a                %%
+%%             Стилевой файл сборника Труды КарНЦ РАН v 1.14a                %%
 %%			   Сделан на основе mmro.sty на правах GPL                       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% TODO: \newenvironment
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{krctran}
 
 \ProcessOptions
-
+\RequirePackage{ifthen}
 %\RequirePackage[cp1251]{inputenc} % набор текста в кодировке WIN-1251
 \RequirePackage[T2A]{fontenc} % кириллическая "внутренняя" кодировка
 \RequirePackage{amssymb}
@@ -14,7 +18,6 @@
 \RequirePackage{amsthm} % теоремы в стиле AMS - три типа и варианты "со звездочкой"
 \RequirePackage{mathrsfs} % каллиграфия в формулах - другой вариант
 \RequirePackage{euscript} % рукописные буквы в формулах 
-\RequirePackage[english,russian]{babel} % переносы
 \RequirePackage{array} % таблицы
 %\RequirePackage{theorem} % теоремоподобные окружения
 \RequirePackage[all]{xy} % для рисования xy-pict
@@ -23,19 +26,27 @@
 \RequirePackage{multicol} % для печати в две колонки и динамического переключения
 \RequirePackage{float} % для поддержки печати рисунков сквозь все колонки
 \RequirePackage[square,numbers,sort&compress]{natbib} % со 2.04.2012 г. ссылки в виде [номер] вместо [Автор, год]
-\RequirePackage{ifthen}
 \RequirePackage{capt-of}
 
+% специальный "флаг" для статей о конференциях и юбилеях
+\newboolean{special}
+\setboolean{special}{false}
+\newcommand{\Special}{\setboolean{special}{true}}
+
+% специальный "флаг" для англоязычных статей
+\newboolean{english}
+\setboolean{english}{false}
+\newcommand{\EngVer}{\setboolean{english}{true}}
+
+% переносы
+%\ifthenelse{\boolean{english}}{\RequirePackage[english]{babel}}{\RequirePackage[english,russian]{babel}} 
+\RequirePackage[english, russian]{babel}
 
 \tolerance=3000
 \hbadness=2000
 \clubpenalty=10000
 \widowpenalty=10000
 
-% специальный "флаг" для статей о конференциях и юбилеях
-\newboolean{special}
-\setboolean{special}{false}
-\newcommand{\Special}{\setboolean{special}{true}}
 
 % переопределение стандартных размеров шрифтов
 \renewcommand{\footnotesize}{\fontsize{9pt}{9pt}\selectfont}
@@ -80,27 +91,46 @@
 
 \setlength{\unitlength}{1mm}
 
+
+
 % Вывод заголовка
-\def\maketitle{%
-\ifthenelse{\boolean{special}}
-    {
-    \@BeginDocument
-    \noindent\parbox{\textwidth}{\small\@procname}\\[30.5mm]
-    \noindent\parbox{\textwidth}{\begin{center}\Large\bfseries\MakeUppercase\@rustitle\end{center}}\\[20.5mm]
-    }
-    {
-    \@BeginDocument
-    \noindent\parbox{\textwidth}{\small\@procname}\\[20.5mm]
-	\noindent\parbox{\textwidth}{\textit\@udk}\\[5mm]
-    \noindent\parbox{\textwidth}{\Large\bfseries\MakeUppercase\@rustitle}\\[4.5mm]
-    \noindent\parbox{\textwidth}{\large\bfseries\@rusauthor}\\[3.175mm]
-    \noindent\parbox{\textwidth}{\textit\@organization}\\[19mm]
-    \noindent\parbox{\abstractwidth}{\small\@rusabstract}\\[3.175mm]
-    \noindent\parbox{\abstractwidth}{\small{К\,л\,ю\,ч\,е\,в\,ы\,е~~c\,л\,о\,в\,а: }\@ruskeywords}\\[5mm]
-    \noindent\parbox{\abstractwidth}{\bfseries\@engauthor. \MakeUppercase\@engtitle}\\[3.175mm]
-    \noindent\parbox{\abstractwidth}{\small\@engabstract}\\[3.175mm]
-    \noindent\parbox{\abstractwidth}{\small{K\,e\,y~~w\,o\,r\,d\,s: }\@engkeywords}\\[1mm]
-    \rule{\abstractwidth}{\linethickness}\\[1mm]
+\def\maketitle{
+\ifthenelse{\boolean{english}}
+	{
+		\@BeginDocument
+	    \noindent\parbox{\textwidth}{\small\@procname}\\[20.5mm]
+		\noindent\parbox{\textwidth}{\textit\@udk}\\[5mm]
+	    \noindent\parbox{\textwidth}{\Large\bfseries\MakeUppercase\@engtitle}\\[4.5mm]
+	    \noindent\parbox{\textwidth}{\large\bfseries\@engauthor}\\[3.175mm]
+	    \noindent\parbox{\textwidth}{\textit\@organization}\\[19mm]
+	    \noindent\parbox{\abstractwidth}{\small\@engabstract}\\[3.175mm]
+	    \noindent\parbox{\abstractwidth}{\small{K\,e\,y~~w\,o\,r\,d\,s: }\@engkeywords}\\[5mm]
+	    \noindent\parbox{\abstractwidth}{\bfseries\@rusauthor. \MakeUppercase\@rustitle}\\[3.175mm]
+	    \noindent\parbox{\abstractwidth}{\small\@rusabstract}\\[3.175mm]
+	    \noindent\parbox{\abstractwidth}{\small{К\,л\,ю\,ч\,е\,в\,ы\,е~~c\,л\,о\,в\,а: }\@ruskeywords}\\[1mm]
+	    \rule{\abstractwidth}{\linethickness}\\[1mm]
+	}
+	{
+	\ifthenelse{\boolean{special}}
+	    {
+		    \@BeginDocument
+		    \noindent\parbox{\textwidth}{\small\@procname}\\[30.5mm]
+		    \noindent\parbox{\textwidth}{\begin{center}\Large\bfseries\MakeUppercase\@rustitle\end{center}}\\[20.5mm]
+	    }
+	    {
+		    \@BeginDocument
+		    \noindent\parbox{\textwidth}{\small\@procname}\\[20.5mm]
+			\noindent\parbox{\textwidth}{\textit\@udk}\\[5mm]
+		    \noindent\parbox{\textwidth}{\Large\bfseries\MakeUppercase\@rustitle}\\[4.5mm]
+		    \noindent\parbox{\textwidth}{\large\bfseries\@rusauthor}\\[3.175mm]
+		    \noindent\parbox{\textwidth}{\textit\@organization}\\[19mm]
+		    \noindent\parbox{\abstractwidth}{\small\@rusabstract}\\[3.175mm]
+		    \noindent\parbox{\abstractwidth}{\small{К\,л\,ю\,ч\,е\,в\,ы\,е~~c\,л\,о\,в\,а: }\@ruskeywords}\\[5mm]
+		    \noindent\parbox{\abstractwidth}{\bfseries\@engauthor. \MakeUppercase\@engtitle}\\[3.175mm]
+		    \noindent\parbox{\abstractwidth}{\small\@engabstract}\\[3.175mm]
+		    \noindent\parbox{\abstractwidth}{\small{K\,e\,y~~w\,o\,r\,d\,s: }\@engkeywords}\\[1mm]
+		    \rule{\abstractwidth}{\linethickness}\\[1mm]
+	    }
     }
 }
 
@@ -163,13 +193,30 @@
 \renewcommand\@biblabel[1]{#1.}
 % Переопределение горизонтальных и вертикальных промежутков в списке литературы
 \renewenvironment{thebibliography}[1]
-    {\section{\bibname}%
+    {\section{\ifthenelse{\boolean{english}}{References}{\bibname}}%
         \list{\@biblabel{\@arabic\c@enumiv}}{%
             \settowidth\labelwidth{\@biblabel{#1}}%
             \leftmargin\labelwidth%
             \setlength\itemindent{\parindent}%
             \topsep=0pt\parsep=0pt\itemsep=1ex %
             \@openbib@code
+        }%
+        \small
+        %\typeBibItem
+    }{%
+        \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+        \endlist
+    }
+    
+\newenvironment{thebibliographyen}[1]
+    {\section{References}%
+	\setcounter{NAT@ctr}{0}
+        \list{\@biblabel{\@arabic\c@enumiv}}{%
+            \settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth%
+            \setlength\itemindent{\parindent}%
+            \topsep=0pt\parsep=0pt\itemsep=1ex %
+            \@openbib@code%
         }%
         \small
         %\typeBibItem
@@ -319,33 +366,51 @@
 % Новые теоремоподобные окружения
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Теоремы наклонным шрифтом
-\theoremstyle{plain}
-\newtheorem{Theorem}{Теорема}
-\newtheorem{Lemma}{Лемма}
-\newtheorem{State}{Утверждение}
-\newtheorem{Corollary}{Следствие}
-\newtheorem{Axiom}{Аксиома}
-% Теоремы прямым шрифтом
-\theoremstyle{definition}
-\newtheorem{Definition}{Определение}
-\newtheorem{Example}{Пример}
-\newtheorem{Remark}{Замечание}
-
-% Версии "со звездочкой"
-% Теоремы наклонным шрифтом
-\theoremstyle{plain}
-\newtheorem*{Theorem*}{Теорема}
-\newtheorem*{Lemma*}{Лемма}
-\newtheorem*{State*}{Утверждение}
-\newtheorem*{Corollary*}{Следствие}
-\newtheorem*{Axiom*}{Аксиома}
-% Теоремы прямым шрифтом
-\theoremstyle{definition}
-\newtheorem*{Definition*}{Определение}
-\newtheorem*{Example*}{Пример}
-\newtheorem*{Remark*}{Замечание}
-
+\ifthenelse{\boolean{english}}
+{
+	\theoremstyle{plain} % Теоремы наклонным шрифтом
+	\newtheorem{Theorem}{Theorem}
+	\newtheorem{Lemma}{Lemma}
+	\newtheorem{State}{State}
+	\newtheorem{Corollary}{Corollary}
+	\newtheorem{Axiom}{Axiom}
+	\theoremstyle{definition} % Теоремы прямым шрифтом
+	\newtheorem{Definition}{Definition}
+	\newtheorem{Example}{Example}
+	\newtheorem{Remark}{Remark}
+	\theoremstyle{plain} % Версии "со звездочкой" % Теоремы наклонным шрифтом
+	\newtheorem*{Theorem*}{Theorem}
+	\newtheorem*{Lemma*}{Lemma}
+	\newtheorem*{State*}{State}
+	\newtheorem*{Corollary*}{Corollary}
+	\newtheorem*{Axiom*}{Axiom}
+	\theoremstyle{definition} % Теоремы прямым шрифтом
+	\newtheorem*{Definition*}{Definition}
+	\newtheorem*{Example*}{Example}
+	\newtheorem*{Remark*}{Remark}
+}
+{
+	\theoremstyle{plain} % Теоремы наклонным шрифтом
+	\newtheorem{Theorem}{Теорема}
+	\newtheorem{Lemma}{Лемма}
+	\newtheorem{State}{Утверждение}
+	\newtheorem{Corollary}{Следствие}
+	\newtheorem{Axiom}{Аксиома}
+	\theoremstyle{definition} % Теоремы прямым шрифтом
+	\newtheorem{Definition}{Определение}
+	\newtheorem{Example}{Пример}
+	\newtheorem{Remark}{Замечание}
+	\theoremstyle{plain} % Версии "со звездочкой" % Теоремы наклонным шрифтом
+	\newtheorem*{Theorem*}{Теорема}
+	\newtheorem*{Lemma*}{Лемма}
+	\newtheorem*{State*}{Утверждение}
+	\newtheorem*{Corollary*}{Следствие}
+	\newtheorem*{Axiom*}{Аксиома}
+	\theoremstyle{definition} % Теоремы прямым шрифтом
+	\newtheorem*{Definition*}{Определение}
+	\newtheorem*{Example*}{Пример}
+	\newtheorem*{Remark*}{Замечание}
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   П Р О Ч Е Е
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
