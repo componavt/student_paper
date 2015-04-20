@@ -2,22 +2,20 @@
 
 \usepackage{cmap} % чтобы работал поиск по PDF
 
+\usepackage{caption}  %-  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
+\usepackage{subcaption} % float figures side by side}  -  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
 \usepackage{krctran}
-
 \usepackage[utf8]{inputenc} % закомментировать в krctran.sty: \RequirePackage[cp1251]{inputenc}
 \usepackage[pdftex]{graphicx} % закомментировать в krctran.sty
-\usepackage{caption}
-\usepackage{subcaption} % float figures side by side
-
+%\usepackage{caption}  %-  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
+%\usepackage{subcaption} % float figures side by side}  -  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{algorithm2e}
 \usepackage{float}
 \usepackage{wrapfig}
-
 %\usepackage[dvips]{graphicx}
 \graphicspath{ {./pictures/} }
-
 
 \begin{document}
 
@@ -38,6 +36,9 @@ $^2$Петрозаводский Государственный Универси
 \rusabstract{Разрешение лексической многозначности --- это задача выбора между разными значениями 
 слов и словосочетаний в словаре в зависимости от контекста. 
 В статье представлен краткий обзор методов и алгоритмов разрешения лексической многозначности. 
+
+
+
 Представлены (1) методы, основанные на машинном обучении, 
 (2) методы, не использующие никаких размеченных корпусов для различения значений слов, и 
 (3) методы, использующие внешние словарные источники информации (машиночитаемые словари, тезаурусы, онтологии). 
@@ -86,7 +87,13 @@ $^2$Петрозаводский Государственный Универси
 
 На сегодняшний день на русском языке нет, по-видимому, достаточно объёмных и серьёзных обзоров по разрешению многозначности. Наиболее полное описание истории развития методов (20 страниц) есть в диссертации Д. Ю. Турдакова \cite{Trudakov 2010}. Такое положение дел послужило одной из причин написания этой статьи, которая послужит заделом для полновесного обзора по данной теме.
 
-Далее будут представлены примеры методов и алгоритмов разрешения лексической многозначности (1) с использованием машинного обучения, (2) без машинного обучения и (3) методы, основанные на знаниях. Данная статья является <<введением>> в проблематику WSD, поскольку эта тема является чрезвычайно обширной и существуют сотни интересных работ по каждому из указанных направлений.
+Далее будут представлены примеры методов и алгоритмов разрешения лексической многозначности, разбитые на три группы: 
+\begin{itemize}
+\itemс использованием машинного обучения: метод ансамбля байесовских классификаторов, нейронные сети, бустинг как метод улучшения точности алгоритма обучения, сравнение методов машинного обучения;
+\itemбез машинного обучения: различение значений на основе контекстных векторов, расширенных словарными значениями; поиск и кластеризация похожих слов; кластеризация фрагментов биомедицинских текстов; кластеризация посредством комитетом;
+\itemметоды, основанные на знаниях: лексические цепочки, сочетаемостные ограничения на основе байесовских сетей.
+\end{itemize}
+ Данная статья является <<введением>> в проблематику WSD, поскольку эта тема является чрезвычайно обширной и существуют сотни интересных работ по каждому из указанных направлений.
 
 \bfullwidth
 \begin{center}
@@ -176,8 +183,9 @@ total & 2368\\
 
 
 
-
+\bfullwidth
 \section{WSD на основе нейронных сетей, построенных по данным машиночитаемых словарей}
+\efullwidth
 
 \begin{flushright}
 \textit{А. Н. Кириллов}
@@ -679,7 +687,7 @@ $$
 \KwData{Список элементов $E$, которые будут сгруппированы, база данных сходства $S$, из фазы I, пороги $\theta1$ и $\theta2$ (с помощью порога $\theta1$ сохраняются только те кластеры, которые имеют значения, отличные от ранее обнаруженных, порог $\theta2$ позволяет обнаружить элементы, не принадлежащие ни одному из кластеров)}
 \KwResult{$C$ --- список комитетов}
 \textbf{Step 1:}\\
-\ForEach{$е \in E$}{\begin{enumerate}
+\ForEach{$e \in E$}{\begin{enumerate}
 \item Кластер k наиболее <<близких>> (похожих) элементов е из S с помощью метода  средней связи
 \item Для каждого обнаруженного кластера $c$ вычислить следующую оценку:
 $val = | C | * avgsim(c)$, где $| C |$ --- количество элементов $c$ и $avgsim(c)$ --- усредненное сходство между всеми парами элементов кластера $c$.
@@ -687,7 +695,7 @@ $val = | C | * avgsim(c)$, где $| C |$ --- количество элемен�
 \textbf{Step 2:}\\
 Сортировка кластеров в списке $L$ в порядке убывания их оценок $val$\\
 \textbf{Step 3:}\\
-$C = \emptyset$ // Пусть $С$ перечень комитетов, изначально пустой\\
+$C = \emptyset$ // Пусть $C$ перечень комитетов, изначально пустой\\
 \ForEach{$c \in L$}{// в отсортированном по убыванию порядке:
 \begin{enumerate}
 \item Вычислить центр тяжести, усредняя поэлементно значение векторов, и вычислить вектор  PMI центроида (точно так же, как мы делали для отдельных элементов)
@@ -1047,175 +1055,197 @@ $Score(Chain) > Average(Scores) + 2 \times StandardDeviation(Scores)$
 \begin{thebibliography}{9}
 
 \bibitem{Averin 2006}
-\textit{А.~Н.~Аверин.~}Разработка сервиса поиска биграмм // Труды международной конференции «Корпусная лингвистика–2006. СПб., С.Петерб. ун-та., 2006.
-
-\bibitem{Kim 1989}
-\textit{Дж.~О.~Ким, Ч.~У.~Мьюллер, У.~Р.~Клекка.~} Факторный, дискриминантный и кластерный анализ. <<Финансы и статистика>>, Москва, Россия. 1989. Стр.172.
+\textit{Аверин А. Н.} Разработка сервиса поиска биграмм // Труды международной конференции «Корпусная лингвистика–2006. СПб., С.Петерб. ун-та., 2006.
 
 \bibitem{epr:website}
-\textit{А.~С.~Епрев.~}Применение контекстных векторов в классификации текстовых документов. 2010. http://jre.cplire.ru/iso/oct10/1/text.html.
+\textit{Епрев А. С.} Применение контекстных векторов в классификации текстовых документов. 2010. http://jre.cplire.ru/iso/oct10/1/text.html.
+
+\bibitem{Kim 1989}
+\textit{Ким Дж. О., Мьюллер Ч. У., Клекка У. Р.} Факторный, дискриминантный и кластерный анализ. <<Финансы и статистика>>, Москва, Россия. 1989. Стр.172.
 
 \bibitem{Lukash 2011}
-\textit{Н.~В.~Лукашевич.~}Тезаурусы в задачах информационного поиска. Издательство МГУ, 2011. 495 с.
+\textit{Лукашевич Н. В.} Тезаурусы в задачах информационного поиска. Издательство МГУ, 2011. 495 с.
 
 \bibitem{Trudakov 2010}
-\textit{Д.~Ю.~Турдаков.~}Методы и программные средства разрешения лексической многозначности терминов на основе сетей документов: диссертация ... кандидата физико-математических наук: 05.13.11. --- Москва, 2010. --- 138 c.
+\textit{Турдаков Д. Ю.} Методы и программные средства разрешения лексической многозначности терминов на основе сетей документов: диссертация ... кандидата физико-математических наук: 05.13.11. --- Москва, 2010. --- 138 c.
 
 \bibitem{Abney 1999}
-\textit{S.~Abney and M.~Light.~}Hiding a semantic hierarchy in a markov model. In Proceedings of the Workshop on Unsupervised Learning in Natural Language Processing, ACL. 1999.
+\textit{Abney S. and Light M.} Hiding a semantic hierarchy in a markov model. In Proceedings of the Workshop on Unsupervised Learning in Natural Language Processing, ACL. 1999.
 
 \bibitem{Azzini}
-\textit{A.~Azzini, C.~da~Costa~Pereira, M.~Dragoni, and A.~G.~B.~Tettamanzi.~}Evolving Neural Networks for Word Sense Disambiguation // 8-th International conference on hybrid intelligent systems. Spain. Barcelona. pp. 332–337. DOI: 10.1109/HIS.2008.88
+\textit{Azzini A., da Costa Pereira C., Dragoni M. and Tettamanzi A. G. B.} Evolving Neural Networks for Word Sense Disambiguation // 8-th International conference on hybrid intelligent systems. Spain. Barcelona. pp. 332–337. DOI: 10.1109/HIS.2008.88
 
 \bibitem{Barzilay Elhadad 1997}
-\textit{R.~Barzilay and M.~Elhadad.~}Using lexical chains for text summarization. In Proceedings of the ACL Workshop on Intelligent Scalable Text Summarization (Madrid, Spain). 1997. pp. 10–17.
+\textit{Barzilay R. and  Elhadad M. }Using lexical chains for text summarization. In Proceedings of the ACL Workshop on Intelligent Scalable Text Summarization (Madrid, Spain). 1997. pp. 10–17.
 
 \bibitem{Berry 1993}
-\textit{M.~Berry, T.~Do, G.~O’Brien, V.~Krishna, and S.~Varadhan.~}SVDPACK (version 1.0) user’s guide. Technical Report CS-93-194, University of Tennessee at Knoxville, Computer Science Department, April 1993.
+\textit{Berry M.,  Do T.,  O’Brien G.,  Krishna V. and Varadhan S. }SVDPACK (version 1.0) user’s guide. Technical Report CS-93-194, University of Tennessee at Knoxville, Computer Science Department, April 1993.
 
 \bibitem{Bruce 1994}
-\textit{R.~Bruce and J.~Wiebe.~}Word-sense disambiguation using decomposable models. In Proceedings of the 32nd Annual Meeting of the Association for Computational Linguistics, 1994, pp. 139–146. DOI: 10.3115/981732.981752
+\textit{Bruce R. and  Wiebe J. }Word-sense disambiguation using decomposable models. In Proceedings of the 32nd Annual Meeting of the Association for Computational Linguistics, 1994, pp. 139–146. DOI: 10.3115/981732.981752
 
 \bibitem{Ciaramita 2000}
-\textit{M.~Ciaramita and M.~Johnson.~}Explaining away ambiguity: Learning verb selectional preference with Bayesian networks. 2000. 
+\textit{Ciaramita M. and  Johnson M. }Explaining away ambiguity: Learning verb selectional preference with Bayesian networks. 2000. 
 
 \bibitem{COTTRELL 1983}
-\textit{G.~W.~Cottrell and S.~L.~Small.~}A connectionist  scheme for modelling word  sense  disambiguation -- Cognition and brain theory. 1983. № 6. pp. 89–120. 
+\textit{Cottrell G. W. and  Small S. L. }A connectionist  scheme for modelling word  sense  disambiguation -- Cognition and brain theory. 1983. № 6. pp. 89–120. 
 
 \bibitem{COTTRELL 1989}
-\textit{G.~W.~Cottrell.~}A connectionist approach to word sense disambiguation. Pitman, London, 1989.
-
-\bibitem{Charles 1993}
-\textit{Charles~X.~Ling, M.~Marinov.~}Answering the connectionist challenge: A symbolic model of learning the past tenses of English verbs,  Cognition, Elsevier, 1993.
-
-\bibitem{Dekang 1998}
-\textit{D.~Lin.~}Automatic Retrieval and Clustering of Similar Words.Proceedings of the 17th international conference on Computational linguistics-Volume 2. – Association for Computational Linguistics, Department of Computer Science University of Manitoba Winnipeg, Manitoba, Canada, 1998, pp. 768-774. DOI: 10.3115/980432.980696
-
-\bibitem{Dekang 1993}
-\textit{D.~Lin.~}Principle-based parsing without overgeneration. In Proceedings of ACL-93, Columbus, Ohio, 1993, pp. 112-120. DOI: 10.3115/981574.981590
-
-\bibitem{Dekang 1997}
-\textit{D.~Lin.~}Using syntactic dependency as local context to resolve word sense ambiguity. In Proceedings of ACL/EACL-97, Madrid, Spain, July, 1997, pp. 64-71. DOI: 10.3115/979617.979626
-
-\bibitem{Donald 1990}
-\textit{D.~Hindle.~}Noun classification from predicate-argument structures. In Proceedings of ACL-90, Pittsburg, Pennsylvania, June, 1990, pp. 268-275.
+\textit{Cottrell G. W. }A connectionist approach to word sense disambiguation. Pitman, London, 1989.
 
 \bibitem{Do Thuy Duong 2011}
-\textit{D.~T.~Duong.~}Automated text summarization. Graduation Thesis. Hanoi University. 2011. 
+\textit{Duong D. T. }Automated text summarization. Graduation Thesis. Hanoi University. 2011. 
 
-\bibitem{Eugene 1975}
-\textit{Eugene A. Nida.~}Componential Analysis of Meaning. The Hague, Mouton. 1975.
+\bibitem{Donald 1990}
+\textit{Hindle D. }Noun classification from predicate-argument structures. In Proceedings of ACL-90, Pittsburg, Pennsylvania, June, 1990, pp. 268-275.
+
+%\bibitem{Charles 1993}
+%\textit{Ling Charles X.,  Marinov M. }Answering the connectionist challenge: A symbolic model of learning the past tenses of English verbs,  %Cognition, Elsevier, 1993.
+
+%\bibitem{Dekang 1998}
+%\textit{Lin D. }Automatic Retrieval and Clustering of Similar Words.Proceedings of the 17th international conference on Computational %linguistics-Volume 2. – Association for Computational Linguistics, Department of Computer Science University of Manitoba Winnipeg, Manitoba, %Canada, 1998, pp. 768-774. DOI: 10.3115/980432.980696
+
+%\bibitem{Dekang 1993}
+%\textit{Lin D. }Principle-based parsing without overgeneration. In Proceedings of ACL-93, Columbus, Ohio, 1993, pp. 112-120. DOI: %10.3115/981574.981590
+
+%\bibitem{Dekang 1997}
+%\textit{Lin D. }Using syntactic dependency as local context to resolve word sense ambiguity. In Proceedings of ACL/EACL-97, Madrid, Spain, %July, 1997, pp. 64-71. DOI: 10.3115/979617.979626
+
+%\bibitem{Donald 1990}
+%\textit{Hindle D. }Noun classification from predicate-argument structures. In Proceedings of ACL-90, Pittsburg, Pennsylvania, June, 1990, pp. %268-275.
+
+%\bibitem{Do Thuy Duong 2011}
+%\textit{Duong D. T. }Automated text summarization. Graduation Thesis. Hanoi University. 2011. 
 
 \bibitem{Freund 1999}
-\textit{Y.~Freund, R.~E.~Schapire.~}A Short Introduction to Boosting//AT\&T Labs Research, Shannon Laboratory. - 1999.
+\textit{Freund Y., Schapire R. E. }A Short Introduction to Boosting//AT\&T Labs Research, Shannon Laboratory. - 1999.
 
 \bibitem{Freund 1996}
-\textit{Y.~Freund, R.~E.~Schapire.~}Game theory, on-line prediction and boosting. In Proceedings of the Ninth Annual Conference on Computational Learning Theory,  1996. pp. 325-332.
+\textit{Freund Y.,  Schapire R. E. }Game theory, on-line prediction and boosting. In Proceedings of the Ninth Annual Conference on Computational Learning Theory,  1996. pp. 325-332.
 
 \bibitem{Freund 1997}
-\textit{Y.~Freund, R.~E.~Schapire.~}A decision-theoretic generalization of on-line learning and an application to boosting. Journal of Computer and System Sciences. 1997. pp. 119–139. DOI: 10.1006/jcss.1997.1504
+\textit{Freund Y.,  Schapire R. E. }A decision-theoretic generalization of on-line learning and an application to boosting. Journal of Computer and System Sciences. 1997. pp. 119–139. DOI: 10.1006/jcss.1997.1504
 
 \bibitem{Halliday Hasan 1976}
-\textit{M.~Halliday, and R.~Hasan.~}Cohesion in English. London: Longman. 1976. 
+\textit{Halliday M. and  Hasan R. }Cohesion in English. London: Longman. 1976. 
 
 \bibitem{Harris 1985}
-\textit{Z.~Harris.~}Distributional structure. In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press. 1985. pp. 26–47
+\textit{Harris Z. }Distributional structure. In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press. 1985. pp. 26–47
 
 \bibitem{Hearst 1994}
-\textit{M.~Hearst.~}Multi-paragraph segmentation of expository text. In Proceedings of the 32th Annual Meeting of the Association for Computational Linguistics, 9–16. Las Cruces, New Mexico: Association for Computational Linguistics. 1994. DOI: 10.3115/981732.981734
+\textit{Hearst M. }Multi-paragraph segmentation of expository text. In Proceedings of the 32th Annual Meeting of the Association for Computational Linguistics, 9–16. Las Cruces, New Mexico: Association for Computational Linguistics. 1994. DOI: 10.3115/981732.981734
 
 \bibitem{Hinton 1986}
-\textit{G.~E.~Hinton, J.~L.~McClelland, D.~E.~Rumelhart.~}Distributed representations// In Parallel Processing: explorations in the microstructure of cognition. MIT Press, Cambridge, MA, 1986. pp. 5–44.
+\textit{Hinton G. E.,  McClelland J. L.,  Rumelhart D. E.. }Distributed representations// In Parallel Processing: explorations in the microstructure of cognition. MIT Press, Cambridge, MA, 1986. pp. 5–44.
 
 \bibitem{Hirst St-Onge 1998}
-\textit{G.~Hirst and D.~St-Onge~.}Lexical chains as representations of context for the detection and correction of malapropisms. WordNet: An electronic lexical database, 1998. pp. 305-332.
+\textit{Hirst G. and  St-Onge D. }Lexical chains as representations of context for the detection and correction of malapropisms. WordNet: An electronic lexical database, 1998. pp. 305-332.
 
 \bibitem{Hoey 1991}
-\textit{M.~Hoey.~}Patterns of Lexis in Text. Oxford: Oxford University Press. 1991. 
+\textit{Hoey M. }Patterns of Lexis in Text. Oxford: Oxford University Press. 1991. 
 
 \bibitem{Jain 1988}
-\textit{A.~Jain and R.~Dubes.~}Algorithms for Clustering Data. Prentice-Hall, Inc., Upper Saddle River, NJ, 1988.
+\textit{Jain A. and  Dubes R. }Algorithms for Clustering Data. Prentice-Hall, Inc., Upper Saddle River, NJ, 1988.
 
 \bibitem{Jain 1999}
-\textit{A.~Jain, M.~Murthy, and P.~Flynn}Data clustering: a review. ACM Computing Surveys, 31(3):264-323, September 1999. DOI: 10.1145/331499.331504
+\textit{Jain A.,  Murthy M. and  Flynn P. }Data clustering: a review. ACM Computing Surveys, 31(3):264-323, September 1999. DOI: 10.1145/331499.331504
 
 \bibitem{Leacock 1993}
-\textit{C.~Leacock, G.~Towell, and E.~Voorhees.~}Corpus-based statistical sense resolution. In Proceedings of the ARPA Workshop on Human Language Technology, March. 1993, pp. 260–265.  
+\textit{Leacock C.,  Towell G. and  VoorheesE. }Corpus-based statistical sense resolution. In Proceedings of the ARPA Workshop on Human Language Technology, March. 1993, pp. 260–265.  
 
 \bibitem{LESK 1986}
-\textit{M.~Lesk.~}Automatic sense disambiguation using machine readable dictionaries: How to tell a pine cone from an ice cream cone --  Proceedings  of  the 5th SIGDOC. New York. 1986. pp. 24–26. DOI: 10.1145/318723.318728
+\textit{Lesk M. }Automatic sense disambiguation using machine readable dictionaries: How to tell a pine cone from an ice cream cone --  Proceedings  of  the 5th SIGDOC. New York. 1986. pp. 24–26. DOI: 10.1145/318723.318728
+
+\bibitem{Dekang 1998}
+\textit{Lin D. }Automatic Retrieval and Clustering of Similar Words.Proceedings of the 17th international conference on Computational linguistics-Volume 2. – Association for Computational Linguistics, Department of Computer Science University of Manitoba Winnipeg, Manitoba, Canada, 1998, pp. 768-774. DOI: 10.3115/980432.980696
+
+\bibitem{Dekang 1993}
+\textit{Lin D. }Principle-based parsing without overgeneration. In Proceedings of ACL-93, Columbus, Ohio, 1993, pp. 112-120. DOI: 10.3115/981574.981590
+
+\bibitem{Dekang 1997}
+\textit{Lin D. }Using syntactic dependency as local context to resolve word sense ambiguity. In Proceedings of ACL/EACL-97, Madrid, Spain, July, 1997, pp. 64-71. DOI: 10.3115/979617.979626
+
 
 \bibitem{Lin 2001}
-\textit{D.~Lin and P.~Pantel.~}Induction of semantic classes from natural language text. In Proceedings of SIGKDD-01. San Francisco, CA. 2001. pp. 317–322. DOI: 10.1145/502512.502558  
+\textit{Lin D. and Pantel P. }Induction of semantic classes from natural language text. In Proceedings of SIGKDD-01. San Francisco, CA. 2001. pp. 317–322. DOI: 10.1145/502512.502558  
+
+\bibitem{Charles 1993}
+\textit{Ling Charles X.,  Marinov M. }Answering the connectionist challenge: A symbolic model of learning the past tenses of English verbs,  Cognition, Elsevier, 1993.
+
 
 \bibitem{Manning 1999}
-\textit{C.~D.~Manning and H.~Sch\"utze.~}Foundations of Statistical Natural Language Processing. MIT Press. 1999.
+\textit{Manning C. D. and  Sch\"utze H. }Foundations of Statistical Natural Language Processing. MIT Press. 1999.
 
 \bibitem{Merz 1998}
-\textit{C.~J.~Merz and P.~M.~Murphy.~}UCI repository of machine learning databases, 1998. www.ics.uci.edu/ mlearn/MLRepository.html.
+\textit{Merz C. J. and  Murphy P. M. }UCI repository of machine learning databases, 1998. www.ics.uci.edu/ mlearn/MLRepository.html.
 
 \bibitem{Miller 1990}
-\textit{G.~Miller.~}Wordnet: An on-line lexical database. International Journal of Lexicography, 3(4). 1990.
+\textit{Miller G. }Wordnet: An on-line lexical database. International Journal of Lexicography, 3(4). 1990.
 
 \bibitem{Mooney 1996}
-\textit{R.~J.~Mooney.~}Comparative Experiments on Disambiguating Word Senses:
+\textit{Mooney R. J. }Comparative Experiments on Disambiguating Word Senses:
 An Illustration of the Role of Bias in Machine Learning, Department of Computer Sceinces, University of Texas, Austin, TX 78712-1188, 1996.
 
 \bibitem{Mooney 1995}
-\textit{R.~J.~Mooney, M.~E.~Califf.~}Induction of First-Order Decision Lists: Results on Learning the Past Tense of English Verbs, Department of Computer Sceinces, University of Texas, Austin, TX 78712-1188, 1995.
+\textit{Mooney R. J., Califf M. E. }Induction of First-Order Decision Lists: Results on Learning the Past Tense of English Verbs, Department of Computer Sceinces, University of Texas, Austin, TX 78712-1188, 1995.
 
 \bibitem{Morris Hirst, 1991}
-\textit{J.~Morris, and G.~Hirst}Lexical cohesion computed by thesaural relations as an indicator of the structure of text. Computational Linguistics 17(1):21–43. 1991. 
+\textit{Morris J. and  Hirst G. }Lexical cohesion computed by thesaural relations as an indicator of the structure of text. Computational Linguistics 17(1):21–43. 1991. 
 
 \bibitem{Navigli 2009}
-\textit{R.~Navigli.~}Word sense disambiguation: A survey. ACM Computing Surveys (CSUR) 41, no. 2 (2009): 10. DOI: 10.1145/1459352.1459355
+\textit{Navigli R. }Word sense disambiguation: A survey. ACM Computing Surveys (CSUR) 41, no. 2 (2009): 10. DOI: 10.1145/1459352.1459355
+
+\bibitem{Eugene 1975}
+\textit{Nida Eugene A. }Componential Analysis of Meaning. The Hague, Mouton. 1975.
+
 
 \bibitem{Pantel 2002}
-\textit{P.~Pantel, D.~Lin.~}Discovering Word Senses from Text. University of Alberta. Department of Computing Science Edmonton, Alberta T6H 2E1 Canada, 2002. DOI: 10.1145/775047.775138
+\textit{Pantel P.,  Lin D. }Discovering Word Senses from Text. University of Alberta. Department of Computing Science Edmonton, Alberta T6H 2E1 Canada, 2002. DOI: 10.1145/775047.775138
 
 \bibitem{Pedersen 2000}
-\textit{T.~Pedersen.~}A Simple Approach to Building Ensembles of Naive Bayesian Classi?ers for Word Sense Disambiguation// Department of Computer Science, University of Minnesota Duluth.–2000.
+\textit{Pedersen T. }A Simple Approach to Building Ensembles of Naive Bayesian Classi?ers for Word Sense Disambiguation// Department of Computer Science, University of Minnesota Duluth.–2000.
 
 \bibitem{Pedersen 1997}
-\textit{T.~Pedersen and R.~Bruce.~}Distinguishing word senses in untagged text. Proc.EMNLP.Providence, RI, 1997.
+\textit{Pedersen T. and  Bruce R. }Distinguishing word senses in untagged text. Proc.EMNLP.Providence, RI, 1997.
 
 \bibitem{Purandare 2004}
-\textit{A.~Purandare and T.~Pedersen.~}Improving word sense discrimination with gloss augmented feature vectors // Workshop on Lexical Resources for the Web and Word Sense Disambiguation. – 2004. – pp. 123-130. 
-
-\bibitem{Resnik 1997}
-\textit{P.~Resnik.~}Selectional preference and sense disambiguation. In Proceedings of the ANLP-97 Workshop: Tagging Text with Lexical Semantics: Why, What, and How? 1997.
+\textit{ Purandare A. and  Pedersen T. }Improving word sense discrimination with gloss augmented feature vectors // Workshop on Lexical Resources for the Web and Word Sense Disambiguation. – 2004. – pp. 123-130. 
 
 \bibitem{Quinlan 1993}
-\textit{J.~R.~Quinlan.~}C4.5: Programs for Machine Learning. Morgan Kaufmann, 1993. 
+\textit{Quinlan J. R. }C4.5: Programs for Machine Learning. Morgan Kaufmann, 1993. 
+
+\bibitem{Resnik 1997}
+\textit{Resnik P. }Selectional preference and sense disambiguation. In Proceedings of the ANLP-97 Workshop: Tagging Text with Lexical Semantics: Why, What, and How? 1997.
 
 \bibitem{Savova 2005}
-\textit{G.~Savova.~}Resolving ambiguities in biomedical text with unsupervised clustering approaches. University of Minnesota Supercomputing Institute Research Report, 2005.
+\textit{Savova G. }Resolving ambiguities in biomedical text with unsupervised clustering approaches. University of Minnesota Supercomputing Institute Research Report, 2005.
 
 \bibitem{Schapire 1998}
-\textit{R.~E.~Schapire and Y.~Singer.~}Improved boosting a predictions. In Proceedings of the Eleventh Annual Confere Theory, 1998. pp. 80–91. 
+\textit{Schapire R. E. and Singer Y. }Improved boosting a predictions. In Proceedings of the Eleventh Annual Confere Theory, 1998. pp. 80–91. 
 
 \bibitem{Schapire 1997}
-\textit{R.~E.~Schapire.~}Using output codes to boost multiclass learning problems. InMachin Learning: Proceedings of the Fourteenth International Conference, 1997. pp. 313–321. 
-\bibitem{VERONIS 1990}
-\textit{J.~Veronis and N.~Ide.~}Word  sense  disambiguation  with  very  large neural  networks  extracted  from machine readable dictionaries – Proceedings of the 13th International Conference on Computational Linguistics. Helsinki. 1990. pp. 389–394. DOI: 10.3115/997939.998006
-
-\bibitem{SC:website}
-\textit{SenseClusters. } http://senseclusters.sourceforge.net
+\textit{Schapire R. E. }Using output codes to boost multiclass learning problems. InMachin Learning: Proceedings of the Fourteenth International Conference, 1997. pp. 313–321. 
 
 \bibitem{Schutze 1998}
-\textit{H.~Schutze.~}Automatic Word Sense Discrimination. Computational Linguistics, vol. 24, number 1., 1998.
+\textit{Schutze H. }Automatic Word Sense Discrimination. Computational Linguistics, vol. 24, number 1., 1998.
+
+\bibitem{SC:website}
+\textit{SenseClusters. }  \newline http://senseclusters.sourceforge.net (дата обращения: ..........).
 
 \bibitem{UMLS:website}
-\textit{UMLS Terminology Services (UTS).} http://umlsks.nlm.nih.gov/kss/servlet/Turbine/template
+\textit{UMLS Terminology Services (UTS).} http://umlsks.nlm.nih.gov/kss/servlet/Turbine/\newline template (дата обращения: ..........)
+
+\bibitem{VERONIS 1990}
+\textit{Veronis J. and Ide N. }Word  sense  disambiguation  with  very  large neural  networks  extracted  from machine readable dictionaries – Proceedings of the 13th International Conference on Computational Linguistics. Helsinki. 1990. pp. 389–394. DOI: 10.3115/997939.998006
 
 \bibitem{WALTZ 1985}
-\textit{D.~L.~Waltz and J. B.~Pollack.~}Massively parallel parsing: a strongly interactive  model  of  natural  language interpretation – Cognitive science. 1985. № 9. pp. 51–74. DOI: 10.1207/s15516709cog0901\_4
+\textit{Waltz D. L. and  Pollack J. B. }Massively parallel parsing: a strongly interactive  model  of  natural  language interpretation – Cognitive science. 1985. № 9. pp. 51–74. DOI: 10.1207/s15516709cog0901\_4
                      
 \bibitem{Weeber 2001}
-\textit{M.~Weeber, J.~Mork, A.~Aronson.~}Developing a test collection for biomedical word sense disambiguation. Proc. AMIA., 2001.
+\textit{Weeber M.,  Mork J.,  Aronson A. }Developing a test collection for biomedical word sense disambiguation. Proc. AMIA., 2001.
 
 \bibitem{Zhao 2002}
-\textit{Y.~Zhao and G.~Karypis.~}Evaluation of hierarchical clustering algorithms for document datasets. In Proceedings of the 11th International Conference on Information and Knowledge Management, McLean, VA, 2002. pp. 515-524. DOI: 10.1145/584792.584877
+\textit{Zhao Y. and  Karypis G. }Evaluation of hierarchical clustering algorithms for document datasets. In Proceedings of the 11th International Conference on Information and Knowledge Management, McLean, VA, 2002. pp. 515-524. DOI: 10.1145/584792.584877
 
 
 
@@ -1490,21 +1520,6 @@ Petrozavodsk State University\\
 tel.: (8142) 711078\\
 e-mail: dyankevic@gmail.com
 \end{aboutauthors}
-
-
-  \begin{table}[H]
-\centering
-\caption{ aaaaa $a_1(m)/m$ kkkkk $m$ }
-\renewcommand{\arraystretch}{1.8}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-$m$&1&2&3&4&5&6&7&8&9&10\\
-\hline
-\!\!\!$\frac{a_1(m)}{m}$\!\!&\!1&\!1&\!3&\!5&\!7&\!23&\!49&\!52&\!76&\!99\\
-\hline
-\end{tabular}
-\end{table}
-
 
 
 \end{document}

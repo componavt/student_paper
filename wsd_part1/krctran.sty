@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%             Стилевой файл сборника Труды КарНЦ РАН v 1.14a                %%
-%%			   Сделан на основе mmro.sty на правах GPL                       %%
+%%             пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ v 1.14a                %%
+%%			   пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ mmro.sty пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ GPL                       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -11,34 +11,34 @@
 
 \ProcessOptions
 \RequirePackage{ifthen}
-%\RequirePackage[cp1251]{inputenc} % набор текста в кодировке WIN-1251
-\RequirePackage[T2A]{fontenc} % кириллическая "внутренняя" кодировка
+%\RequirePackage[cp1251]{inputenc} % пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ WIN-1251
+\RequirePackage[T2A]{fontenc} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \RequirePackage{amssymb}
-\RequirePackage{amsmath} % для принятых в AMS символов в формулах
-\RequirePackage{amsthm} % теоремы в стиле AMS - три типа и варианты "со звездочкой"
-\RequirePackage{mathrsfs} % каллиграфия в формулах - другой вариант
-\RequirePackage{euscript} % рукописные буквы в формулах 
-\RequirePackage{array} % таблицы
-%\RequirePackage{theorem} % теоремоподобные окружения
-\RequirePackage[all]{xy} % для рисования xy-pict
+\RequirePackage{amsmath} % пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ AMS пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\RequirePackage{amsthm} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ AMS - пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+\RequirePackage{mathrsfs} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\RequirePackage{euscript} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
+\RequirePackage{array} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+%\RequirePackage{theorem} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\RequirePackage[all]{xy} % пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ xy-pict
 %\RequirePackage{graphicx}
 \RequirePackage[a4paper,twoside,hmargin={21.5mm,21.5mm},vmargin={25mm,29mm}]{geometry}
-\RequirePackage{multicol} % для печати в две колонки и динамического переключения
-\RequirePackage{float} % для поддержки печати рисунков сквозь все колонки
-\RequirePackage[square,numbers,sort&compress]{natbib} % со 2.04.2012 г. ссылки в виде [номер] вместо [Автор, год]
+\RequirePackage{multicol} % пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\RequirePackage{float} % пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+\RequirePackage[square,numbers,sort&compress]{natbib} % пїЅпїЅ 2.04.2012 пїЅ. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ [пїЅпїЅпїЅпїЅпїЅ] пїЅпїЅпїЅпїЅпїЅпїЅ [пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ]
 \RequirePackage{capt-of}
 
-% специальный "флаг" для статей о конференциях и юбилеях
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \newboolean{special}
 \setboolean{special}{false}
 \newcommand{\Special}{\setboolean{special}{true}}
 
-% специальный "флаг" для англоязычных статей
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅ" пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 \newboolean{english}
 \setboolean{english}{false}
 \newcommand{\EngVer}{\setboolean{english}{true}}
 
-% переносы
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %\ifthenelse{\boolean{english}}{\RequirePackage[english]{babel}}{\RequirePackage[english,russian]{babel}} 
 \RequirePackage[english, russian]{babel}
 
@@ -48,7 +48,7 @@
 \widowpenalty=10000
 
 
-% переопределение стандартных размеров шрифтов
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \renewcommand{\footnotesize}{\fontsize{9pt}{9pt}\selectfont}
 \renewcommand{\small}{\fontsize{10pt}{11pt}\selectfont}
 \renewcommand{\normalsize}{\fontsize{11pt}{12pt}\selectfont}
@@ -57,7 +57,7 @@
 \renewcommand{\baselinestretch}{1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Оформление заголовочной части статей                                                
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ                                                
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\procname}[1]{\gdef\@procname{{#1}}}
 \newcommand{\udk}[1]{\gdef\@udk{{#1}}}
@@ -76,15 +76,15 @@
 \newcommand{\rusauthorinfo}[1]{\gdef\@rusauthorinfo{{#1}}}
 \newcommand{\engauthorinfo}[1]{\gdef\@engauthorinfo{{#1}}}
 
-% сделать неразрывные пробелы ещё и нерастяжимыми (например между фамилией и инициалами авторов)
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 \newcommand\unstretchspaces{\catcode`~=\active\def~{\;}} 
 
-% длина аннотации статьи (русской и английской)
+% пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 \newlength\abstractwidth
 \setlength{\abstractwidth}{\textwidth}
 \addtolength{\abstractwidth}{-40mm}
 
-% длина отступа для четного колонтитула
+% пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \newlength\oddleftindent
 \setlength{\oddleftindent}{\textwidth}
 \addtolength{\oddleftindent}{-129mm}
@@ -93,7 +93,7 @@
 
 
 
-% Вывод заголовка
+% пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \def\maketitle{
 \ifthenelse{\boolean{english}}
 	{
@@ -107,8 +107,8 @@
 	    \noindent\parbox{\abstractwidth}{\small{K\,e\,y~~w\,o\,r\,d\,s: }\@engkeywords}\\[5mm]
 	    \noindent\parbox{\abstractwidth}{\bfseries\@rusauthor. \MakeUppercase\@rustitle}\\[3.175mm]
 	    \noindent\parbox{\abstractwidth}{\small\@rusabstract}\\[3.175mm]
-	    \noindent\parbox{\abstractwidth}{\small{К\,л\,ю\,ч\,е\,в\,ы\,е~~c\,л\,о\,в\,а: }\@ruskeywords}\\[1mm]
-	    \rule{\abstractwidth}{\linethickness}\\[1mm]
+	    \noindent\parbox{\abstractwidth}{\small{пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ~~c\,пїЅ\,пїЅ\,пїЅ\,пїЅ: }\@ruskeywords}\\[1mm]
+            \rule{\abstractwidth}{\linethickness}\\[1mm]
 	}
 	{
 	\ifthenelse{\boolean{special}}
@@ -125,7 +125,9 @@
 		    \noindent\parbox{\textwidth}{\large\bfseries\@rusauthor}\\[3.175mm]
 		    \noindent\parbox{\textwidth}{\textit\@organization}\\[19mm]
 		    \noindent\parbox{\abstractwidth}{\small\@rusabstract}\\[3.175mm]
-		    \noindent\parbox{\abstractwidth}{\small{К\,л\,ю\,ч\,е\,в\,ы\,е~~c\,л\,о\,в\,а: }\@ruskeywords}\\[5mm]
+                    \noindent\parbox{\abstractwidth}{\small{К\,л\,ю\,ч\,е\,в\,ы\,е~~c\,л\,о\,в\,а: }\@ruskeywords}\\[5mm]
+
+		    %\noindent\parbox{\abstractwidth}{\small{пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ\,пїЅ~~c\,пїЅ\,пїЅ\,пїЅ\,пїЅ: }\@ruskeywords}\\[5mm]
 		    \noindent\parbox{\abstractwidth}{\bfseries\@engauthor. \MakeUppercase\@engtitle}\\[3.175mm]
 		    \noindent\parbox{\abstractwidth}{\small\@engabstract}\\[3.175mm]
 		    \noindent\parbox{\abstractwidth}{\small{K\,e\,y~~w\,o\,r\,d\,s: }\@engkeywords}\\[1mm]
@@ -134,13 +136,13 @@
     }
 }
 
-% Новое окружение - основной текст статьи (двухколоночный режим)
+% пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 \setlength{\columnsep}{5mm}
 \newenvironment{articletext}{\begin{multicols}{2}\normalsize}%
 				{\end{multicols}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Переопределение колонтитулов
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\ps@headings}{%
     \renewcommand{\@oddfoot}{\rule{120mm}{\linethickness}\put(4.4,0){\circle{9}\makebox(0,0){\thepage}}}%
@@ -151,18 +153,18 @@
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Оформление разделов
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Настройка разделов
-% Разделы в стилевом файле по юбилеям (Список основных работ юбиляра) по центру
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ) пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 \ifthenelse{\boolean{special}}{\newcommand\typeSection[1]{\bigskip\noindent\centering{\textbf{\textsc{#1}}}\par\medskip}}%
 {\newcommand\typeSection[1]{\bigskip\noindent{\textbf{\textsc{#1}}}\par\medskip}}
 
 \newcommand\typeSubSection[1]{\medskip\noindent{\textbf{#1}}\par\smallskip}
 \newcommand\typeParagraph[1]{\smallskip\noindent{\bfseries #1}}
 
-% Разделы
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \renewcommand\section[1]{\par\typeSection{#1}}
 \renewcommand\subsection[1]{\par\typeSubSection{#1}}
 \renewcommand\subsubsection[1]{\par\typeSubSection{#1}}
@@ -170,10 +172,10 @@
 \renewcommand\subparagraph[1]{\par\typeParagraph{#1}\nobreak}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Оформление библиографии - natbib - Со 2.04.2012 команды не используются
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - natbib - пїЅпїЅ 2.04.2012 пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% Оформление элементов пункта библиографии
+%%% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %\let\oldthebibliography=\thebibliography
 %\let\endoldthebibliography=\endthebibliography
 %\renewenvironment{thebibliography}[1]{%
@@ -191,7 +193,7 @@
 %\def\typeBibItem{\small\sloopy}
 
 \renewcommand\@biblabel[1]{#1.}
-% Переопределение горизонтальных и вертикальных промежутков в списке литературы
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \renewenvironment{thebibliography}[1]
     {\section{\ifthenelse{\boolean{english}}{References}{\bibname}}%
         \list{\@biblabel{\@arabic\c@enumiv}}{%
@@ -225,11 +227,11 @@
         \endlist
     }
 
-%% Действия, которые делаются в начале каждой статьи
+%% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 \newcommand{\@BeginDocument}{
     \pagestyle{headings}%
     \renewcommand{\theenumii}{\asbuk{enumii}}%
-    % Обнуление счётчиков
+    % пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     \setcounter{equation}{0}%
     \setcounter{table}{0}%
     \setcounter{figure}{0}%
@@ -245,22 +247,22 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Финальные заметки об авторах
+%% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% оформление имени автора
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 \newcommand\authorsname[1]{%
 \ifthenelse{\boolean{special}}
 {\flushright{\it #1}}
 {\noindent{\footnotesize\bfseries #1}\newline}}
 
-% на последней странице нет линейки и нумерации
+% пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \newcommand\lastpage{\thispagestyle{empty}}
 \newenvironment{aboutauthors}{\thispagestyle{empty}~\\[-13mm]\begin{multicols}{2}\footnotesize}%
 				{\end{multicols}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Для включения графиков пакетом graphicx
+%% пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ graphicx
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\DeclareGraphicsRule{.wmf}{bmp}{}{}
@@ -269,9 +271,10 @@
 %\DeclareGraphicsRule{.png}{bmp}{}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Плавающие иллюстрации
+%% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%\usepackage{caption}
+%\usepackage{subcaption} % float figures side by side
 \setcounter{topnumber}{9}
 \setcounter{totalnumber}{9}
 \renewcommand\topfraction{1.0}
@@ -284,7 +287,6 @@
 
 %\def\@caption@left@right@skip{\leftskip=3.5ex\rightskip=3.5ex}
 %\def\nocaptionskips{\def\@caption@left@right@skip{}}
-
 \renewcommand\@makecaption[2]{%
     \vskip\abovecaptionskip
     \sbox\@tempboxa{\small\textit{#1.} #2}%
@@ -298,7 +300,7 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Некоторые переопределения для унификации математики
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\geq}{\geqslant}
@@ -312,7 +314,7 @@
 
 \renewcommand{\vec}[1]{\mathbf{#1}}
 \renewcommand{\complement}{\mathsf{C}}
-\newcommand{\T}{^{\text{\rm т}}}
+\newcommand{\T}{^{\text{\rm пїЅ}}}
 
 \newcommand\myop[1]{\mathop{\operator@font #1}\nolimits}
 \newcommand\mylim[1]{\mathop{\operator@font #1}\limits}
@@ -332,7 +334,7 @@
 \newcommand\sign{\mylim{sign}}
 \newcommand\const{\myop{const}}
 
-% теория вероятностей
+% пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \newcommand{\erf}{\myop{erf}}
 \newcommand{\Expect}{\mathsf{E}}
 \newcommand{\Var}{\mathsf{D}}
@@ -363,61 +365,61 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Новые теоремоподобные окружения
+% пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifthenelse{\boolean{english}}
 {
-	\theoremstyle{plain} % Теоремы наклонным шрифтом
+	\theoremstyle{plain} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	\newtheorem{Theorem}{Theorem}
 	\newtheorem{Lemma}{Lemma}
 	\newtheorem{State}{State}
 	\newtheorem{Corollary}{Corollary}
 	\newtheorem{Axiom}{Axiom}
-	\theoremstyle{definition} % Теоремы прямым шрифтом
+	\theoremstyle{definition} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	\newtheorem{Definition}{Definition}
 	\newtheorem{Example}{Example}
 	\newtheorem{Remark}{Remark}
-	\theoremstyle{plain} % Версии "со звездочкой" % Теоремы наклонным шрифтом
+	\theoremstyle{plain} % пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	\newtheorem*{Theorem*}{Theorem}
 	\newtheorem*{Lemma*}{Lemma}
 	\newtheorem*{State*}{State}
 	\newtheorem*{Corollary*}{Corollary}
 	\newtheorem*{Axiom*}{Axiom}
-	\theoremstyle{definition} % Теоремы прямым шрифтом
+	\theoremstyle{definition} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	\newtheorem*{Definition*}{Definition}
 	\newtheorem*{Example*}{Example}
 	\newtheorem*{Remark*}{Remark}
 }
 {
-	\theoremstyle{plain} % Теоремы наклонным шрифтом
-	\newtheorem{Theorem}{Теорема}
-	\newtheorem{Lemma}{Лемма}
-	\newtheorem{State}{Утверждение}
-	\newtheorem{Corollary}{Следствие}
-	\newtheorem{Axiom}{Аксиома}
-	\theoremstyle{definition} % Теоремы прямым шрифтом
-	\newtheorem{Definition}{Определение}
-	\newtheorem{Example}{Пример}
-	\newtheorem{Remark}{Замечание}
-	\theoremstyle{plain} % Версии "со звездочкой" % Теоремы наклонным шрифтом
-	\newtheorem*{Theorem*}{Теорема}
-	\newtheorem*{Lemma*}{Лемма}
-	\newtheorem*{State*}{Утверждение}
-	\newtheorem*{Corollary*}{Следствие}
-	\newtheorem*{Axiom*}{Аксиома}
-	\theoremstyle{definition} % Теоремы прямым шрифтом
-	\newtheorem*{Definition*}{Определение}
-	\newtheorem*{Example*}{Пример}
-	\newtheorem*{Remark*}{Замечание}
+	\theoremstyle{plain} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	\newtheorem{Theorem}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem{Lemma}{пїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem{State}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem{Corollary}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem{Axiom}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\theoremstyle{definition} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	\newtheorem{Definition}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem{Example}{пїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem{Remark}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\theoremstyle{plain} % пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	\newtheorem*{Theorem*}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem*{Lemma*}{пїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem*{State*}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem*{Corollary*}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem*{Axiom*}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\theoremstyle{definition} % пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	\newtheorem*{Definition*}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem*{Example*}{пїЅпїЅпїЅпїЅпїЅпїЅ}
+	\newtheorem*{Remark*}{пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%   П Р О Ч Е Е
+%   пїЅ пїЅ пїЅ пїЅ пїЅ пїЅ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Выделение - всегда курсивом
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 \renewcommand\emph[1]{\textit{#1}}
 
-% Формулы, таблицы, рисунки на всю ширину
+% пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 \newcommand\bfullwidth{\end{multicols}}
 \newcommand\efullwidth{\begin{multicols}{2}}
