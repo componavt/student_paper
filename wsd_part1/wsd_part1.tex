@@ -1,14 +1,14 @@
 \documentclass{article}
 
-\usepackage{cmap} % С‡С‚РѕР±С‹ СЂР°Р±РѕС‚Р°Р» РїРѕРёСЃРє РїРѕ PDF
+\usepackage{cmap} % чтобы работал поиск по PDF
 
-\usepackage{caption}  %-  РІСЃС‚Р°РІРёС‚СЊ РІ krctran РїРµСЂРµРґ РѕРїРёСЃР°РЅРёРµРј РїРѕРґРїРёСЃРµР№ caption (\renewcommand\@makecaption)
-\usepackage{subcaption} % float figures side by side}  -  РІСЃС‚Р°РІРёС‚СЊ РІ krctran РїРµСЂРµРґ РѕРїРёСЃР°РЅРёРµРј РїРѕРґРїРёСЃРµР№ caption (\renewcommand\@makecaption)
+\usepackage{caption}  %-  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
+\usepackage{subcaption} % float figures side by side}  -  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
 \usepackage{krctran}
-%\usepackage[utf8]{inputenc} % Р·Р°РєРѕРјРјРµРЅС‚РёСЂРѕРІР°С‚СЊ РІ krctran.sty: \RequirePackage[cp1251]{inputenc}
-\usepackage[pdftex]{graphicx} % Р·Р°РєРѕРјРјРµРЅС‚РёСЂРѕРІР°С‚СЊ РІ krctran.sty
-%\usepackage{caption}  %-  РІСЃС‚Р°РІРёС‚СЊ РІ krctran РїРµСЂРµРґ РѕРїРёСЃР°РЅРёРµРј РїРѕРґРїРёСЃРµР№ caption (\renewcommand\@makecaption)
-%\usepackage{subcaption} % float figures side by side}  -  РІСЃС‚Р°РІРёС‚СЊ РІ krctran РїРµСЂРµРґ РѕРїРёСЃР°РЅРёРµРј РїРѕРґРїРёСЃРµР№ caption (\renewcommand\@makecaption)
+%\usepackage[utf8]{inputenc} % закомментировать в krctran.sty: \RequirePackage[cp1251]{inputenc}
+\usepackage[pdftex]{graphicx} % закомментировать в krctran.sty
+%\usepackage{caption}  %-  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
+%\usepackage{subcaption} % float figures side by side}  -  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{algorithm2e}
@@ -19,82 +19,82 @@
 
 \begin{document}
 
-\procname{РўСЂСѓРґС‹ РљР°СЂРµР»СЊСЃРєРѕРіРѕ РЅР°СѓС‡РЅРѕРіРѕ С†РµРЅС‚СЂР° Р РђРќ\\ \No 0. 2015. РЎ.~1--24}
-\udk{РЈР”Рљ 81.32}
+\procname{Труды Карельского научного центра РАН\\ \No 0. 2015. С.~1--24}
+\udk{УДК 81.32}
 
-\rustitle{РћР±Р·РѕСЂ РјРµС‚РѕРґРѕРІ Рё Р°Р»РіРѕСЂРёС‚РјРѕРІ СЂР°Р·СЂРµС€РµРЅРёСЏ \newline Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё: Р’РІРµРґРµРЅРёРµ}
+\rustitle{Обзор методов и алгоритмов разрешения \newline лексической многозначности: Введение}
 \engtitle{Word-sense disambiguation methods and algorithms review: Introduction}
 
-\rusauthor{Рў.~Р’.~РљР°СѓС€РёРЅРёСЃ$^2$,  Рђ.~Рќ.~РљРёСЂРёР»Р»РѕРІ$^1$,  Рќ.~Р.~РљРѕСЂР¶РёС†РєРёР№$^2$, Рђ.~Рђ.~РљСЂРёР¶Р°РЅРѕРІСЃРєРёР№$^1$, Рђ.~Р’.~РџРёР»РёРЅРѕРІРёС‡$^2$, Р.~Рђ.~РЎРёС…РѕРЅРёРЅР°$^2$,  Рђ.~Рњ.~РЎРїРёСЂРєРѕРІР°$^2$, Р’.~Р“.~РЎС‚Р°СЂРєРѕРІР°$^1$, Рў.~Р’.~РЎС‚РµРїРєРёРЅР°$^2$, РЎ.~РЎ.~РўРєР°С‡$^2$, Р®.~Р’.~Р§РёСЂРєРѕРІР°$^1$, Рђ.~Р›.~Р§СѓС…Р°СЂРµРІ$^1$,  Р”.~РЎ.~РЁРѕСЂРµС†$^2$,  Р”.~Р®.~РЇРЅРєРµРІРёС‡$^2$, Р•.~Рђ.~РЇСЂС‹С€РєРёРЅР°$^2$}
+\rusauthor{Т.~В.~Каушинис$^2$,  А.~Н.~Кириллов$^1$,  Н.~И.~Коржицкий$^2$, А.~А.~Крижановский$^1$, А.~В.~Пилинович$^2$, И.~А.~Сихонина$^2$,  А.~М.~Спиркова$^2$, В.~Г.~Старкова$^1$, Т.~В.~Степкина$^2$, С.~С.~Ткач$^2$, Ю.~В.~Чиркова$^1$, А.~Л.~Чухарев$^1$,  Д.~С.~Шорец$^2$,  Д.~Ю.~Янкевич$^2$, Е.~А.~Ярышкина$^2$}
 \engauthor{T.~V.~Kaushinis$^2$, A.~N.~Kirillov$^1$, N.~I.~Korzhitsky$^2$, A.~A.~Krizhanovsky$^1$, A.~V.~Pilinovich$^2$, I.~A.~Sikhonina$^2$, A.~M.~Spirkova$^2$, V.~G.~Starkova$^1$, T.~V.~Stepkina$^2$, S.~S.~Tkach$^2$, J.~V.~Chirkova$^1$, A.~L.~Chuharev$^1$, D.~S.~Shorets$^2$, D.~Y.~Yankevich$^2$, E.~A.~Yaryshkina$^2$}
 
 
-\organization{$^1$РРЅСЃС‚РёС‚СѓС‚ РїСЂРёРєР»Р°РґРЅС‹С… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РљР°СЂРµР»СЊСЃРєРѕРіРѕ РЅР°СѓС‡РЅРѕРіРѕ С†РµРЅС‚СЂР° Р РђРќ \\
-$^2$РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЈРЅРёРІРµСЂСЃРёС‚РµС‚}
+\organization{$^1$Институт прикладных математических исследований Карельского научного центра РАН \\
+$^2$Петрозаводский Государственный Университет}
 
 
-\rusabstract{Р Р°Р·СЂРµС€РµРЅРёРµ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё --- СЌС‚Рѕ Р·Р°РґР°С‡Р° РІС‹Р±РѕСЂР° РјРµР¶РґСѓ СЂР°Р·РЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё 
-СЃР»РѕРІ Рё СЃР»РѕРІРѕСЃРѕС‡РµС‚Р°РЅРёР№ РІ СЃР»РѕРІР°СЂРµ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РєРѕРЅС‚РµРєСЃС‚Р°. 
-Р’ СЃС‚Р°С‚СЊРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅ РєСЂР°С‚РєРёР№ РѕР±Р·РѕСЂ РјРµС‚РѕРґРѕРІ Рё Р°Р»РіРѕСЂРёС‚РјРѕРІ СЂР°Р·СЂРµС€РµРЅРёСЏ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё. 
+\rusabstract{Разрешение лексической многозначности --- это задача выбора между разными значениями 
+слов и словосочетаний в словаре в зависимости от контекста. 
+В статье представлен краткий обзор методов и алгоритмов разрешения лексической многозначности. 
 
-РџСЂРµРґСЃС‚Р°РІР»РµРЅС‹ (1) РјРµС‚РѕРґС‹, РѕСЃРЅРѕРІР°РЅРЅС‹Рµ РЅР° РјР°С€РёРЅРЅРѕРј РѕР±СѓС‡РµРЅРёРё, 
-(2) РјРµС‚РѕРґС‹, РЅРµ РёСЃРїРѕР»СЊР·СѓСЋС‰РёРµ РЅРёРєР°РєРёС… СЂР°Р·РјРµС‡РµРЅРЅС‹С… РєРѕСЂРїСѓСЃРѕРІ РґР»СЏ СЂР°Р·Р»РёС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№ СЃР»РѕРІ, Рё 
-(3) РјРµС‚РѕРґС‹, РёСЃРїРѕР»СЊР·СѓСЋС‰РёРµ РІРЅРµС€РЅРёРµ СЃР»РѕРІР°СЂРЅС‹Рµ РёСЃС‚РѕС‡РЅРёРєРё РёРЅС„РѕСЂРјР°С†РёРё (РјР°С€РёРЅРѕС‡РёС‚Р°РµРјС‹Рµ СЃР»РѕРІР°СЂРё, С‚РµР·Р°СѓСЂСѓСЃС‹, РѕРЅС‚РѕР»РѕРіРёРё). 
-РЎС‚Р°С‚СЊСЏ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏРµС‚СЃСЏ РЅР° РїСЂР°РІР°С… СЃРІРѕР±РѕРґРЅРѕР№ Р»РёС†РµРЅР·РёРё вЂњCC AttributionвЂќ.
+Представлены (1) методы, основанные на машинном обучении, 
+(2) методы, не использующие никаких размеченных корпусов для различения значений слов, и 
+(3) методы, использующие внешние словарные источники информации (машиночитаемые словари, тезаурусы, онтологии). 
+Статья распространяется на правах свободной лицензии “CC Attribution”.
 }
 \engabstract{The word-sense disambiguation  task is the classification task, where the goal is to predict the meaning of words and phrases with the help of surrounding text. The purpose of this short review is to acquaint the reader with the general directions of word sense disambiguation methods and algorithms. The paper consists of three main parts: (1) supervised (machine learning) approaches to word-sense disambiguation, (2) unsupervised approaches based on unlabeled corpora and (3) knowledge-based approaches to word-sense disambiguation, where machine-readable dictionaries, thesauri, ontologies are used. This work is licensed under the CC Attribution license.}
 
-\ruskeywords{Р°Р»РіРѕСЂРёС‚Рј, РјРµС‚РѕРґ, СЂР°Р·СЂРµС€РµРЅРёРµ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё.}
+\ruskeywords{алгоритм, метод, разрешение лексической многозначности.}
 \engkeywords{algorithm, method, word-sense disambiguation.}
 
 \maketitle
 
 \begin{articletext}
-\section{Р’РІРµРґРµРЅРёРµ}
-Р’ СЃС‚Р°С‚СЊРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅ РѕР±Р·РѕСЂ РјРµС‚РѕРґРѕРІ Рё Р°Р»РіРѕСЂРёС‚РјРѕРІ СЂР°Р·СЂРµС€РµРЅРёСЏ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё (word-sense disambiguation РёР»Рё WSD). Р’РµСЂРЅС‹Р№ РІС‹Р±РѕСЂ РІ СЃР»РѕРІР°СЂРµ РѕРґРЅРѕРіРѕ РёР· Р·РЅР°С‡РµРЅРёР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕРіРѕ СЃР»РѕРІР° РёР»Рё С„СЂР°Р·С‹ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РєРѕРЅС‚РµРєСЃС‚Р° СЏРІР»СЏРµС‚СЃСЏ СѓСЃРїРµС€РЅС‹Рј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј СЂРµС€РµРЅРёСЏ WSD-Р·Р°РґР°С‡Рё.
+\section{Введение}
+В статье представлен обзор методов и алгоритмов разрешения лексической многозначности (word-sense disambiguation или WSD). Верный выбор в словаре одного из значений многозначного слова или фразы в зависимости от контекста является успешным результатом решения WSD-задачи.
 
-РџСЂРёРІРµРґРµРј РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРёРјРµСЂРѕРІ СѓРїРѕС‚СЂРµР±Р»РµРЅРёСЏ СЃР»РѕРІ <<РєРѕСЃР°>> Рё <<РєРѕСЃРѕР№>>, РЅР°Р№РґРµРЅРЅС‹С… СЃ РїРѕРјРѕС‰СЊСЋ РќР°С†РёРѕРЅР°Р»СЊРЅРѕРіРѕ РєРѕСЂРїСѓСЃР° СЂСѓСЃСЃРєРѕРіРѕ СЏР·С‹РєР° (http://ruscorpora.ru) РїРѕ Р·Р°РїСЂРѕСЃСѓ <<РєРѕСЃР°>>:
+Приведем несколько примеров употребления слов <<коса>> и <<косой>>, найденных с помощью Национального корпуса русского языка (http://ruscorpora.ru) по запросу <<коса>>:
 
 \begin{enumerate}
-\item РџРѕРї СЃР°Рј РІ РїРµСЂРІРѕР№ \textit{\underline{РєРѕСЃРµ}} РёРґРµС‚, РЅРѕ РїСЂРёС…РѕР¶Р°РЅРµ РЅРµ С‚РѕСЂРѕРїСЏС‚СЃСЏ, СЃРјРѕС‚СЂСЏС‚ РЅР° СЃРѕР»РЅС‹С€РєРѕ Рё С‡Р°СЃР° С‡РµСЂРµР· РїРѕР»С‚РѕСЂР° СѓР¶Рµ РЅР°РјРµРєР°СЋС‚, С‡С‚Рѕ РѕР±РµРґР°С‚СЊ РїРѕСЂР°. {\footnotesize[\textit{Рњ. Р•. РЎР°Р»С‚С‹РєРѕРІ-Р©РµРґСЂРёРЅ. РњРµР»РѕС‡Рё Р¶РёР·РЅРё (1886-1887)}]}
-\item РќРѕ СЂР°Р±РѕС‚Р° РґР°Р¶Рµ Рё РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РёРґРµС‚ РІСЃРµ РІСЏР»РµРµ Рё РІСЏР»РµРµ; РЅРµРєРѕС‚РѕСЂС‹Рµ Рё \textit{\underline{РєРѕСЃС‹}} РїРѕР±СЂРѕСЃР°Р»Рё. {\footnotesize[\textit{Рњ. Р•. РЎР°Р»С‚С‹РєРѕРІ-Р©РµРґСЂРёРЅ. РњРµР»РѕС‡Рё Р¶РёР·РЅРё (1886-1887)}]}
-\item Р’ РѕСЃРѕР±РµРЅРЅРѕСЃС‚Рё Р¶РµСЃС‚РѕРєРѕ Р±С‹Р»Рѕ РєСЂРµРїРѕСЃС‚РЅРѕРµ РїСЂР°РІРѕ РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ РґРІРѕСЂРѕРІС‹С… Р»СЋРґРµР№: РґР°Р¶Рµ РІРѕР»РѕСЃС‹ РєСЂРµРїРѕСЃС‚РЅС‹С… РґРµРІРѕРє СЌРєСЃРїР»СѓР°С‚РёСЂРѕРІР°Р»Рё, РїСЂРѕРґР°РІР°СЏ РёС… \textit{\underline{РєРѕСЃС‹}} РїР°СЂРёРєРјР°С…РµСЂР°Рј. {\footnotesize[\textit{Рњ. Р•. РЎР°Р»С‚С‹РєРѕРІ-Р©РµРґСЂРёРЅ. РњРµР»РѕС‡Рё Р¶РёР·РЅРё (1886-1887)}]}
-\item Р­С‚Рѕ РѕРґРёРЅРѕРєР°СЏ СЃРєР°Р»Р°, СЃРѕРµРґРёРЅСЏСЋС‰Р°СЏСЃСЏ СЃ РјР°С‚РµСЂРёРєРѕРј РЅР°РјС‹РІРЅРѕР№ \textit{\underline{РєРѕСЃРѕР№}} РёР· РїРµСЃРєР° Рё РіР°Р»СЊРєРё. {\footnotesize[\textit{Р’. Рљ. РђСЂСЃРµРЅСЊРµРІ, В«РџРѕ РЈСЃСЃСѓСЂРёР№СЃРєРѕРјСѓ РєСЂР°СЋВ», 1917 Рі.}]}
-\item РџРµСЂРІР°СЏ С‡РµСЂРµРїР°С€РєР° РїРѕРґСЃРєРѕС‡РёР»Р° Рє РіРІР°СЂРґРµР№С†Сѓ Рё РІРѕС‚РєРЅСѓР»Р° РµРјСѓ РІ СЃРїРёРЅСѓ СЃРІРµСЂРєР°СЋС‰РёР№ \textit{\underline{РєРѕСЃРѕР№}} РјРµС‡. {\footnotesize[\textit{Р’РёРєС‚РѕСЂ РџРµР»РµРІРёРЅ. S.N.U.F.F, 2011}]}
+\item Поп сам в первой \textit{\underline{косе}} идет, но прихожане не торопятся, смотрят на солнышко и часа через полтора уже намекают, что обедать пора. {\footnotesize[\textit{М. Е. Салтыков-Щедрин. Мелочи жизни (1886-1887)}]}
+\item Но работа даже и после этого идет все вялее и вялее; некоторые и \textit{\underline{косы}} побросали. {\footnotesize[\textit{М. Е. Салтыков-Щедрин. Мелочи жизни (1886-1887)}]}
+\item В особенности жестоко было крепостное право относительно дворовых людей: даже волосы крепостных девок эксплуатировали, продавая их \textit{\underline{косы}} парикмахерам. {\footnotesize[\textit{М. Е. Салтыков-Щедрин. Мелочи жизни (1886-1887)}]}
+\item Это одинокая скала, соединяющаяся с материком намывной \textit{\underline{косой}} из песка и гальки. {\footnotesize[\textit{В. К. Арсеньев, «По Уссурийскому краю», 1917 г.}]}
+\item Первая черепашка подскочила к гвардейцу и воткнула ему в спину сверкающий \textit{\underline{косой}} меч. {\footnotesize[\textit{Виктор Пелевин. S.N.U.F.F, 2011}]}
 \end{enumerate}
 
-РџРµСЂРІС‹Рµ С‡РµС‚С‹СЂРµ РїСЂРёРјРµСЂР° РґР°СЋС‚ С‚СЂРё СЂР°Р·РЅС‹С… Р·РЅР°С‡РµРЅРёСЏ СЃСѓС‰РµСЃС‚РІРёС‚РµР»СЊРЅРѕРіРѕ <<РєРѕСЃР°>>: СЂСЏРґ РєРѕСЃР°СЂРµР№, СЃРµР»СЊСЃРєРѕС…РѕР·СЏР№СЃС‚РІРµРЅРЅРѕРµ РѕСЂСѓРґРёРµ, Р·Р°РїР»РµС‚РµРЅРЅС‹Рµ РІРѕР»РѕСЃС‹, РїСЂРѕС‚СЏР¶РµРЅРЅР°СЏ СЂРµС‡РЅР°СЏ РѕС‚РјРµР»СЊ. РџРѕСЃР»РµРґРЅРёР№ РїСЂРёРјРµСЂ СЃРѕРґРµСЂР¶РёС‚ РїСЂРёР»Р°РіР°С‚РµР»СЊРЅРѕРµ <<РєРѕСЃРѕР№>>, СЃРѕРІРїР°РґР°СЋС‰РµРµ СЃ РѕРґРЅРѕР№ РёР· С„РѕСЂРј СЃСѓС‰РµСЃС‚РІРёС‚РµР»СЊРЅРѕРіРѕ <<РєРѕСЃР°>>. Р’СЃРµ СЌС‚Рё Р·РЅР°С‡РµРЅРёСЏ Рё С‡Р°СЃС‚СЊ СЂРµС‡Рё С‡РёС‚Р°С‚РµР»СЊ Р»РµРіРєРѕ РѕРїСЂРµРґРµР»СЏРµС‚ РїРѕ РєРѕРЅС‚РµРєСЃС‚Сѓ. 
+Первые четыре примера дают три разных значения существительного <<коса>>: ряд косарей, сельскохозяйственное орудие, заплетенные волосы, протяженная речная отмель. Последний пример содержит прилагательное <<косой>>, совпадающее с одной из форм существительного <<коса>>. Все эти значения и часть речи читатель легко определяет по контексту. 
 
-РРјРµРЅРЅРѕ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚СЊ СЃР»РѕРІ, РёС… РЅРµРѕРґРЅРѕР·РЅР°С‡РЅРѕСЃС‚СЊ Рё Р·Р°РІРёСЃРёРјРѕСЃС‚СЊ Р·РЅР°С‡РµРЅРёР№ СЃР»РѕРІ РѕС‚ РєРѕРЅС‚РµРєСЃС‚Р° СЏРІР»СЏСЋС‚СЃСЏ РїСЂРёС‡РёРЅРѕР№ РІРѕР·РЅРёРєРЅРѕРІРµРЅРёСЏ С‚Р°РєРѕР№ Р·Р°РґР°С‡Рё Рё РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ РѕР±СѓСЃР»Р°РІР»РёРІР°СЋС‚ СЃР»РѕР¶РЅРѕСЃС‚СЊ РµРµ СЂРµС€РµРЅРёСЏ. РЈРІРµСЂРµРЅРЅРѕРµ СЂРµС€РµРЅРёРµ WSD-Р·Р°РґР°С‡Рё РЅРµРѕР±С…РѕРґРёРјРѕ РІРѕ РјРЅРѕРіРёС… РїСЂРёР»РѕР¶РµРЅРёСЏС…, СЃРІСЏР·Р°РЅРЅС‹С… СЃ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕР№ РѕР±СЂР°Р±РѕС‚РєРѕР№ С‚РµРєСЃС‚Р° (РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Р№ РїРѕРёСЃРє, РјР°С€РёРЅРЅС‹Р№ РїРµСЂРµРІРѕРґ Рё С‚РѕРјСѓ РїРѕРґРѕР±РЅРѕРµ) Рё, РЅР° РЅР°С€ РІР·РіР»СЏРґ, СЏРІР»СЏРµС‚СЃСЏ РїСЂРµРґС‚РµС‡РµР№ РёСЃРєСѓСЃСЃС‚РІРµРЅРЅРѕРіРѕ РёРЅС‚РµР»Р»РµРєС‚Р°.
+Именно многозначность слов, их неоднозначность и зависимость значений слов от контекста являются причиной возникновения такой задачи и одновременно обуславливают сложность ее решения. Уверенное решение WSD-задачи необходимо во многих приложениях, связанных с автоматической обработкой текста (информационный поиск, машинный перевод и тому подобное) и, на наш взгляд, является предтечей искусственного интеллекта.
 
-Р”Р»СЏ СЌС‚РѕР№ Р·Р°РґР°С‡Рё РёР·РІРµСЃС‚РЅРѕ Р±РѕР»СЊС€РѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р°Р»РіРѕСЂРёС‚РјРѕРІ Рё РјРµС‚РѕРґРѕРІ СЂРµС€РµРЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ РјРѕР¶РЅРѕ СЂР°Р·РґРµР»РёС‚СЊ РЅР° \cite{Lukash 2011}, \cite{Navigli 2009}: 
+Для этой задачи известно большое количество алгоритмов и методов решения, которые можно разделить на \cite{Lukash 2011}, \cite{Navigli 2009}: 
 
 \begin{itemize}
-\item WSD-РјРµС‚РѕРґС‹ СЃ СѓС‡РёС‚РµР»РµРј (\textit{supervised}) --- РјРµС‚РѕРґС‹, Р±Р°Р·РёСЂСѓСЋС‰РёРµСЃСЏ РЅР° РјР°С€РёРЅРЅРѕРј РѕР±СѓС‡РµРЅРёРё Рё СЂР°Р±РѕС‚Р°СЋС‰РёРµ РЅР° СЂР°Р·РјРµС‡РµРЅРЅС‹С… РєРѕСЂРїСѓСЃР°С… С‚РµРєСЃС‚РѕРІ; 
-\item WSD-РјРµС‚РѕРґС‹ Р±РµР· СѓС‡РёС‚РµР»СЏ (\textit{unsupervised}), РЅРµ РёСЃРїРѕР»СЊР·СѓСЋС‰РёРµ РЅРёРєР°РєРёС… СЂР°Р·РјРµС‡РµРЅРЅС‹С… РєРѕСЂРїСѓСЃРѕРІ РґР»СЏ СЂР°Р·Р»РёС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№ СЃР»РѕРІ.
+\item WSD-методы с учителем (\textit{supervised}) --- методы, базирующиеся на машинном обучении и работающие на размеченных корпусах текстов; 
+\item WSD-методы без учителя (\textit{unsupervised}), не использующие никаких размеченных корпусов для различения значений слов.
 \end{itemize}
 
-Р”СЂСѓРіР°СЏ РєР»Р°СЃСЃРёС„РёРєР°С†РёСЏ РјРµС‚РѕРґРѕРІ СЃС‚СЂРѕРёС‚СЃСЏ РЅР° РїСЂРѕС‚РёРІРѕРїРѕСЃС‚Р°РІР»РµРЅРёРё РёСЃРїРѕР»СЊР·СѓРµРјС‹С… СЂРµСЃСѓСЂСЃРѕРІ \cite{Navigli 2009}:
+Другая классификация методов строится на противопоставлении используемых ресурсов \cite{Navigli 2009}:
 \begin{itemize}
-\item WSD-РјРµС‚РѕРґС‹, РѕСЃРЅРѕРІР°РЅРЅС‹Рµ РЅР° Р·РЅР°РЅРёСЏС… (\textit{knowledge-based}); РІ СЌС‚РёС… РјРµС‚РѕРґР°С… РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ РІРЅРµС€РЅРёРµ СЃР»РѕРІР°СЂРЅС‹Рµ РёСЃС‚РѕС‡РЅРёРєРё РёРЅС„РѕСЂРјР°С†РёРё (РјР°С€РёРЅРѕС‡РёС‚Р°РµРјС‹Рµ СЃР»РѕРІР°СЂРё, С‚РµР·Р°СѓСЂСѓСЃС‹, РѕРЅС‚РѕР»РѕРіРёРё);
-\item WSD-РјРµС‚РѕРґС‹, РѕСЃРЅРѕРІР°РЅРЅС‹Рµ РЅР° РєРѕСЂРїСѓСЃР°С… С‚РµРєСЃС‚РѕРІ (\textit{corpus-based}).
+\item WSD-методы, основанные на знаниях (\textit{knowledge-based}); в этих методах используются внешние словарные источники информации (машиночитаемые словари, тезаурусы, онтологии);
+\item WSD-методы, основанные на корпусах текстов (\textit{corpus-based}).
 \end{itemize}
 
-РўР°РєР¶Рµ РїСЂРёРјРµРЅСЏСЋС‚СЃСЏ РєРѕРјР±РёРЅР°С†РёРё СЌС‚РёС… РјРµС‚РѕРґРѕРІ.
+Также применяются комбинации этих методов.
 
-РќР° СЃРµРіРѕРґРЅСЏС€РЅРёР№ РґРµРЅСЊ РЅР° СЂСѓСЃСЃРєРѕРј СЏР·С‹РєРµ РЅРµС‚, РїРѕ-РІРёРґРёРјРѕРјСѓ, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕР±СЉС‘РјРЅС‹С… Рё СЃРµСЂСЊС‘Р·РЅС‹С… РѕР±Р·РѕСЂРѕРІ РїРѕ СЂР°Р·СЂРµС€РµРЅРёСЋ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё. РќР°РёР±РѕР»РµРµ РїРѕР»РЅРѕРµ РѕРїРёСЃР°РЅРёРµ РёСЃС‚РѕСЂРёРё СЂР°Р·РІРёС‚РёСЏ РјРµС‚РѕРґРѕРІ (20 СЃС‚СЂР°РЅРёС†) РµСЃС‚СЊ РІ РґРёСЃСЃРµСЂС‚Р°С†РёРё Р”.~ Р®. РўСѓСЂРґР°РєРѕРІР° \cite{Trudakov 2010}. РўР°РєРѕРµ РїРѕР»РѕР¶РµРЅРёРµ РґРµР» РїРѕСЃР»СѓР¶РёР»Рѕ РѕРґРЅРѕР№ РёР· РїСЂРёС‡РёРЅ РЅР°РїРёСЃР°РЅРёСЏ СЌС‚РѕР№ СЃС‚Р°С‚СЊРё, РєРѕС‚РѕСЂР°СЏ Р±СѓРґРµС‚ Р·Р°РґРµР»РѕРј РґР»СЏ РїРѕР»РЅРѕРІРµСЃРЅРѕРіРѕ РѕР±Р·РѕСЂР° РїРѕ РґР°РЅРЅРѕР№ С‚РµРјРµ.
+На сегодняшний день на русском языке нет, по-видимому, достаточно объёмных и серьёзных обзоров по разрешению многозначности. Наиболее полное описание истории развития методов (20 страниц) есть в диссертации Д.~ Ю. Турдакова \cite{Trudakov 2010}. Такое положение дел послужило одной из причин написания этой статьи, которая будет заделом для полновесного обзора по данной теме.
 
-Р”Р°Р»РµРµ Р±СѓРґСѓС‚ РїСЂРµРґСЃС‚Р°РІР»РµРЅС‹ РїСЂРёРјРµСЂС‹ РјРµС‚РѕРґРѕРІ Рё Р°Р»РіРѕСЂРёС‚РјРѕРІ СЂР°Р·СЂРµС€РµРЅРёСЏ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё, СЂР°Р·Р±РёС‚С‹Рµ РЅР° С‚СЂРё РіСЂСѓРїРїС‹: 
+Далее будут представлены примеры методов и алгоритмов разрешения лексической многозначности, разбитые на три группы: 
 \begin{itemize}
-\itemСЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РјР°С€РёРЅРЅРѕРіРѕ РѕР±СѓС‡РµРЅРёСЏ: РјРµС‚РѕРґ Р°РЅСЃР°РјР±Р»СЏ Р±Р°Р№РµСЃРѕРІСЃРєРёС… РєР»Р°СЃСЃРёС„РёРєР°С‚РѕСЂРѕРІ, РЅРµР№СЂРѕРЅРЅС‹Рµ СЃРµС‚Рё, Р±СѓСЃС‚РёРЅРі РєР°Рє РјРµС‚РѕРґ СѓР»СѓС‡С€РµРЅРёСЏ С‚РѕС‡РЅРѕСЃС‚Рё Р°Р»РіРѕСЂРёС‚РјР° РѕР±СѓС‡РµРЅРёСЏ, СЃСЂР°РІРЅРµРЅРёРµ РјРµС‚РѕРґРѕРІ РјР°С€РёРЅРЅРѕРіРѕ РѕР±СѓС‡РµРЅРёСЏ;
-\itemР±РµР· РјР°С€РёРЅРЅРѕРіРѕ РѕР±СѓС‡РµРЅРёСЏ: СЂР°Р·Р»РёС‡РµРЅРёРµ Р·РЅР°С‡РµРЅРёР№ РЅР° РѕСЃРЅРѕРІРµ РєРѕРЅС‚РµРєСЃС‚РЅС‹С… РІРµРєС‚РѕСЂРѕРІ, СЂР°СЃС€РёСЂРµРЅРЅС‹С… СЃР»РѕРІР°СЂРЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё; РїРѕРёСЃРє Рё РєР»Р°СЃС‚РµСЂРёР·Р°С†РёСЏ РїРѕС…РѕР¶РёС… СЃР»РѕРІ; РєР»Р°СЃС‚РµСЂРёР·Р°С†РёСЏ С„СЂР°РіРјРµРЅС‚РѕРІ Р±РёРѕРјРµРґРёС†РёРЅСЃРєРёС… С‚РµРєСЃС‚РѕРІ; РєР»Р°СЃС‚РµСЂРёР·Р°С†РёСЏ РїРѕСЃСЂРµРґСЃС‚РІРѕРј РєРѕРјРёС‚РµС‚РѕРІ;
-\itemРјРµС‚РѕРґС‹, РѕСЃРЅРѕРІР°РЅРЅС‹Рµ РЅР° Р·РЅР°РЅРёСЏС…: Р»РµРєСЃРёС‡РµСЃРєРёРµ С†РµРїРѕС‡РєРё, СЃРѕС‡РµС‚Р°РµРјРѕСЃС‚РЅС‹Рµ РѕРіСЂР°РЅРёС‡РµРЅРёСЏ РЅР° РѕСЃРЅРѕРІРµ Р±Р°Р№РµСЃРѕРІСЃРєРёС… СЃРµС‚РµР№.
+\itemс использованием машинного обучения: метод ансамбля байесовских классификаторов, нейронные сети, бустинг как метод улучшения точности алгоритма обучения, сравнение методов машинного обучения;
+\itemбез машинного обучения: различение значений на основе контекстных векторов, расширенных словарными значениями; поиск и кластеризация похожих слов; кластеризация фрагментов биомедицинских текстов; кластеризация посредством комитетов;
+\itemметоды, основанные на знаниях: лексические цепочки, сочетаемостные ограничения на основе байесовских сетей.
 \end{itemize}
- Р”Р°РЅРЅР°СЏ СЃС‚Р°С‚СЊСЏ СЏРІР»СЏРµС‚СЃСЏ <<РІРІРµРґРµРЅРёРµРј>> РІ РїСЂРѕР±Р»РµРјР°С‚РёРєСѓ WSD, РїРѕСЃРєРѕР»СЊРєСѓ СЌС‚Р° С‚РµРјР° СЏРІР»СЏРµС‚СЃСЏ С‡СЂРµР·РІС‹С‡Р°Р№РЅРѕ РѕР±С€РёСЂРЅРѕР№ Рё СЃСѓС‰РµСЃС‚РІСѓСЋС‚ СЃРѕС‚РЅРё РёРЅС‚РµСЂРµСЃРЅС‹С… СЂР°Р±РѕС‚ РїРѕ РєР°Р¶РґРѕРјСѓ РёР· СѓРєР°Р·Р°РЅРЅС‹С… РЅР°РїСЂР°РІР»РµРЅРёР№.
+ Данная статья является <<введением>> в проблематику WSD, поскольку эта тема является чрезвычайно обширной и существуют сотни интересных работ по каждому из указанных направлений.
 
 \bfullwidth
 \begin{center}
-\section{WSD-РјРµС‚РѕРґС‹ СЃ СѓС‡РёС‚РµР»РµРј}
+\section{WSD-методы с учителем}
 \end{center}
 \efullwidth
 
@@ -108,7 +108,7 @@ $^2$РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЈРЅРёРІРµСЂСЃРё
 
 \bfullwidth
 \begin{center}
-\section{WSD-РјРµС‚РѕРґС‹ Р±РµР· СѓС‡РёС‚РµР»СЏ}
+\section{WSD-методы без учителя}
 \end{center}
 \efullwidth
 
@@ -121,7 +121,7 @@ $^2$РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЈРЅРёРІРµСЂСЃРё
 
 \bfullwidth
 \begin{center}
-\section{WSD-РјРµС‚РѕРґС‹, РѕСЃРЅРѕРІР°РЅРЅС‹Рµ РЅР° Р·РЅР°РЅРёСЏС…}
+\section{WSD-методы, основанные на знаниях}
 \end{center}
 \efullwidth
 
@@ -131,55 +131,64 @@ $^2$РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЈРЅРёРІРµСЂСЃРё
 
 \input{./chapter/Sikhonina_bayes_seti}
 
-\section{Р—Р°РєР»СЋС‡РµРЅРёРµ}
+\section{Заключение}
 
-Р Р°Р·СЂРµС€РµРЅРёРµ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё - СЌС‚Рѕ Р·Р°РґР°С‡Р° РІС‹Р±РѕСЂР° РјРµР¶РґСѓ СЂР°Р·РЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё СЃР»РѕРІ Рё СЃР»РѕРІРѕСЃРѕС‡РµС‚Р°РЅРёР№ РІ СЃР»РѕРІР°СЂРµ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РєРѕРЅС‚РµРєСЃС‚Р°. Р—Р°РґР°С‡Р° СЂР°Р·СЂРµС€РµРЅРёСЏ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё СЏРІР»СЏРµС‚СЃСЏ РѕС‚РєСЂС‹С‚РѕР№ РїСЂРѕР±Р»РµРјРѕР№, С‚Рѕ РµСЃС‚СЊ РєСЂР°Р№РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕР№ Рё РїСЂРёРІР»РµРєР°С‚РµР»СЊРЅРѕР№ СЃ РЅР°СѓС‡РЅРѕР№ С‚РѕС‡РєРё Р·СЂРµРЅРёСЏ.
+Разрешение лексической многозначности - это задача выбора между разными значениями слов и словосочетаний в словаре в зависимости от контекста. Задача разрешения лексической многозначности является открытой проблемой, то есть крайне интересной и привлекательной с научной точки зрения.
 
-Р’ СЃС‚Р°С‚СЊРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅ РєСЂР°С‚РєРёР№ РѕР±Р·РѕСЂ РјРµС‚РѕРґРѕРІ Рё Р°Р»РіРѕСЂРёС‚РјРѕРІ СЂР°Р·СЂРµС€РµРЅРёСЏ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё. Р’Рѕ-РїРµСЂРІС‹С…, РјРµС‚РѕРґС‹, РѕСЃРЅРѕРІР°РЅРЅС‹Рµ РЅР° РјР°С€РёРЅРЅРѕРј РѕР±СѓС‡РµРЅРёРё.  Р’Рѕ-РІС‚РѕСЂС‹С…, РјРµС‚РѕРґС‹, РЅРµ РёСЃРїРѕР»СЊР·СѓСЋС‰РёРµ РЅРёРєР°РєРёС… СЂР°Р·РјРµС‡РµРЅРЅС‹С… РєРѕСЂРїСѓСЃРѕРІ РґР»СЏ СЂР°Р·Р»РёС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёР№ СЃР»РѕРІ. Р’-С‚СЂРµС‚СЊРёС…, РјРµС‚РѕРґС‹, РёСЃРїРѕР»СЊР·СѓСЋС‰РёРµ РІРЅРµС€РЅРёРµ СЃР»РѕРІР°СЂРЅС‹Рµ РёСЃС‚РѕС‡РЅРёРєРё РёРЅС„РѕСЂРјР°С†РёРё (РјР°С€РёРЅРѕС‡РёС‚Р°РµРјС‹Рµ СЃР»РѕРІР°СЂРё, С‚РµР·Р°СѓСЂСѓСЃС‹, РѕРЅС‚РѕР»РѕРіРёРё).
+В статье представлен краткий обзор методов и алгоритмов разрешения лексической многозначности. Во-первых, методы, основанные на машинном обучении.  Во-вторых, методы, не использующие никаких размеченных корпусов для различения значений слов. В-третьих, методы, использующие внешние словарные источники информации (машиночитаемые словари, тезаурусы, онтологии).
 
-Р Р°Р±РѕС‚Р° РЎС‚Р°СЂРєРѕРІРѕР№ Р’.Р“. РїРѕРґРґРµСЂР¶Р°РЅР° РіСЂР°РЅС‚РѕРј Р Р“РќР¤ (РїСЂРѕРµРєС‚ в„– 15-04-12029), СЂР°Р±РѕС‚Р° РљРёСЂРёР»Р»РѕРІР° Рђ.Рќ. Рё Р§РёСЂРєРѕРІРѕР№ Р®.Р’. РїРѕРґРґРµСЂР¶Р°РЅР° РіСЂР°РЅС‚РѕРј Р Р“РќР¤ (РїСЂРѕРµРєС‚ в„– 15-04-12006). Р Р°Р±РѕС‚Р° РљСЂРёР¶Р°РЅРѕРІСЃРєРѕРіРѕ Рђ. Рђ. РІС‹РїРѕР»РЅРµРЅР° РїСЂРё С‡Р°СЃС‚РёС‡РЅРѕР№ С„РёРЅР°РЅСЃРѕРІРѕР№ РїРѕРґРґРµСЂР¶РєРµ РџСЂРѕРіСЂР°РјРјС‹ С„СѓРЅРґР°РјРµРЅС‚Р°Р»СЊРЅС‹С… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РЎРµРєС†РёРё Р»РёС‚РµСЂР°С‚СѓСЂС‹ Рё СЏР·С‹РєР° РћРР¤Рќ Р РђРќ В«РЇР·С‹Рє  Рё РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ С‚РµС…РЅРѕР»РѕРіРёРёВ» 2015-2017 (РїСЂРѕРµРєС‚ В«РљРѕСЂРїСѓСЃ РІРµРїСЃСЃРєРѕРіРѕ СЏР·С‹РєР°: СЂР°Р·СЂР°Р±РѕС‚РєР° Рё С„РѕСЂРјРёСЂРѕРІР°РЅРёРµ РјРѕСЂС„РѕР»РѕРіРёС‡РµСЃРєРѕР№ Р±Р°Р·С‹ СЌР»РµРєС‚СЂРѕРЅРЅРѕРіРѕ СЂРµСЃСѓСЂСЃР°В»).
+Работа Старковой В.Г. поддержана грантом РГНФ (проект № 15-04-12029), работа Кириллова А.Н. и Чирковой Ю.В. поддержана грантом РГНФ (проект № 15-04-12006). Работа Крижановского А. А. выполнена при частичной финансовой поддержке Программы фундаментальных исследований Секции литературы и языка ОИФН РАН «Язык  и информационные технологии» 2015-2017 (проект «Корпус вепсского языка: разработка и формирование морфологической базы электронного ресурса»).
  
 \begin{thebibliography}{9}
 
 \bibitem{Averin 2006}
-\textit{РђРІРµСЂРёРЅ Рђ. Рќ.} Р Р°Р·СЂР°Р±РѕС‚РєР° СЃРµСЂРІРёСЃР° РїРѕРёСЃРєР° Р±РёРіСЂР°РјРј // РўСЂСѓРґС‹ РјРµР¶РґСѓРЅР°СЂРѕРґРЅРѕР№ РєРѕРЅС„РµСЂРµРЅС†РёРё В«РљРѕСЂРїСѓСЃРЅР°СЏ Р»РёРЅРіРІРёСЃС‚РёРєР°вЂ“2006. РЎРџР±., РЎ.РџРµС‚РµСЂР±. СѓРЅ-С‚Р°., 2006. РЎ. 5~ - 15.
+\textit{Аверин А. Н.} Разработка сервиса поиска биграмм // Труды международной конференции «Корпусная лингвистика–2006. СПб., С.Петерб. ун-та., 2006. С. 5~ - 15.
 
 \bibitem{epr:website}
-\textit{Р•РїСЂРµРІ Рђ. РЎ.} РџСЂРёРјРµРЅРµРЅРёРµ РєРѕРЅС‚РµРєСЃС‚РЅС‹С… РІРµРєС‚РѕСЂРѕРІ РІ РєР»Р°СЃСЃРёС„РёРєР°С†РёРё С‚РµРєСЃС‚РѕРІС‹С… РґРѕРєСѓРјРµРЅС‚РѕРІ // 
-вЂњР–СѓСЂРЅР°Р» СЂР°РґРёРѕСЌР»РµРєС‚СЂРѕРЅРёРєРёвЂќ.   2010. N 10. URL: http://jre.cplire.ru/iso/oct10/1/text.html (РґР°С‚Р° РѕР±СЂР°С‰РµРЅРёСЏ: ).
+\textit{Епрев А. С.} Применение контекстных векторов в классификации текстовых документов // 
+“Журнал радиоэлектроники”.   2010. N 10. URL: http://jre.cplire.ru/iso/oct10/1/text.html (дата обращения: ).
 
 \bibitem{Kim 1989}
-\textit{РљРёРј Р”Р¶. Рћ., РњСЊСЋР»Р»РµСЂ Р§. РЈ., РљР»РµРєРєР° РЈ. Р .} Р¤Р°РєС‚РѕСЂРЅС‹Р№, РґРёСЃРєСЂРёРјРёРЅР°РЅС‚РЅС‹Р№ Рё РєР»Р°СЃС‚РµСЂРЅС‹Р№ Р°РЅР°Р»РёР· / <<Р¤РёРЅР°РЅСЃС‹ Рё СЃС‚Р°С‚РёСЃС‚РёРєР°>>, РњРѕСЃРєРІР°, Р РѕСЃСЃРёСЏ. 1989. РЎС‚СЂ.172.
+\textit{Ким Дж. О., Мьюллер Ч. У., Клекка У. Р.} Факторный, дискриминантный и кластерный анализ / <<Финансы и статистика>>, Москва, Россия. 1989. Стр.172.
 
 \bibitem{Lukash 2011}
-\textit{Р›СѓРєР°С€РµРІРёС‡ Рќ. Р’.} РўРµР·Р°СѓСЂСѓСЃС‹ РІ Р·Р°РґР°С‡Р°С… РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРіРѕ РїРѕРёСЃРєР° / РР·РґР°С‚РµР»СЊСЃС‚РІРѕ РњР“РЈ, 2011. 495 СЃ.
+\textit{Лукашевич Н. В.} Тезаурусы в задачах информационного поиска / Издательство МГУ, 2011. 495 с.
+
+\bibitem{Marmanis}
+\textit{Марманис~Х., Бабенко Д.} Алгоритмы интеллектуального Интернета. Передовые методики сбора, анализа и обработки данных. – Пер. с англ. – СПб.: Символ-Плюс, 2011. 480 с.
+
+\bibitem{Paclin}
+\textit{Паклин~Н.~Б., Орешков~В.~И.}Бизнес-аналитика: от данных к знаниям: Учебное пособие. 2-е изд., испр. --- СПб.: Питер, 2013. --- 704~с.
 
 \bibitem{Trudakov 2010}
-\textit{РўСѓСЂРґР°РєРѕРІ Р”. Р®.} РњРµС‚РѕРґС‹ Рё РїСЂРѕРіСЂР°РјРјРЅС‹Рµ СЃСЂРµРґСЃС‚РІР° СЂР°Р·СЂРµС€РµРЅРёСЏ Р»РµРєСЃРёС‡РµСЃРєРѕР№ РјРЅРѕРіРѕР·РЅР°С‡РЅРѕСЃС‚Рё С‚РµСЂРјРёРЅРѕРІ РЅР° РѕСЃРЅРѕРІРµ СЃРµС‚РµР№ РґРѕРєСѓРјРµРЅС‚РѕРІ: РґРёСЃ. вЂ¦ РєР°РЅРґ. С„РёР·РёРєРѕ-РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РЅР°СѓРє:  РњРѕСЃРєРІР°, 2010.  138 c.
+\textit{Турдаков Д. Ю.} Методы и программные средства разрешения лексической многозначности терминов на основе сетей документов: дис. … канд. физико-математических наук:  Москва, 2010.  138 c.
 
 \bibitem{Abney 1999}
 \textit{Abney S. and Light M.} Hiding a semantic hierarchy in a markov model. In Proceedings of the Workshop on Unsupervised Learning in Natural Language Processing, ACL. 1999.
 
 \bibitem{Azzini}
-\textit{Azzini A., da Costa Pereira C., Dragoni M. and Tettamanzi A. G. B.} Evolving Neural Networks for Word Sense Disambiguation // 8-th International conference on hybrid intelligent systems. Spain. Barcelona, 2008. P. 332вЂ“337. doi: 10.1109/HIS.2008.88
+\textit{Azzini A., da Costa Pereira C., Dragoni M. and Tettamanzi A. G. B.} Evolving Neural Networks for Word Sense Disambiguation // 8-th International conference on hybrid intelligent systems. Spain. Barcelona, 2008. P. 332–337. doi: 10.1109/HIS.2008.88
 
 \bibitem{Barzilay Elhadad 1997}
-\textit{Barzilay R. and  Elhadad M. }Using lexical chains for text summarization // In Proceedings of the ACL Workshop on Intelligent Scalable Text Summarization (Madrid, Spain). 1997. P. 10вЂ“17.
+\textit{Barzilay R. and  Elhadad M. }Using lexical chains for text summarization // In Proceedings of the ACL Workshop on Intelligent Scalable Text Summarization (Madrid, Spain). 1997. P. 10–17.
 
 \bibitem{Berry 1993}
-\textit{Berry M.,  Do T.,  OвЂ™Brien G.,  Krishna V. and Varadhan S. }SVDPACK (version 1.0) userвЂ™s guide. Technical Report CS-93-194, University of Tennessee at Knoxville, Computer Science Department, April 1993.
+\textit{Berry M.,  Do T.,  O’Brien G.,  Krishna V. and Varadhan S. }SVDPACK (version 1.0) user’s guide. Technical Report CS-93-194, University of Tennessee at Knoxville, Computer Science Department, April 1993.
+
+\bibitem{Breiman}
+\textit{L.~Breiman.} Arcing classifiers. The Annals of Statistics. Vol 26 (3), 1998, pp. 801–849.
 
 \bibitem{Bruce 1994}
-\textit{Bruce R. and  Wiebe J. }Word-sense disambiguation using decomposable models // In Proceedings of the 32nd Annual Meeting of the Association for Computational Linguistics, 1994. P. 139вЂ“146. doi: 10.3115/981732.981752
+\textit{Bruce R. and  Wiebe J. }Word-sense disambiguation using decomposable models // In Proceedings of the 32nd Annual Meeting of the Association for Computational Linguistics, 1994. P. 139–146. doi: 10.3115/981732.981752
 
 \bibitem{Wu}
-\textit{Carpuat M. and Wu D.}Evaluating the Word Sense Disambiguation Performance of Statistical Machine Translation. URL: http://www.aclweb.org/anthology/I05-2021 (РґР°С‚Р° РѕР±СЂР°С‰РµРЅРёСЏ: 14.05.2015)
+\textit{Carpuat M. and Wu D.} Evaluating the word sense disambiguation performance of statistical machine translation. In Proceedings of the second international joint conference on natural language processing (IJCNLP), 2005, pp. 122–127. URL: http://www.aclweb.org/anthology/I05-2021
 
 \bibitem{Ciaramita 2000}
-\textit{Ciaramita M. and  Johnson M. }Explaining away ambiguity: Learning verb selectional preference with Bayesian networks. 2000. 
+\textit{Ciaramita M. and  Johnson M.} Explaining away ambiguity: Learning verb selectional preference with Bayesian networks. In Proceedings of the 18th conference on Computational linguistics, vol. 1, 2000, pp. 187–193.
 
 \bibitem{COTTRELL 1983}
-\textit{Cottrell G. W. and  Small S. L. }A connectionist  scheme for modelling word  sense  disambiguation // Cognition and brain theory. 1983. в„– 6. P. 89вЂ“120. 
+\textit{Cottrell G. W. and  Small S. L. }A connectionist  scheme for modelling word  sense  disambiguation // Cognition and brain theory. 1983. № 6. P. 89–120. 
 
 \bibitem{COTTRELL 1989}
 \textit{Cottrell G. W. }A connectionist approach to word sense disambiguation / Pitman, London, 1989.
@@ -194,7 +203,7 @@ $^2$РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЈРЅРёРІРµСЂСЃРё
 %\textit{Ling Charles X.,  Marinov M. }Answering the connectionist challenge: A symbolic model of learning the past tenses of English verbs,  %Cognition, Elsevier, 1993.
 
 %\bibitem{Dekang 1998}
-%\textit{Lin D. }Automatic Retrieval and Clustering of Similar Words.Proceedings of the 17th international conference on Computational %linguistics-Volume 2. вЂ“ Association for Computational Linguistics, Department of Computer Science University of Manitoba Winnipeg, Manitoba, %Canada, 1998, pp. 768-774. DOI: 10.3115/980432.980696
+%\textit{Lin D. }Automatic Retrieval and Clustering of Similar Words.Proceedings of the 17th international conference on Computational %linguistics-Volume 2. – Association for Computational Linguistics, Department of Computer Science University of Manitoba Winnipeg, Manitoba, %Canada, 1998, pp. 768-774. DOI: 10.3115/980432.980696
 
 %\bibitem{Dekang 1993}
 %\textit{Lin D. }Principle-based parsing without overgeneration. In Proceedings of ACL-93, Columbus, Ohio, 1993, pp. 112-120. DOI: %10.3115/981574.981590
@@ -209,11 +218,11 @@ $^2$РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЈРЅРёРІРµСЂСЃРё
 %\textit{Duong D. T. }Automated text summarization. Graduation Thesis. Hanoi University. 2011. 
 
 \bibitem{esc1}
-\textit{Escudero G., Marquez L. and Rigau G.}Using LazyBoosting for Word Sense Disambiguation. In Proceedings of the Second 
-International Workshop on evaluating Word Sense Disambiguation Systems.Toulouse, France, 2001.
+\textit{Escudero G., M\`{a}rquez L. and Rigau G.} Using LazyBoosting for word sense disambiguation. 
+In Proceedings of the Second International Workshop on evaluating Word Sense Disambiguation Systems. Toulouse, France, 2001, pp. 71–74.
 
 \bibitem{esc2}
-\textit{Escudero G., Marquez L. and Rigau G.}Boosting Applied to Word Sense Disambiguation. In Proceedings of the 12th 
+\textit{Escudero G., M\`{a}rquez L. and Rigau G.} Boosting Applied to Word Sense Disambiguation. In Proceedings of the 12th 
 European Conference on Machine Learning, ECML. Barcelona, Catalonia. 2000. 
 
 \bibitem{Freund 1999}
@@ -223,19 +232,19 @@ European Conference on Machine Learning, ECML. Barcelona, Catalonia. 2000.
 \textit{Freund Y.,  Schapire R. E. }Game theory, on-line prediction and boosting // In Proceedings of the Ninth Annual Conference on Computational Learning Theory,  1996. P. 325-332.
 
 \bibitem{Freund 1997}
-\textit{Freund Y.,  Schapire R. E. }A decision-theoretic generalization of on-line learning and an application to boosting // Journal of Computer and System Sciences. 1997. P. 119вЂ“139. doi: 10.1006/jcss.1997.1504
+\textit{Freund Y.,  Schapire R. E. }A decision-theoretic generalization of on-line learning and an application to boosting // Journal of Computer and System Sciences. 1997. P. 119–139. doi: 10.1006/jcss.1997.1504
 
 \bibitem{Halliday Hasan 1976}
 \textit{Halliday M. and  Hasan R. }Cohesion in English / London: Longman. 1976. 
 
 \bibitem{Harris 1985}
-\textit{Harris Z. }Distributional structure / In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press. 1985. P. 26вЂ“47
+\textit{Harris Z. }Distributional structure / In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press. 1985. P. 26–47
 
 \bibitem{Hearst 1994}
-\textit{Hearst M. }Multi-paragraph segmentation of expository text // In Proceedings of the 32th Annual Meeting of the Association for Computational Linguistics, 9вЂ“16. Las Cruces, New Mexico: Association for Computational Linguistics. 1994. doi: 10.3115/981732.981734
+\textit{Hearst M. }Multi-paragraph segmentation of expository text // In Proceedings of the 32th Annual Meeting of the Association for Computational Linguistics, 9–16. Las Cruces, New Mexico: Association for Computational Linguistics. 1994. doi: 10.3115/981732.981734
 
 \bibitem{Hinton 1986}
-\textit{Hinton G. E.,  McClelland J. L.,  Rumelhart D. E.. }Distributed representations // In Parallel Processing: explorations in the microstructure of cognition. MIT Press, Cambridge, MA, 1986. P. 5вЂ“44.
+\textit{Hinton G. E.,  McClelland J. L.,  Rumelhart D. E.} Distributed representations // In Parallel Processing: explorations in the microstructure of cognition. MIT Press, Cambridge, MA, 1986. P. 5–44.
 
 \bibitem{Hirst St-Onge 1998}
 \textit{Hirst G. and  St-Onge D. }Lexical chains as representations of context for the detection and correction of malapropisms. WordNet: An electronic lexical database, 1998. P. 305-332.
@@ -250,13 +259,13 @@ European Conference on Machine Learning, ECML. Barcelona, Catalonia. 2000.
 \textit{Jain A.,  Murthy M. and  Flynn P. }Data clustering: a review // ACM Computing Surveys, 31(3):264-323, September 1999. doi: 10.1145/331499.331504
 
 \bibitem{Leacock 1993}
-\textit{Leacock C.,  Towell G. and  VoorheesE. }Corpus-based statistical sense resolution // In Proceedings of the ARPA Workshop on Human Language Technology, March. 1993, P. 260вЂ“265.  
+\textit{Leacock C.,  Towell G. and  VoorheesE. }Corpus-based statistical sense resolution // In Proceedings of the ARPA Workshop on Human Language Technology, March. 1993, P. 260–265.  
 
 \bibitem{LESK 1986}
-\textit{Lesk M. }Automatic sense disambiguation using machine readable dictionaries: How to tell a pine cone from an ice cream cone //  Proceedings  of  the 5th SIGDOC. New York. 1986. P. 24вЂ“26. doi: 10.1145/318723.318728
+\textit{Lesk M. }Automatic sense disambiguation using machine readable dictionaries: How to tell a pine cone from an ice cream cone //  Proceedings  of  the 5th SIGDOC. New York. 1986. P. 24–26. doi: 10.1145/318723.318728
 
 \bibitem{Dekang 1998}
-\textit{Lin D. }Automatic Retrieval and Clustering of Similar Words // Proceedings of the 17th international conference on Computational linguistics-Vol. 2. вЂ“  Department of Computer Science University of Manitoba Winnipeg, Manitoba, Canada, 1998, P. 768-774. doi: 10.3115/980432.980696
+\textit{Lin D. }Automatic Retrieval and Clustering of Similar Words // Proceedings of the 17th international conference on Computational linguistics-Vol. 2. –  Department of Computer Science University of Manitoba Winnipeg, Manitoba, Canada, 1998, P. 768-774. doi: 10.3115/980432.980696
 
 \bibitem{Dekang 1993}
 \textit{Lin D. }Principle-based parsing without overgeneration // In Proceedings of ACL-93, Columbus, Ohio, 1993, P. 112-120. doi: 10.3115/981574.981590
@@ -266,7 +275,7 @@ European Conference on Machine Learning, ECML. Barcelona, Catalonia. 2000.
 
 
 \bibitem{Lin 2001}
-\textit{Lin D. and Pantel P. }Induction of semantic classes from natural language text // In Proceedings of SIGKDD-01. San Francisco, CA. 2001. P. 317вЂ“322. doi: 10.1145/502512.502558  
+\textit{Lin D. and Pantel P. }Induction of semantic classes from natural language text // In Proceedings of SIGKDD-01. San Francisco, CA. 2001. P. 317–322. doi: 10.1145/502512.502558  
 
 \bibitem{Charles 1993}
 \textit{Ling Charles X.,  Marinov M. }Answering the connectionist challenge: A symbolic model of learning the past tenses of English verbs /  Cognition, Elsevier, 1993.
@@ -276,7 +285,7 @@ European Conference on Machine Learning, ECML. Barcelona, Catalonia. 2000.
 \textit{Manning C. D. and  Sch\"utze H. }Foundations of Statistical Natural Language Processing / MIT Press. 1999.
 
 \bibitem{Merz 1998}
-\textit{Merz C. J. and  Murphy P. M. }UCI repository of machine learning databases, 1998. URL: www.ics.uci.edu/ mlearn/MLRepository.html (РґР°С‚Р° РѕР±СЂР°С‰РµРЅРёСЏ: 24.04.2015).
+\textit{Merz C. J. and  Murphy P. M. }UCI repository of machine learning databases, 1998. URL: www.ics.uci.edu/ mlearn/MLRepository.html (дата обращения: 24.04.2015).
 
 \bibitem{Miller 1990}
 \textit{Miller G. }Wordnet: An on-line lexical database // International Journal of Lexicography, 3(4). 1990.
@@ -289,7 +298,7 @@ An Illustration of the Role of Bias in Machine Learning / Department of Computer
 \textit{Mooney R. J., Califf M. E. }Induction of First-Order Decision Lists: Results on Learning the Past Tense of English Verbs / Department of Computer Sceinces, University of Texas, Austin, TX 78712-1188, 1995.
 
 \bibitem{Morris Hirst 1991}
-\textit{Morris J. and  Hirst G. }Lexical cohesion computed by thesaural relations as an indicator of the structure of text // Computational Linguistics 17(1):21вЂ“43. 1991. 
+\textit{Morris J. and  Hirst G. }Lexical cohesion computed by thesaural relations as an indicator of the structure of text // Computational Linguistics 17(1):21–43. 1991. 
 
 \bibitem{Navigli 2009}
 \textit{Navigli R. }Word sense disambiguation: A survey. ACM Computing Surveys (CSUR) 41, no. 2 (2009): 10. doi: 10.1145/1459352.1459355
@@ -320,29 +329,29 @@ An Illustration of the Role of Bias in Machine Learning / Department of Computer
 \textit{Savova G., Pedersen T., Purandare A., Kulkarni A. }Resolving ambiguities in biomedical text with unsupervised clustering approaches / University of Minnesota Supercomputing Institute Research Report, 2005.
 
 \bibitem{schapire99}
-\textit{Schapire R. E. and Singer Y. } Improved Boosting   Algorithms   Using   Confidence-rated
-Predictions. Machine Learning, 37(3):297вЂ“336.                          
+\textit{Schapire R. E. and Singer Y.} Improved Boosting Algorithms Using Confidence-rated Predictions. 
+Machine Learning, vol. 37(3), 1999, pp. 297–336.
 
 \bibitem{Schapire 1998}
-\textit{Schapire R. E. and Singer Y. }Improved boosting a predictions // In Proceedings of the Eleventh Annual Confere Theory, 1998. P. 80вЂ“91. 
+\textit{Schapire R. E. and Singer Y. }Improved boosting a predictions // In Proceedings of the Eleventh Annual Confere Theory, 1998. P. 80–91. 
 
 \bibitem{Schapire 1997}
-\textit{Schapire R. E. }Using output codes to boost multiclass learning problems. In Machine Learning // Proceedings of the Fourteenth International Conference, 1997. P. 313вЂ“321. 
+\textit{Schapire R. E. }Using output codes to boost multiclass learning problems. In Machine Learning // Proceedings of the Fourteenth International Conference, 1997. P. 313–321. 
 
 \bibitem{Schutze 1998}
 \textit{Sch$\ddot{u}$tze H. }Automatic Word Sense Discrimination // Computational Linguistics, vol. 24, number 1., 1998.
 
 \bibitem{SC:website}
-\textit{SenseClusters. }  \newline URL: http://senseclusters.sourceforge.net (РґР°С‚Р° РѕР±СЂР°С‰РµРЅРёСЏ: 24.04.2015).
+\textit{SenseClusters. }  \newline URL: http://senseclusters.sourceforge.net (дата обращения: 24.04.2015).
 
 \bibitem{UMLS:website}
-\textit{UMLS Terminology Services (UTS).} URL: http://umlsks.nlm.nih.gov/kss/servlet/Turbine/\newline template (РґР°С‚Р° РѕР±СЂР°С‰РµРЅРёСЏ: 22.04.2015)
+\textit{UMLS Terminology Services (UTS).} URL: http://umlsks.nlm.nih.gov/kss/servlet/Turbine/\newline template (дата обращения: 22.04.2015)
 
 \bibitem{VERONIS 1990}
-\textit{Veronis J. and Ide N. }Word  sense  disambiguation  with  very  large neural  networks  extracted  from machine readable dictionaries // Proceedings of the 13th International Conference on Computational Linguistics. Helsinki. 1990. P. 389вЂ“394. doi: 10.3115/997939.998006
+\textit{Veronis J. and Ide N. }Word  sense  disambiguation  with  very  large neural  networks  extracted  from machine readable dictionaries // Proceedings of the 13th International Conference on Computational Linguistics. Helsinki. 1990. P. 389–394. doi: 10.3115/997939.998006
 
 \bibitem{WALTZ 1985}
-\textit{Waltz D. L. and  Pollack J. B. }Massively parallel parsing: a strongly interactive  model  of  natural  language interpretation // Cognitive science. 1985. в„– 9. P. 51вЂ“74. doi: 10.1207/s15516709cog0901\_4
+\textit{Waltz D. L. and  Pollack J. B. }Massively parallel parsing: a strongly interactive  model  of  natural  language interpretation // Cognitive science. 1985. № 9. P. 51–74. doi: 10.1207/s15516709cog0901\_4
                      
 \bibitem{Weeber 2001}
 \textit{Weeber M.,  Mork J.,  Aronson A. }Developing a test collection for biomedical word sense disambiguation / Proc. AMIA., 2001.
@@ -356,16 +365,16 @@ Predictions. Machine Learning, 37(3):297вЂ“336.
 \end{articletext}
 
 
-\section{РЎР’Р•Р”Р•РќРРЇ РћР‘ РђР’РўРћР E:}
+\section{СВЕДЕНИЯ ОБ АВТОРE:}
 
 \begin{aboutauthors}
-\authorsname{РљР°СѓС€РёРЅРёСЃ РўР°С‚СЊСЏРЅР° Р’РёРєС‚РѕСЂРѕРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: merilstreet@mail.ru
+\authorsname{Каушинис Татьяна Викторовна}
+Студентка\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: merilstreet@mail.ru
 
 \columnbreak
 
@@ -377,13 +386,13 @@ e-mail: merilstreet@mail.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РљРёСЂРёР»Р»РѕРІ РђР»РµРєСЃР°РЅРґСЂ РќРёРєРѕР»Р°РµРІРёС‡}
-Р”РѕРєС‚РѕСЂ С„РёР·РёРєРѕ-РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РЅР°СѓРє\\ 
-РґРѕС†РµРЅС‚\\
-РРЅСЃС‚РёС‚СѓС‚ РїСЂРёРєР»Р°РґРЅС‹С… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РљР°СЂРµР»СЊСЃРєРѕРіРѕ РЅР°СѓС‡РЅРѕРіРѕ С†РµРЅС‚СЂР° Р РђРќ\\ 
-СѓР». РџСѓС€РєРёРЅСЃРєР°СЏ, 11, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ, Р РѕСЃСЃРёСЏ, 185910\\
-СЌР». РїРѕС‡С‚Р°: kirillov@krc.karelia.ru\\
-С‚РµР».: (8142) 766312
+\authorsname{Кириллов Александр Николаевич}
+Доктор физико-математических наук\\ 
+доцент\\
+Институт прикладных математических исследований Карельского научного центра РАН\\ 
+ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
+эл. почта: kirillov@krc.karelia.ru\\
+тел.: (8142) 766312
 
 \columnbreak
 
@@ -395,13 +404,13 @@ tel.: (8142) 766312
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РљРѕСЂР¶РёС†РєРёР№ РќРёРєРёС‚Р° РРІР°РЅРѕРІРёС‡}
-РЎС‚СѓРґРµРЅС‚\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: nikita@nikita.tv
+\authorsname{Коржицкий Никита Иванович}
+Студент\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: nikita@nikita.tv
 
 \columnbreak
 
@@ -413,12 +422,12 @@ e-mail: nikita@nikita.tv
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РљСЂРёР¶Р°РЅРѕРІСЃРєРёР№ РђРЅРґСЂРµР№ РђРЅР°С‚РѕР»СЊРµРІРёС‡}
-РљР°РЅРґРёС‚Р°С‚ С‚РµС…РЅРёС‡РµСЃРєРёС… РЅР°СѓРє\\ 
-РРЅСЃС‚РёС‚СѓС‚ РїСЂРёРєР»Р°РґРЅС‹С… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РљР°СЂРµР»СЊСЃРєРѕРіРѕ РЅР°СѓС‡РЅРѕРіРѕ С†РµРЅС‚СЂР° Р РђРќ\\ 
-СѓР». РџСѓС€РєРёРЅСЃРєР°СЏ, 11, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ, Р РѕСЃСЃРёСЏ, 185910\\
-СЌР». РїРѕС‡С‚Р°: andew.krizhanovsky@gmail.com\\
-С‚РµР».: (8142) 766312
+\authorsname{Крижановский Андрей Анатольевич}
+Кандитат технических наук\\ 
+Институт прикладных математических исследований Карельского научного центра РАН\\ 
+ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
+эл. почта: andew.krizhanovsky@gmail.com\\
+тел.: (8142) 766312
 
 \columnbreak
 
@@ -430,13 +439,13 @@ tel.: (8142) 766312
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РџРёР»РёРЅРѕРІРёС‡ РђР»РµРєСЃР°РЅРґСЂ Р’Р»Р°РґРёРјРёСЂРѕРІРёС‡}
-РЎС‚СѓРґРµРЅС‚\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: alexander.pilinovich@yandex.ru
+\authorsname{Пилинович Александр Владимирович}
+Студент\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: alexander.pilinovich@yandex.ru
 
 \columnbreak
 
@@ -448,13 +457,13 @@ e-mail: alexander.pilinovich@yandex.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЎРёС…РѕРЅРёРЅР° РСЂРёРЅР° РђР»РµРєСЃР°РЅРґСЂРѕРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: syawenka@mail.ru
+\authorsname{Сихонина Ирина Александровна}
+Студентка\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: syawenka@mail.ru
 
 \columnbreak
 
@@ -466,13 +475,13 @@ e-mail: syawenka@mail.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЎРїРёСЂРєРѕРІР° РђРЅРЅР° РњРёС…Р°Р№Р»РѕРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: annspirkova@gmail.com
+\authorsname{Спиркова Анна Михайловна}
+Студентка\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: annspirkova@gmail.com
 
 \columnbreak
 
@@ -484,12 +493,12 @@ e-mail: annspirkova@gmail.com
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЎС‚Р°СЂРєРѕРІР° Р’Р°Р»РµРЅС‚РёРЅР° Р“РµРЅРЅР°РґСЊРµРІРЅР°}
-РЎС‚Р°СЂС€РёР№ РёРЅР¶РµРЅРµСЂ-РїСЂРѕРіСЂР°РјРјРёСЃС‚\\ 
-РРЅСЃС‚РёС‚СѓС‚ РїСЂРёРєР»Р°РґРЅС‹С… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РљР°СЂРќР¦ Р РђРќ\\ 
-СѓР». РџСѓС€РєРёРЅСЃРєР°СЏ, 11, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ, Р РѕСЃСЃРёСЏ, 185910\\
-С‚РµР».: (8142) 766312\\
-СЌР». РїРѕС‡С‚Р°: stark\_val@mail.ru
+\authorsname{Старкова Валентина Геннадьевна}
+Старший инженер-программист\\ 
+Институт прикладных математических исследований КарНЦ РАН\\ 
+ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
+тел.: (8142) 766312\\
+эл. почта: stark\_val@mail.ru
 
 \columnbreak
 
@@ -501,13 +510,13 @@ e-mail: stark\_val@mail.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЎС‚РµРїРєРёРЅР° РўР°С‚СЊСЏРЅР° Р’Р»Р°РґРёРјРёСЂРѕРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: hogdp@mail.ru
+\authorsname{Степкина Татьяна Владимировна}
+Студентка\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: hogdp@mail.ru
 
 \columnbreak
 
@@ -519,13 +528,13 @@ e-mail: hogdp@mail.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РўРєР°С‡ РЎС‚Р°РЅРёСЃР»Р°РІ РЎРµСЂРіРµРµРІРёС‡}
-РЎС‚СѓРґРµРЅС‚\\
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР».: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: tkachkras@gmail.com
+\authorsname{Ткач Станислав Сергеевич}
+Студент\\
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел.: (8142) 711078\\
+эл. почта: tkachkras@gmail.com
 
 \columnbreak
 
@@ -537,12 +546,12 @@ e-mail: tkachkras@gmail.com
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{Р§РёСЂРєРѕРІР° Р®Р»РёСЏ Р’Р°СЃРёР»СЊРµРІРЅР°}
-РљР°РЅРґРёРґР°С‚ С„РёР·РёРєРѕ-РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РЅР°СѓРє\\ 
-РРЅСЃС‚РёС‚СѓС‚ РїСЂРёРєР»Р°РґРЅС‹С… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РљР°СЂРќР¦ Р РђРќ\\ 
-СѓР». РџСѓС€РєРёРЅСЃРєР°СЏ, 11, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ, Р РѕСЃСЃРёСЏ, 185910\\
-С‚РµР».: (8142) 766312
-СЌР». РїРѕС‡С‚Р°: julia@krc.karelia.ru
+\authorsname{Чиркова Юлия Васильевна}
+Кандидат физико-математических наук\\ 
+Институт прикладных математических исследований КарНЦ РАН\\ 
+ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
+тел.: (8142) 766312
+эл. почта: julia@krc.karelia.ru
 
 \columnbreak
 
@@ -554,12 +563,12 @@ e-mail: julia@krc.karelia.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{Р§СѓС…Р°СЂРµРІ РђР»РµРєСЃРµР№ Р›РµРѕРЅРёРґРѕРІРёС‡}
-РЎС‚Р°СЂС€РёР№ РёРЅР¶РµРЅРµСЂ-РїСЂРѕРіСЂР°РјРјРёСЃС‚\\ 
-РРЅСЃС‚РёС‚СѓС‚ РїСЂРёРєР»Р°РґРЅС‹С… РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёС… РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РљР°СЂРќР¦ Р РђРќ\\ 
-СѓР». РџСѓС€РєРёРЅСЃРєР°СЏ, 11, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ, Р РѕСЃСЃРёСЏ, 185910\\
-С‚РµР».: (8142) 766312
-СЌР». РїРѕС‡С‚Р°: chuharev@krc.karelia.ru
+\authorsname{Чухарев Алексей Леонидович}
+Старший инженер-программист\\ 
+Институт прикладных математических исследований КарНЦ РАН\\ 
+ул. Пушкинская, 11, Петрозаводск, Республика Карелия, Россия, 185910\\
+тел.: (8142) 766312
+эл. почта: chuharev@krc.karelia.ru
 
 \columnbreak
 
@@ -571,13 +580,13 @@ e-mail: chuharev@krc.karelia.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЁРѕСЂРµС† Р”Р°СЂСЊСЏ РЎРµСЂРіРµРµРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\ 
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР»: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: da\_sha1078@mail.ru
+\authorsname{Шорец Дарья Сергеевна}
+Студентка\\ 
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел: (8142) 711078\\
+эл. почта: da\_sha1078@mail.ru
 
 \columnbreak
 
@@ -589,13 +598,13 @@ e-mail: da\_sha1078@mail.ru
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЇСЂС‹С€РєРёРЅР° Р•РєР°С‚РµСЂРёРЅР° РђР»РµРєСЃР°РЅРґСЂРѕРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\ 
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР»:(8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: kate.rysh@gmail.com
+\authorsname{Ярышкина Екатерина Александровна}
+Студентка\\ 
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел:(8142) 711078\\
+эл. почта: kate.rysh@gmail.com
 
 \columnbreak
 
@@ -607,13 +616,13 @@ e-mail: kate.rysh@gmail.com
 \end{aboutauthors}
 
 \begin{aboutauthors}
-\authorsname{РЇРЅРєРµРІРёС‡ Р”Р°СЂСЊСЏ Р®СЂСЊРµРІРЅР°}
-РЎС‚СѓРґРµРЅС‚РєР°\\ 
-РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ С„Р°РєСѓР»СЊС‚РµС‚\\ 
-РџРµС‚СЂРѕР·Р°РІРѕРґСЃРєРёР№ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ СѓРЅРёРІРµСЂСЃРёС‚РµС‚\\
-РїСЂ-РєС‚ Р›РµРЅРёРЅР°, 33, РџРµС‚СЂРѕР·Р°РІРѕРґСЃРє, Р РµСЃРїСѓР±Р»РёРєР° РљР°СЂРµР»РёСЏ\\
-С‚РµР»: (8142) 711078\\
-СЌР». РїРѕС‡С‚Р°: dyankevic@gmail.com
+\authorsname{Янкевич Дарья Юрьевна}
+Студентка\\ 
+Математический факультет\\ 
+Петрозаводский государственный университет\\
+пр-кт Ленина, 33, Петрозаводск, Республика Карелия\\
+тел: (8142) 711078\\
+эл. почта: dyankevic@gmail.com
 
 \columnbreak
 
