@@ -60,40 +60,23 @@ $P_{MLE}(C|B)=\frac{\displaystyle ||*,r,w'||}{\displaystyle ||*,r,*||}$
 $P_{MLE}(A,B,C)=\frac{\displaystyle ||w,r,w'||}{\displaystyle ||*,*,*||}$
 \item ѕусть \textit{\textbf{I(w,r, wТ)}} обозначает количество информации, содержащейс€ 
 в утверждении ||\textit{w, r, w'}||\textit{=с}. ћожно вычислить это значение так:
-\end{enumerate}
-
-%\bfullwidth
-%\begin{center}
-$$
-I(w,r,wТ)=
-$$
-$$
-=-log(P_{MLE}(B) P_{MLE} (A|B) P_{MLE} (C|B))-
-$$
-$$
--(-log(P_{MLE}(A,B,C))=
-$$
-$$
+%
+\begin{multline*}
+I(w,r,wТ)= \\
+=-log(P_{MLE}(B) P_{MLE} (A|B) P_{MLE} (C|B))- \\
+-(-log(P_{MLE}(A,B,C))= \\
 =log\frac{||w,r,w'||\times||*,r,*||}{||w,r,*||\times||*,r,w'||}.
-$$
-
-%$\end{center}
-%$\efullwidth
+\end{multline*}
+\end{enumerate}
 
 ќтметим, что значение \textit{I(w,r,wТ)} равно количеству взаимной информации (\textit{mutual information}) между $w$ и $w'$ \cite{Donald 1990}.
 
 ѕусть $T(w)$ --Ц это множество пар \textit{(r, w')}, при которых $log\frac{\displaystyle ||w,r,w'||\times||*,r,*||}{\displaystyle ||w,r,*||\times||*,r,w'||}$ имеет положительное значение. ќпределим значение сходства (похожести) двух слов \textit{w1} и \textit{w2} с помощью формулы:
 
-%\bfullwidth
-%\begin{center}
-$$
-sim(w_1,w_2)=
-$$
-$$
-= \frac{\displaystyle \sum_{(r,w)\in T(w_1)\cap T(w_2)}(I(w_1,r,w)+I(w_2,r,w))}{\displaystyle \sum_{(r,w)\in T(w_1)}I(w_1,r,w)+\sum_{(r,w)\in T(w_2)}I(w_2,r,w)}.
-$$
-%\end{center}
-%\efullwidth
+\begin{multline*}
+sim(w_1,w_2)= \\
+\frac{\displaystyle \sum_{(r,w)\in T(w_1)\cap T(w_2)}(I(w_1,r,w)+I(w_2,r,w))}{\displaystyle \sum_{(r,w)\in T(w_1)}I(w_1,r,w)+\sum_{(r,w)\in T(w_2)}I(w_2,r,w)}.
+\end{multline*}
 
 \textbf{ѕрактическа€ реализаци€ метода.} Ѕыл обработан корпус, включающий 64 млн. слов. »з него было извлечено 56,6 миллионов троек, включающих 8,7 миллиона уникальных троек.
 
