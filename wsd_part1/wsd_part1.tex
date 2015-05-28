@@ -4,7 +4,7 @@
 
 \usepackage{caption}  %-  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
 \usepackage{subcaption} % float figures side by side}  -  вставить в krctran перед описанием подписей caption (\renewcommand\@makecaption)
-\usepackage{krctran}
+\usepackage{krctran_modified}
 %\usepackage[utf8]{inputenc} % закомментировать в krctran.sty: \RequirePackage[cp1251]{inputenc}
 \usepackage[pdftex]{graphicx} % закомментировать в krctran.sty
 
@@ -130,6 +130,7 @@ This paper is licensed under the CC Attribution license.}
 Во второй части представлена задача \textit{различения значений слов}. Эта задача отличается от задачи разрешения лексической многозначности тем, что при различении значений слов нет никаких предопределенных значений слова, присоединенных к кластерам; здесь слова, употребляющиеся в схожих контекстах, группируются в кластеры (значения).
 
 \input{./chapter/Yaryshkina_clustering_medtekst.tex}
+\columnbreak
 \input{./chapter/Spirkova_vektor_specific.tex}
 
 \bfullwidth
@@ -149,8 +150,10 @@ This paper is licensed under the CC Attribution license.}
 В алгоритме последовательно вычисляется сходство между словами,  строится набор компактных кластеров (комитетов), все слова распределяются по этим кластерам
 
 \input{./chapter/Shorets_clustering.tex}
+\columnbreak
 \input{./chapter/Yankevich_komitetj.tex}
 
+\newpage
 \bfullwidth
 \begin{center}
 \section{Эксперименты}
