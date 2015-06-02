@@ -51,8 +51,10 @@
 \begin{enumerate}
 \item Когда значение ||\textit{w, r, w'}|| неизвестно, то предполагаем, что \textbf{А} и \textbf{С} являются условно независимыми при наличии события \textbf{В}.  Вероятность наступления сразу трех этих событий составляет \textbf{$P_{MLE}(B) P_{MLE} (A|B) P_{MLE} (C|B)$}, где \textbf{$P_{MLE}$} --- это оценка максимального правдоподобия распределения вероятностей (\textit{maximum likelihood estimation})
 
-$P_{MLE}(B)=\frac{\displaystyle ||*,r,*||}{\displaystyle ||*,*,*||}$\\
-$P_{MLE}(A|B)=\frac{\displaystyle ||w,r,*||}{\displaystyle ||*,r,*||}$\\
+$P_{MLE}(B)=\frac{\displaystyle ||*,r,*||}{\displaystyle ||*,*,*||}$
+
+$P_{MLE}(A|B)=\frac{\displaystyle ||w,r,*||}{\displaystyle ||*,r,*||}$
+
 $P_{MLE}(C|B)=\frac{\displaystyle ||*,r,w'||}{\displaystyle ||*,r,*||}$
 
 \item Когда значение ||\textit{w, r, w’}|| известно, можно сразу получить $P_{MLE}(A,B,C)$:
@@ -71,7 +73,7 @@ I(w,r,w’)= \\
 
 Отметим, что значение \textit{I(w,r,w’)} равно количеству взаимной информации (\textit{mutual information}) между $w$ и $w'$ \cite{Donald 1990}.
 
-Пусть $T(w)$ --– это множество пар \textit{(r, w')}, при которых $log\frac{\displaystyle ||w,r,w'||\times||*,r,*||}{\displaystyle ||w,r,*||\times||*,r,w'||}$ имеет положительное значение. Определим значение сходства (похожести) двух слов \textit{w1} и \textit{w2} с помощью формулы:
+Пусть $T(w)$ --– это множество пар \textit{(r, w')}, при которых $$log\frac{\displaystyle ||w,r,w'||\times||*,r,*||}{\displaystyle ||w,r,*||\times||*,r,w'||}$$ имеет положительное значение. Определим значение сходства (похожести) двух слов \textit{w1} и \textit{w2} с помощью формулы:
 
 \begin{multline*}
 sim(w_1,w_2)= \\
@@ -88,57 +90,83 @@ $w(pos):w_1,s_1,w_2,s_2,\ldots,w_N,s_N$\\
 
 Два слова являются \textit{парой взаимных ближайших соседей (RNN от respective nearest neighbors)}, если они являются наиболее похожими словами друг для друга (первыми в списке из двухсот слов). С помощью программы удалось получить 543 пары RNN существительных, 212 пар RNN глаголов, 382 пары RNN прилагательных/наречий в созданном автоматически тезаурусе. В Табл.~\ref{tabshor} представлен список каждого 10-го RNN для глаголов.
 
+\bfullwidth
 \begin{table*}
 \centering
 \caption{Список пар взаимных ближайших соседей (RNN) глаголов}
 \begin{tabular}{|c|c|c|}
 \hline
+ &  & \\
 \textbf{Ранг} & \textbf{RNN} & \textbf{Значение сходства}\\
+ &  & \\
 \hline
-1 & \textit{fall rise} & 0,67\\
+\rule{0pt}{11pt}
+  1 & \textit{fall rise} & 0,67\\
 \hline
+\rule{0pt}{11pt}
 11 & \textit{injure kill} & 0,38\\
 \hline
-21 & \textit{concern worry} & 0,34\\
+\rule{0pt}{11pt}
+ 21 & \textit{concern worry} & 0,34\\
 \hline
+\rule{0pt}{11pt}
 31 & \textit{convict sentence} & 0,29\\
 \hline
+\rule{0pt}{11pt}
 41 & \textit{limit restrict} & 0,27\\
 \hline
+\rule{0pt}{11pt}
 51 & \textit{narrow widen} & 0,26\\
 \hline
+\rule{0pt}{11pt}
 61 & \textit{attract draw} & 0,24\\
 \hline
+\rule{0pt}{11pt}
 71 & \textit{discourage encourage} & 0,23\\
 \hline
+\rule{0pt}{11pt}
 81 & \textit{hit strike} & 0,22\\
 \hline
+\rule{0pt}{11pt}
 91 & \textit{distregard ignore} & 0,21\\
 \hline
+\rule{0pt}{11pt}
 101 & \textit{overstate understate} & 0,20\\
 \hline
+\rule{0pt}{11pt}
 111 & \textit{affirm reaffirm} & 0,18\\
 \hline
+\rule{0pt}{11pt}
 121 & \textit{inform notify} & 0,17\\
 \hline
+\rule{0pt}{11pt}
 131 & \textit{differ vary} & 0,16\\
 \hline
+\rule{0pt}{11pt}
 141 & \textit{scream yell} & 0,15\\
 \hline
+\rule{0pt}{11pt}
 151 & \textit{laugh smile} & 0,143\\
 \hline
+\rule{0pt}{11pt}
 161 & \textit{compete cope} & 0,136\\
 \hline
+\rule{0pt}{11pt}
 171 & \textit{add whisk} & 0,130\\
 \hline
+\rule{0pt}{11pt}
 181 & \textit{blossom mature} & 0,12\\
 \hline
+\rule{0pt}{11pt}
 191 & \textit{smell taste} & 0,11\\
 \hline
+\rule{0pt}{11pt}
 201 & \textit{bark howl} & 0,10\\
 \hline
+\rule{0pt}{11pt}
 211 & \textit{black white} & 0,07\\
 \hline
 \end{tabular}
 \label{tabshor}
 \end{table*}
+\efullwidth
