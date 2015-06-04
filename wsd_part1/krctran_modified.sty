@@ -7,7 +7,7 @@
 %%% TODO: \newenvironment
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{krctran}
+\ProvidesPackage{krctran_modified}
 
 \ProcessOptions
 \RequirePackage{ifthen}
@@ -255,8 +255,14 @@
 {\noindent{\footnotesize\bfseries #1}\newline}}
 
 % на последней странице нет линейки и нумерации
-\newcommand\lastpage{\thispagestyle{empty}}
-\newenvironment{aboutauthors}{\thispagestyle{empty}~\\[-13mm]\begin{multicols}{2}\footnotesize}%
+
+% неа. ƒве (непоследние) страницы с авторами - теперь нумеруютс€: headings вместо empty
+\newcommand\lastpage{\thispagestyle{headings}}
+\newenvironment{aboutauthors}{\thispagestyle{headings}~\\[-13mm]\begin{multicols}{2}\footnotesize}%
+				{\end{multicols}}
+
+% а треть€ (последн€€) страницы с авторами - теперь не нумеруетс€
+\newenvironment{aboutauthors_without_page_numbering}{\thispagestyle{empty}~\\[-13mm]\begin{multicols}{2}\footnotesize}%
 				{\end{multicols}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
