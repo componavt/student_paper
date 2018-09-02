@@ -7,6 +7,8 @@ Computer science books and papers written by a group of PetrSU students.
 
 # Scratch book (in Russian)
 
+See our course [Scratch](https://ru.wikiversity.org/wiki/Scratch) in Russian Wikiversity.
+
 ## Quick Start
 
 The Scratch book (file `student_paper/scratch/s1book.tex`) can be compiled with the following:
@@ -35,5 +37,5 @@ The template of [Tufte-LaTeX](https://github.com/Tufte-LaTeX/tufte-latex) GitHub
 
 # Literature
 
-   * Krizhanovsky, Andrew (2014) Methodology and guidelines of writing articles in Wikipedia by students with the help of the teacher (the Russian Wikipedia case study) (in Russian). Petrozavodsk. (preprint). URL: http://scipeople.com/publication/114999/
+   * Krizhanovsky, Andrew (2015) [Methodology and guidelines of writing articles in Wikipedia by students with the help of the teacher (the Russian Wikipedia case study)](http://nauchkor.ru/pubs/rabota-v-viki-srede-na-primere-russkoy-vikipedii-5690f7f35f1be74d9400018e) (in Russian). Petrozavodsk. (preprint). 
 .
