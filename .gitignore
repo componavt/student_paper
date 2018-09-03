@@ -7,3 +7,36 @@ wsd_part1.synctex.gz
 *.addon
 lesk
 trudw_karrc_dogovor
+
+
+# Vim temporary files
+*.swp
+
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+
+# makeindex
+*.idx
+
+# PDF output - usually a bad idea to keep this in Git
+*.pdf
+
+# Latexmk
+*.fdb_latexmk
+
+# SyncTeX
+*.synctex.gz
+
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+
+# BibTeX
+*.bbl
+*.blg
