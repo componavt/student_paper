@@ -5,9 +5,9 @@ Computer science books and papers written by a group of PetrSU students.
 
 [Petrozavodsk State University](https://en.wikipedia.org/wiki/Petrozavodsk_State_University) (PetrSU), Internet-mathematics course.
 
-# Scratch book (in Russian)
+# App Inventor book (in Russian)
 
-See our course [Scratch](https://ru.wikiversity.org/wiki/Scratch) in Russian Wikiversity.
+See our course [App Inventor for Android](https://ru.wikiversity.org/wiki/App_Inventor) in Russian Wikiversity.
 
 ## Quick Start
 
