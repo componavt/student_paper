@@ -4,7 +4,7 @@
 
 \usepackage[T1]{fontenc}
 
-\usepackage[russian]{babel}
+\usepackage[english,russian]{babel}
 
 \usepackage[utf8]{inputenc}
 
@@ -16,9 +16,17 @@
 
 
 % If too much notes: see https://tex.stackexchange.com/a/175796/99685
-\usepackage{marginfix}
+%\usepackage{marginfix}
+
+% how to use `\marginnote` in `mdframed` environment?, see https://tex.stackexchange.com/a/412839/99685
+\usepackage[framemethod=TikZ]{mdframed}
+%\let\marginnote\someundefinedcommand
+%\usepackage{marginnote}
+
+\newmdenv[skipabove=6mm]{mdfstyle}
 
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
+%\usepackage{breakurl}% see https://tex.stackexchange.com/a/21266/99685
 
 %%
 % Book metadata
