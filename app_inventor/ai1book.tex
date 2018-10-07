@@ -14,6 +14,25 @@
 
 \renewcommand{\ttdefault}{cmtt}
 
+% Remove prefix from figure caption in tufte-book, see https://tex.stackexchange.com/a/106422/99685
+\makeatletter
+\newenvironment{nocapfigure}
+  {\let\H@refstepcounter\@gobble%
+   \long\def\@caption##1[##2]##3{%
+   \par%
+   %\addcontentsline{\csname ext@##1\endcsname}{##1}%
+   %  {\protect\numberline{\csname the##1\endcsname}{\ignorespaces ##2}}%
+   \begingroup%
+     \@parboxrestore%
+     \if@minipage%
+       \@setminipage%
+     \fi%
+     \@tufte@caption@font\@tufte@caption@justification%
+     \noindent\ignorespaces##3\par%\noindent\csname fnum@#1\endcsname: \ignorespaces#3\par%
+     %\@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
+   \endgroup}\figure
+    }{\endfigure}
+\makeatother
 
 % If too much notes: see https://tex.stackexchange.com/a/175796/99685
 %\usepackage{marginfix}
@@ -27,6 +46,14 @@
 
 \hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
 %\usepackage{breakurl}% see https://tex.stackexchange.com/a/21266/99685
+
+\setcounter{secnumdepth}{0} % turn on numbering for parts and chapters 
+
+\usepackage{amsthm, amsmath, amssymb}
+%\usepackage{setspace, enumerate}
+
+\theoremstyle{definition}
+\newtheorem{task}{}
 
 %%
 % Book metadata
@@ -294,6 +321,9 @@ and the use of the \doccls{tufte-book} and \doccls{tufte-handout} document class
 \input{./chapter/Change_flags_AKA.tex}
 \input{./chapter/1_to_19_Oksanche.tex}
 \input{./chapter/Need_to_think_Gr3zjd.tex}
+
+
+\input{./chapter/answers.tex}
 
 
 \chapter{The Design of Tufte's Books}
