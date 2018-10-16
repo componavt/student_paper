@@ -99,7 +99,7 @@
     % Source: Why is it called Bitly? Annelise Schoups, 2016. URL: https://www.rewindandcapture.com/why-is-bitly-called-bitly/
 \end{mdframed}
 
-\begin{marginfigure}
+\begin{marginfigure}[-4cm]
 {%
 \setlength{\fboxsep}{0pt}%
 \setlength{\fboxrule}{1pt}%
@@ -121,3 +121,49 @@
         или цифрой от 0 до 9? Ответ на странице ... todo.
 
 Temp indexkey example: А вот и \index{Интерфейс пользователя!ListView / Выбор из списка}...
+
+\newthought{В нашей программе цвета полосок} -- это то, чем мы будем управлять, 
+чтобы построить нужный флаг. 
+
+Создадим глобальную переменную \var{colors} для хранения наших цветов 
+(может, переменную стоило назвать <<ваза>>? $\ddot\smile$). 
+Создадим список\footnote[][-2cm]{List -- 
+список, структура для хранения данных. 
+Сделать задания по \{\emph{математике, истории, русскому}\} -- это тоже список.
+} 
+из четырёх цветов и присвоим список глобальной\footnote[][-0.5cm]{Global variable -- 
+глобальная переменная. К ней можно обратиться из любого места программы. 
+} 
+переменной \var{colors}. См. верхнюю строчку на рис.~\ref{fig:block:proc:swap:colors}.
+
+\begin{figure}
+  \includegraphics{./graphics/programs/change_flags/proc_swap_colors_2018.png}
+    \caption[Процедура \var{swapColors}.][6pt]{Процедура \var{swapColors}.
+    Аргументы процедуры -- номер первого цвета (\var{index\_x}) 
+    и номер второго (\var{index\_y}). 
+    Например, вызов процедуры \var{swapColors(1,3)} поменяет местами первый и 
+    третий цвета (синий и зелёный) в списке \var{colors}. 
+    
+    {\tiny Написать рядом то же, что и на рисунке, но в виде псевдокода, 
+    см. https://tex.stackexchange.com/a/381105/99685
+    }
+    
+    }
+  \label{fig:block:proc:swap:colors}
+\end{figure}
+
+Используем объект "canvas" при создании интерфейса программы, чтобы нарисовать 
+цветные полоски ... TODO
+
+Следующий код позволит игроку щёлкать по полоскам 
+и две ближайшие полоски будут меняться местами. 
+Для этого нам пригодится процедура "SwapColors" (todo figure ref). 
+
+\begin{figure}
+  \includegraphics{./graphics/programs/change_flags/click_and_swap_colors_2018.png}
+    \caption[Caption short.][6pt]{Caption long.
+    }
+  \label{fig:block:click:swap:colors}
+\end{figure}
+
+TODO Почему комментарии и названия переменных на английском языке?
