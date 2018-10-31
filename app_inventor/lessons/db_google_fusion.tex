@@ -1,0 +1,84 @@
+\chapter{База данных Google Fusion Tables, она же ДинамиТ}
+\label{ch:dynamite}
+
+
+\newthought{По-английски эта база данных} в App Inventor называется ``FusiontablesControl'', 
+в книге Камриани и Роя\cite{KamrianiAndRoy2016} её называют ``Google Fusion Tables''. 
+В русском интерфейсе среды App Inventor эта база называется предлинно: 
+<<УправлениеДинамическимиТаблицами>>, а мы эту базу данных назовём кратко <<ДинамиТ>>, 
+где заглавная буква Т указывает на <<\textbf{Т}аблицы>>.
+
+Программы, работающие с ДинамиТом, должны получить разрешение у сервера Гугл, то есть должны указать логин и пароль. Есть два варианта:
+\begin{itemize}
+    \item Разработчик приложения получает API Key и использует его в программе. 
+        Но пользователю программы тогда тоже нужно залогиниться для доступа к ДинамиТу. 
+    \item Использовать Service Account. Тогда нужно создать 
+        файл с логином и паролем (это наш секретный ключик) и получить 
+        мейл "Service Account Email Address" из Google APIs Console. 
+        Затем сообщаем ДинамиТу мейл ``Service Account Email Address'' 
+        и загружаем файл с секретным ключиком в своё приложение, 
+        и связываем свойство KeyFile с этим файлом. 
+        Наконец, в Дизайнере ставим галочку на пункт ``UseServiceAuthentication''. 
+        В случае использования Service Account 
+        пользователям не нужно заботиться о логине в ДинамиТ, 
+        все эти заботы берёт на себя приложение.
+\end{itemize}
+
+
+
+
+\section{Приготовление ДинамиТа}
+
+
+Откройте веб-страницу https://drive.google.com. Нажмите последовательно 
+кнопки меню: <<Создать>>, <<Ещё>> и кнопку <<+ Подключить другие приложения>> 
+(рис.~\ref{fig:google_drive_connect_more_apps}). В новом окне будет множество 
+приложений, которые можно подключить к Google Диску. 
+
+\begin{figure}
+{%
+\setlength{\fboxsep}{0pt}%
+\setlength{\fboxrule}{1pt}%
+\fcolorbox{gray}{gray}{\includegraphics{./lessons/db_google_fusion/020_google_drive_connect_more_apps_with_new-button_ru.png}}%
+}%
+    \caption[Подключения приложения к Google Диску.][56pt]{Подключения 
+            приложения к Google Диску.
+    }
+  \label{fig:google_drive_connect_more_apps}
+\end{figure}
+
+В строке поиска нового окна наберите слово ``Fusion''. Нажмите кнопку поиска. 
+Из списка приложений выберите ``Fusion Tables'' и нажмите кнопку <<ПОДКЛЮЧИТЬ>> 
+(рис.~\ref{fig:add_fusion_to_drive}).
+
+\begin{figure}
+{%
+\setlength{\fboxsep}{0pt}%
+\setlength{\fboxrule}{1pt}%
+\fcolorbox{gray}{gray}{\includegraphics{./lessons/db_google_fusion/030_add_fusion_to_drive_ru.png}}%
+}%
+    \caption[Выбор приложения в Google Диск.][-0pt]{Выбор приложения 
+            ``Fusion Tables'' в Google Диск. У кнопки <<Подключить>> 
+            на экране поместилось полторы буквы <<ПО>>.
+
+        { Если даже у Гугля на картинке есть опечатки, то какой может быть 
+        спрос с авторов этой книги $\ddot\smile$
+        }
+    }
+  \label{fig:add_fusion_to_drive}
+\end{figure}
+
+Теперь при нажатии кнопок <<Создать>> и <<Ещё>> в списке меню будут 
+<<Google Сводные таблицы>> (рис.~\ref{fig:fusion_is_available_at_drive}).
+
+\begin{figure}
+{%
+\setlength{\fboxsep}{0pt}%
+\setlength{\fboxrule}{1pt}%
+\fcolorbox{gray}{gray}{\includegraphics{./lessons/db_google_fusion/040_GoogleFusionTables_avail_ru.png}}%
+}%
+    \caption[Google Сводные таблицы доступны в Google Диск.][56pt]{ДинамиТ 
+            (Google Сводные таблицы) доступен в Google Диск.
+    }
+  \label{fig:fusion_is_available_at_drive}
+\end{figure}
