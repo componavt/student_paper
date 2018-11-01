@@ -14,7 +14,7 @@
         Но пользователю программы тогда тоже нужно залогиниться для доступа к ДинамиТу. 
     \item Использовать Service Account. Тогда нужно создать 
         файл с логином и паролем (это наш секретный ключик) и получить 
-        мейл "Service Account Email Address" из Google APIs Console. 
+        мейл ``Service Account Email Address'' из Google APIs Console. 
         Затем сообщаем ДинамиТу мейл ``Service Account Email Address'' 
         и загружаем файл с секретным ключиком в своё приложение, 
         и связываем свойство KeyFile с этим файлом. 
@@ -30,10 +30,13 @@
 \section{Приготовление ДинамиТа}
 
 
-Откройте веб-страницу https://drive.google.com. Нажмите последовательно 
-кнопки меню: <<Создать>>, <<Ещё>> и кнопку <<+ Подключить другие приложения>> 
+Откройте веб-страницу Google Диска (https://drive.google.com).\marginnote[-0cm]{
+    Чтобы получить доступ к Google Диску, достаточно зарегистрироваться на сайте Google.
+}
+Нажмите последовательно 
+кнопки меню: <<Создать>>, <<Ещё>> и~кнопку <<+ Подключить другие приложения>> 
 (рис.~\ref{fig:google_drive_connect_more_apps}). В новом окне будет множество 
-приложений, которые можно подключить к Google Диску. 
+приложений, которые можно подключить к~Google Диску. 
 
 \begin{figure}
 {%
@@ -68,7 +71,7 @@
   \label{fig:add_fusion_to_drive}
 \end{figure}
 
-Теперь при нажатии кнопок <<Создать>> и <<Ещё>> в списке меню будут 
+Теперь, если ещё раз нажать кнопки <<Создать>> и <<Ещё>>, в~списке меню будут 
 <<Google Сводные таблицы>> (рис.~\ref{fig:fusion_is_available_at_drive}).
 
 \begin{figure}
@@ -77,16 +80,38 @@
 \setlength{\fboxrule}{1pt}%
 \fcolorbox{gray}{gray}{\includegraphics{./lessons/db_google_fusion/040_GoogleFusionTables_avail_ru.png}}%
 }%
-    \caption[Google Сводные таблицы доступны в Google Диск.][56pt]{ДинамиТ 
-            (Google Сводные таблицы) доступен в Google Диск.
+    \caption[Google Сводные таблицы доступны в Google Диск.][56pt]{Google Сводные таблицы 
+            (по-нашему ДинамиТ) доступны в Google Диск.
     }
   \label{fig:fusion_is_available_at_drive}
 \end{figure}
 
 Щёлкнем по кнопке <<Google Сводные таблицы>>, чтобы создать новую таблицу.
 
-Откроется новое окно (рис. 050\_create\_empty\_table.png). Выберите пункт 
-"Create empty table" для создания новой пустой таблицы.
+Откроется новое окно (рис.~\ref{fig:fusion_create_empty_table}). Выберите пункт 
+``Create empty table'' для создания новой пустой таблицы.
+
+\begin{figure}
+{%
+\setlength{\fboxsep}{0pt}%
+\setlength{\fboxrule}{1pt}%
+\fcolorbox{gray}{gray}{\includegraphics{./lessons/db_google_fusion/050_create_empty_table.png}}%
+}%
+    \caption[Создание новой Google Сводной таблицы.][0pt]{Создание новой 
+            Google Сводной таблицы (Fusion Table).
+
+            { 
+                Интерфейс Fusion Tables на русский пока не переведён, 
+                но для нас это не беда. 
+            }
+
+            {
+                Обратите внимание, что внизу иллюстрации есть ссылка на учебник 
+                по Fusion Tables: \url{https://support.google.com/fusiontables}.
+            }
+    }
+  \label{fig:fusion_create_empty_table}
+\end{figure}
 
 
 \section{Закладка (данных) ДинамиТа}
